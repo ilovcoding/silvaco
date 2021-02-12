@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<!DOCTYPE rto SYSTEM "rto.dtd">
+<rto>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="deckbuild" timestamp="1613133426" type="out">
+*** this is deckbuild version 5.0.10.R ***
+
+</text>
+
+  <text deck-line="1" is-extract="false" line-id="1" simulator="athena" timestamp="1613133426" type="out">go athena
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613133426" type="out">
+
+
+                                  A T H E N A
+
+     Version: athena 5.21.2 (aka 5.22.3.R) (Fri Jul 12 14:21:19 PDT 2013)
+
+                            Copyright � 1984 - 2013
+
+                       Silvaco Inc. All rights reserved
+
+   We acknowledge the contribution of the following collaborative partners:
+
+                              Stanford University
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613133427" type="out">
+
+	==============================================================
+	 ATHENA                           :  Enabled
+	 SSUPREM4                         :  Enabled
+	   Monte Carlo Implant            :  Enabled
+	 ELITE                            :  Enabled
+	   Monte Carlo Etch &amp; Deposit     :  Enabled
+	 OPTOLITH                         :  Enabled
+	==============================================================
+
+                      It is now Fri Feb 12 20:37:07 2021
+
+                       Executing </text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613133427" type="out">on host: DESKTOP-VV1IB23
+
+
+Loading model file 'D:\sedatools\\lib\athena\5.22.3.R\common\athenamod'...</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613133428" type="out"> done.
+ATHENA&gt; </text>
+
+  <text deck-line="2" is-extract="false" line-id="2" simulator="athena" timestamp="1613133428" type="out">line x loc = 0.0  spacing=0.02
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613133428" type="out">ATHENA&gt; </text>
+
+  <text deck-line="3" is-extract="false" line-id="3" simulator="athena" timestamp="1613133428" type="out">line x loc = 0.5   spacing=0.02
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613133428" type="out">ATHENA&gt; </text>
+
+  <text deck-line="4" is-extract="false" line-id="4" simulator="athena" timestamp="1613133428" type="out">line y loc = 0   spacing = 0.02
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613133428" type="out">ATHENA&gt; </text>
+
+  <text deck-line="5" is-extract="false" line-id="5" simulator="athena" timestamp="1613133428" type="out">line y loc = 1.5  spacing = 0.05
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613133428" type="out">ATHENA&gt; </text>
+
+  <text deck-line="6" is-extract="false" line-id="6" simulator="athena" timestamp="1613133428" type="out">init orientation=100 two.d
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613133428" type="out">ATHENA&gt; </text>
+
+  <text deck-line="7" is-extract="false" line-id="7" simulator="athena" timestamp="1613133428" type="out">deposit oxide thick=0.5 div=10
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613133428" type="out">ATHENA&gt; </text>
+
+  <text deck-line="8" is-extract="false" line-id="8" simulator="athena" timestamp="1613133428" type="out">etch oxide p1.x=0.3 right
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613133428" type="out">ATHENA&gt; </text>
+
+  <text deck-line="9" is-extract="false" line-id="9" simulator="athena" timestamp="1613133428" type="out">structure mirror  right
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613133428" type="out">ATHENA&gt; </text>
+
+  <text deck-line="10" is-extract="false" line-id="10" simulator="athena" timestamp="1613133428" type="out">
+</text>  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613133428" type="out">ATHENA&gt; </text>
+
+  <text deck-line="11" is-extract="false" line-id="11" simulator="athena" timestamp="1613133428" type="out">deposit oxide thick=0.03 div=3
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613133428" type="out">ATHENA&gt; </text>
+
+  <text deck-line="12" is-extract="false" line-id="12" simulator="athena" timestamp="1613133428" type="out">implant phosph dose=1e14 energy=100 bca tilt=7 rotation=0 temperature=300
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613133429" type="out">
+::Binary Collision Approximation(BCA) implantation module: 2.8.1::
+  (12 CPU(s) available, running 12 threads)
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613133429" type="out">::0.</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613133429" type="out">..</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613133429" type="out">..10.</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613133429" type="out">..</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613133429" type="out">.</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613133429" type="out">.20..</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613133429" type="out">..</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613133429" type="out">.30..</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613133430" type="out">.</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613133430" type="out">.</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613133430" type="out">.40..</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613133430" type="out">..</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613133430" type="out">.50..</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613133430" type="out">.</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613133430" type="out">..60.</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613133430" type="out">..</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613133430" type="out">..70.</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613133430" type="out">.</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613133430" type="out">.</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613133430" type="out">..80.</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613133430" type="out">..</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613133430" type="out">..90.</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613133430" type="out">..</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613133431" type="out">..</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613133431" type="out">100::
+::IONS(/cm2): transmitted= 0,  reflected= 9e+010,  retained= 9.99e+013::
+
+ATHENA&gt; </text>
+
+  <text deck-line="13" is-extract="false" line-id="13" simulator="athena" timestamp="1613133431" type="out">
+</text>  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613133431" type="out">ATHENA&gt; </text>
+
+  <text deck-line="14" is-extract="false" line-id="14" simulator="athena" timestamp="1613133431" type="out">structure outfile=Monte_Carlo_implant.str remove.gas
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613133431" type="out">ATHENA&gt; </text>
+
+  <text deck-line="-1" is-extract="false" line-id="15" simulator="athena" timestamp="1613133431" type="out">tonyplot Monte_Carlo_implant.str -set Monte_Carlo_implant.set
+</text>
+
+  <text deck-line="16" is-extract="false" line-id="16" simulator="athena" timestamp="1613133431" type="out">quit
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="deckbuild" timestamp="1613133461" type="out">
+*** this is deckbuild version 5.0.10.R ***
+
+</text>
+
+  <text deck-line="1" is-extract="false" line-id="1" simulator="athena" timestamp="1613133461" type="out">go athena
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613133462" type="out">
+
+
+                                  A T H E N A
+
+     Version: athena 5.21.2 (aka 5.22.3.R) (Fri Jul 12 14:21:19 PDT 2013)
+
+                            Copyright � 1984 - 2013
+
+                       Silvaco Inc. All rights reserved
+
+   We acknowledge the contribution of the following collaborative partners:
+
+                              Stanford University
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613133462" type="out">
+
+	==============================================================
+	 ATHENA                           :  Enabled
+	 SSUPREM4                         :  Enabled
+	   Monte Carlo Implant            :  Enabled
+	 ELITE                            :  Enabled
+	   Monte Carlo Etch &amp; Deposit     :  Enabled
+	 OPTOLITH                         :  Enabled
+	==============================================================
+
+                      It is now Fri Feb 12 20:37:42 2021
+
+                       Executing </text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613133462" type="out">on host: DESKTOP-VV1IB23
+
+
+Loading model file 'D:\sedatools\\lib\athena\5.22.3.R\common\athenamod'...</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613133463" type="out"> done.
+ATHENA&gt; </text>
+
+  <text deck-line="2" is-extract="false" line-id="2" simulator="athena" timestamp="1613133463" type="out">line x loc = 0.0  spacing=0.02
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613133463" type="out">ATHENA&gt; </text>
+
+  <text deck-line="3" is-extract="false" line-id="3" simulator="athena" timestamp="1613133463" type="out">line x loc = 0.5   spacing=0.02
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613133463" type="out">ATHENA&gt; </text>
+
+  <text deck-line="4" is-extract="false" line-id="4" simulator="athena" timestamp="1613133463" type="out">line y loc = 0   spacing = 0.02
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613133463" type="out">ATHENA&gt; </text>
+
+  <text deck-line="5" is-extract="false" line-id="5" simulator="athena" timestamp="1613133463" type="out">line y loc = 1.5  spacing = 0.05
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613133463" type="out">ATHENA&gt; </text>
+
+  <text deck-line="6" is-extract="false" line-id="6" simulator="athena" timestamp="1613133463" type="out">init orientation=100 two.d
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613133463" type="out">ATHENA&gt; </text>
+
+  <text deck-line="7" is-extract="false" line-id="7" simulator="athena" timestamp="1613133463" type="out">deposit oxide thick=0.5 div=10
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613133463" type="out">ATHENA&gt; </text>
+
+  <text deck-line="8" is-extract="false" line-id="8" simulator="athena" timestamp="1613133463" type="out">etch oxide p1.x=0.3 right
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613133463" type="out">ATHENA&gt; </text>
+
+  <text deck-line="9" is-extract="false" line-id="9" simulator="athena" timestamp="1613133463" type="out">structure mirror  right
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613133463" type="out">ATHENA&gt; </text>
+
+  <text deck-line="10" is-extract="false" line-id="10" simulator="athena" timestamp="1613133463" type="out">
+</text>  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613133463" type="out">ATHENA&gt; </text>
+
+  <text deck-line="11" is-extract="false" line-id="11" simulator="athena" timestamp="1613133463" type="out">deposit oxide thick=0.03 div=3
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613133463" type="out">ATHENA&gt; </text>
+
+  <text deck-line="12" is-extract="false" line-id="12" simulator="athena" timestamp="1613133463" type="out">implant phosph dose=1e14 energy=100 bca tilt=7 rotation=0 temperature=300
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613133463" type="out">
+::Binary Collision Approximation(BCA) implantation module: 2.8.1::
+  (12 CPU(s) available, running 12 threads)
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613133464" type="out">::0.</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613133464" type="out">..</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613133464" type="out">..10.</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613133464" type="out">..</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613133464" type="out">..20.</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613133464" type="out">...</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613133464" type="out">.30.</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613133464" type="out">...</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613133464" type="out">.</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613133464" type="out">40</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613133464" type="out">..</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613133464" type="out">..</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613133464" type="out">.50..</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613133464" type="out">..</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613133465" type="out">.60</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613133465" type="out">...</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613133465" type="out">..70</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613133465" type="out">...</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613133465" type="out">..80.</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613133465" type="out">..</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613133465" type="out">..90</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613133465" type="out">...</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613133465" type="out">..</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613133465" type="out">100::
+::IONS(/cm2): transmitted= 0,  reflected= 9e+010,  retained= 9.99e+013::
+
+ATHENA&gt; </text>
+
+  <text deck-line="13" is-extract="false" line-id="13" simulator="athena" timestamp="1613133465" type="out">
+</text>  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613133465" type="out">ATHENA&gt; </text>
+
+  <text deck-line="14" is-extract="false" line-id="14" simulator="athena" timestamp="1613133465" type="out">structure outfile=Monte_Carlo_implant.str remove.gas
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613133465" type="out">ATHENA&gt; </text>
+
+  <text deck-line="-1" is-extract="false" line-id="15" simulator="athena" timestamp="1613133465" type="out">tonyplot Monte_Carlo_implant.str -set Monte_Carlo_implant.set
+</text>
+
+  <text deck-line="16" is-extract="false" line-id="16" simulator="athena" timestamp="1613133466" type="out">quit
+</text>
+
+</rto>
