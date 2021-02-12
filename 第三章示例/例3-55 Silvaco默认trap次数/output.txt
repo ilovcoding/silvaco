@@ -1,0 +1,354 @@
+ATLAS> init infile=mos.str
+	####################################################
+	######                                        ######
+	######           Running on  2 CPUs           ######
+	######                                        ######
+	####################################################
+
+Reading MASTER format file mos.str from ATHENA.
+ Read 1613 nodes.
+ Read 3034 triangles.
+ Read 6 regions.
+ Read 4 electrodes.
+ 2195621 net bytes allocated during read.
+
+Electrode bias information:
+ V(   gate   ) =  0.000000E+00
+ V(  source  ) =  0.000000E+00
+ V(  drain   ) =  0.000000E+00
+ V(substrate ) =  0.000000E+00
+
+Electrode geometry information: 
+ No.  Name       x.min      x.max      y.min      y.max
+   1 gate        3.543E-01  8.457E-01  6.892E-03  2.041E-01
+   2 source      0.000E+00  1.800E-01  1.855E-01  2.179E-01
+   3 drain       1.020E+00  1.200E+00  1.855E-01  2.179E-01
+   4 substrate   0.000E+00  1.200E+00  8.000E-01  8.000E-01
+ATLAS> # set material models
+ATLAS> models cvt srh print
+
+Mesh
+ Type:               non-cylindrical
+ Total grid points:  1613
+ Total triangles  :  3034
+ Obtuse triangles :  78  (2.57086 %)
+ATLAS> contact name=gate n.poly
+ATLAS> interface qf=30000000000
+ATLAS> method newton
+
+
+CONSTANTS:
+ Boltzmann's constant  = 1.38066e-023 J/K
+ Elementary charge     = 1.60219e-019 C
+ Permitivity in vacuum = 8.85419e-014 F/cm
+ Temperature           = 300 K
+ Thermal voltage       = 0.025852 V
+
+REGIONAL MATERIAL PARAMETERS:
+ Region       :        1         2         3         4         5         6   
+ Material     :    Silicon      SiO2 Polysilicon  Aluminum  Aluminum  Aluminum 
+ Type         :    semicond. insulator   metal     metal     metal     metal  
+
+ Average Composition Fraction 
+ X-composition:         0         0         0         0         0         0 
+ Y-composition:         0         0         0         0         0         0 
+
+ Band Parameters
+ Epsilon      :      11.8       3.9                                         
+ Eg (eV)      :      1.08                                                   
+ Chi (eV)     :      4.17                                                   
+ Nc (per cc)  :  2.8e+019                                                   
+ Nv (per cc)  : 1.04e+019                                                   
+ ni (per cc)  : 1.45e+010                                                   
+
+ Effective Richardson Constants
+ An**         :       110                                                   
+ Ap**         :        30                                                   
+
+ Incomplete Ionization Parameters
+ Gc           :         2                                                   
+ Gv           :         4                                                   
+ Ed (eV)      :     0.044                                                   
+ Ea (eV)      :     0.045                                                   
+
+ Recombination Parameters
+ taun0        :    1e-007                                                   
+ taup0        :    1e-007                                                   
+ etrap        :         0                                                   
+ nsrhn        :    5e+016                                                   
+ nsrhp        :    5e+016                                                   
+ ksrhtn       :    0.0025                                                   
+ ksrhtp       :    0.0025                                                   
+ ksrhcn       :    3e-013                                                   
+ ksrhcp       : 1.18e-012                                                   
+ ksrhgn       :      1.77                                                   
+ ksrhgp       :      0.57                                                   
+ nsrhn        :    5e+016                                                   
+ nsrhp        :    5e+016                                                   
+ augn         :  2.8e-031                                                   
+ augp         :  9.9e-032                                                   
+ augkn        :         0                                                   
+ augkp        :         0                                                   
+ kaugcn       : 1.83e-031                                                   
+ kaugcp       : 2.78e-031                                                   
+ kaugdn       :      1.18                                                   
+ kaugdp       :      0.72                                                   
+ copt         :         0                                                   
+
+ Band-to-band tunneling Parameters
+ mass.tunnel  :      0.25                                                   
+ me.tunnel    :     0.322                                                   
+ mh.tunnel    :     0.549                                                   
+
+ Thermal Velocities
+ vn (cm/s)    : 1.08e+007                                                   
+ vp (cm/s)    :  1.3e+007                                                   
+
+ Saturation Velocities
+ vsatn (cm/s) : 1.03e+007                                                   
+ vsatp (cm/s) : 1.03e+007                                                   
+
+REGIONAL MODEL FLAGS:
+ Region:          1    2    3    4    5    6 
+ SRH              T                           
+ consrh           F                           
+ klasrh           F                           
+ Auger            F                           
+ klaaug           F                           
+ optr             F                           
+ bgn              F                           
+ incomplete       F                           
+ bbt              F                           
+ bbtauto          F                           
+ bbthurkx         F                           
+ bbtkane          F                           
+ bbtschenk        F                           
+ bbtnonlocal      F                           
+ tat(local)       F                           
+ tatnonlocal      F                           
+ tat(coulombic)   F                           
+ impact           F                           
+ Boltzmann        T                           
+ Fermi-Dirac      F                           
+
+Gain and Rsp scaling
+  Gain scale factor  :         1         1 
+  Rsp scale factor   :         1         1 
+
+
+REGIONAL MOBILITY MODEL SUMMARY:
+
+  Region #1:
+
+    Model for Electrons:
+
+      Concentration Dependent Mobility
+      @ Temperature =     300 Kelvin 
+        Using CVT low field mobility model.
+          cs    = 3.43e+020
+          cr    = 9.68e+016
+          alpha = 0.68
+          beta  = 2
+          gamma = 2.5
+          pc    = 0
+          mu0   = 52.2
+          mu1   = 43.4
+          mumax = 1417
+
+      Parallel Field Dependent Mobility
+        Using parallel field model.
+          Using built-in Silicon model for Vsat.
+          alpha = 2.4e+007
+          theta = 0.8
+          tnom = 600
+          beta = 2
+
+      Perpendicular Field Dependent Mobility
+        Using CVT model.
+          B = 4.75e+007
+          C = 174000
+          D = 0.333333
+          E = 1
+          tau = 0.125
+          delta = 5.82e+014
+          k = 2
+
+    Model for Holes:
+
+      Concentration Dependent Mobility
+      @ Temperature =     300 Kelvin 
+        Using CVT low field mobility model.
+          cs    = 6.1e+020
+          cr    = 2.23e+017
+          alpha = 0.71
+          beta  = 2
+          gamma = 2.2
+          pc    = 9.23e+016
+          mu0   = 44.9
+          mu1   = 29
+          mumax = 470.5
+
+      Parallel Field Dependent Mobility
+        Using parallel field model.
+          Using built-in Silicon model for Vsat.
+          alpha = 2.4e+007
+          theta = 0.8
+          tnom = 600
+          beta = 1
+
+      Perpendicular Field Dependent Mobility
+        Using CVT model.
+          B = 9.925e+006
+          C = 884200
+          D = 0.333333
+          E = 1
+          tau = 0.0317
+          delta = 2.0546e+014
+          k = 2
+
+
+Contacts :
+Name         Num  Work fn    Resist.    Capacit.   Induct.
+                   (eV)      (Ohms)     (Farads)   (Henries)
+gate          1     4.170   0.000E+00  0.000E+00  0.000E+00
+source        2     0.000   0.000E+00  0.000E+00  0.000E+00
+drain         3     0.000   0.000E+00  0.000E+00  0.000E+00
+substrate     4     0.000   0.000E+00  0.000E+00  0.000E+00
+  
+ATLAS> # Bias the drain
+ATLAS> solve vdrain=1
+
+Starting module:   SPISCES                        
+
+  
+ Warning: No solution present.  Performing zero carrier, zero bias
+ calculation for initial guess.
+  
+
+Obtaining static solution:
+
+
+init           psi    psi 
+direct          x     rhs 
+   i    j  m  -5.00* -26.0*
+---------------------------
+   1    1  G  -0.433 -15.39
+   2    1  G  -0.541 -15.51
+   3    1  G  -0.731 -15.68
+   4    1  G  -0.674 -15.82
+   5    1  G  -0.570 -15.97
+   6    1  G  -0.626 -16.25
+   7    1  G  -4.773 -20.79
+   8    1  G  -10.3* -26.5*
+  
+
+Obtaining static solution:
+
+ V(  drain  ) = 1           
+
+
+prev           psi     n      p     psi     n      p  
+direct          x      x      x     rhs    rhs    rhs 
+   i    j  m  -5.00* -5.00* -5.00* -26.0* -17.3* -17.3*
+-------------------------------------------------------
+   1       N   2.146 -0.001 -0.028 -14.07 -0.309 -4.528
+   2       N   6.174  3.943  2.984 -13.44 -0.314 -3.669
+   3       N   6.488  6.121  6.429 -13.26  0.143 -0.435
+   4       N   6.858  8.874  7.445 -11.47  1.691  1.455
+
+Warning: Solution diverging. Potential update too large.
+ Update: 7.21172e+006 Vstep: 40
+  
+ 
+Warning: Convergence problem.  Taking smaller bias
+step(s).  Bias step reduced 1 times.
+ 
+
+Obtaining static solution:
+
+ V(  drain  ) = 0.5         
+
+
+prev           psi     n      p     psi     n      p  
+direct          x      x      x     rhs    rhs    rhs 
+   i    j  m  -5.00* -5.00* -5.00* -26.0* -17.3* -17.3*
+-------------------------------------------------------
+   1       N   2.080 -0.001 -0.020 -14.24 -0.298 -4.624
+   2       N   6.116  4.598  2.867 -13.44 -0.308 -3.723
+   3       N   6.567  5.991  6.743 -12.19  1.150 -0.379
+   4       N   6.913  7.359  7.623 -11.43  1.611  1.432
+
+Warning: Solution diverging. Potential update too large.
+ Update: 8.18211e+006 Vstep: 40
+  
+ 
+Warning: Convergence problem.  Taking smaller bias
+step(s).  Bias step reduced 2 times.
+ 
+
+Obtaining static solution:
+
+ V(  drain  ) = 0.25        
+
+
+prev           psi     n      p     psi     n      p  
+direct          x      x      x     rhs    rhs    rhs 
+   i    j  m  -5.00* -5.00* -5.00* -26.0* -17.3* -17.3*
+-------------------------------------------------------
+   1       N   2.021 -0.025 -0.001 -14.24 -0.299 -4.517
+   2       N   6.164  4.635  2.839 -13.44 -0.309 -3.782
+   3       N   6.614  6.640  6.715 -12.15  1.636 -0.247
+   4       N   6.946  5.617  7.556 -11.65  2.599  1.982
+
+Warning: Solution diverging. Potential update too large.
+ Update: 8.82832e+006 Vstep: 40
+  
+ 
+Warning: Convergence problem.  Taking smaller bias
+step(s).  Bias step reduced 3 times.
+ 
+
+Obtaining static solution:
+
+ V(  drain  ) = 0.125       
+
+
+prev           psi     n      p     psi     n      p  
+direct          x      x      x     rhs    rhs    rhs 
+   i    j  m  -5.00* -5.00* -5.00* -26.0* -17.3* -17.3*
+-------------------------------------------------------
+   1       N   1.852 -0.133 -0.009 -14.83 -0.314 -4.595
+   2       N   6.106  4.860  2.518 -13.44 -0.316 -3.843
+   3       N   6.533  7.073  6.363 -11.49  2.643 -0.412
+   4       N   6.919  8.199  8.043 -11.46  2.342  1.629
+
+Warning: Solution diverging. Potential update too large.
+ Update: 8.30151e+006 Vstep: 40
+  
+ 
+Warning: Convergence problem.  Taking smaller bias
+step(s).  Bias step reduced 4 times.
+ 
+
+Obtaining static solution:
+
+ V(  drain  ) = 0.0625      
+
+
+prev           psi     n      p     psi     n      p  
+direct          x      x      x     rhs    rhs    rhs 
+   i    j  m  -5.00* -5.00* -5.00* -26.0* -17.3* -17.3*
+-------------------------------------------------------
+   1       N   1.351 -0.018 -0.007 -15.46 -0.318 -4.855
+   2       N   4.276  4.308  4.600 -11.23  1.977 -1.939
+   3       N   2.270  2.796 -0.000 -11.53  1.491 -1.954
+   4       N   4.284  5.001  3.662 -11.22  2.571 -1.117
+
+Warning: Solution diverging. Potential update too large.
+ Update: 19222.4 Vstep: 40
+  
+ 
+Warning: Bias step cut back more than 4
+times.  Cannot trap.
+ 
+ATLAS> 

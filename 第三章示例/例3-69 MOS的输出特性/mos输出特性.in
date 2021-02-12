@@ -1,0 +1,37 @@
+go atlas
+
+init infile=mos.str
+
+# define the Gate workfunction 
+contact name=gate n.poly
+
+# Define the Gate Qss
+interface qf=3e10
+
+# Use the cvt mobility model for MOS 
+models cvt srh print numcarr=2 
+method climit=1e-4 maxtrap=10
+# set gate biases with Vds=0.0 
+solve init
+solve vgate=1.1 outf=solve_tmp1 
+solve vgate=2.2 outf=solve_tmp2 
+solve vgate=3.3 outf=solve_tmp3 
+
+#load in temporary files and ramp Vds
+load infile=solve_tmp1
+log outf=mos_ids_1.log
+solve name=drain vdrain=0 vfinal=3.3 vstep=0.1 
+ 
+load infile=solve_tmp2
+log outf=mos_ids_2.log
+solve name=drain vdrain=0 vfinal=3.3 vstep=0.1
+  
+load infile=solve_tmp3
+log outf=mos_ids_3.log
+solve name=drain vdrain=0 vfinal=3.3 vstep=0.1
+
+tonyplot -overlay mos_ids_1.log  mos_ids_2.log mos_ids_3.log -set mos_output.set
+
+quit
+
+

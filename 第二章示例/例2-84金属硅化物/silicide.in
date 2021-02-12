@@ -1,0 +1,21 @@
+go athena
+
+line x loc=0 spac=0.1
+line x loc=0.5 spac=0.1
+
+line y loc=0 spac=0.0001
+line y loc=0.1 spac=0.05
+
+init two.d c.boron=1e17
+
+
+deposit material=titanium thick=0.002 div=5
+
+silicide material=tisi2 mttype=silicide / material=titanium alpha=0.4
+
+structure outfile=before_alloy.str
+diffuse time=60 temp=650 
+
+structure outfile=after_alloy.str
+
+tonyplot before_alloy.str after_alloy.str

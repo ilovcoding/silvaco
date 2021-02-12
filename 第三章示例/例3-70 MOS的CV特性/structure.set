@@ -1,0 +1,105 @@
+# TPCS version: 8
+# various properties
+log label 0
+key opaque 0
+mark frequency 0
+mark overlay 0
+graph width 0 2
+graph width 1 1
+graph width 2 1
+graph width 3 1
+graph width 4 2
+graph width 5 1
+sequence size 0
+sequence width 0
+log zero 0
+sequence mark 0 0
+sequence mark 1 1
+sequence mark 2 2
+sequence mark 3 3
+sequence mark 4 4
+sequence mark 5 5
+# Functions
+function 1 "" ""
+function 2 "" ""
+function 3 "" ""
+function 4 "" ""
+select 1
+# plot flags, special
+show mesh off
+show edges on
+show materials on
+show contours on
+show light off
+show vectors off
+show junctions on
+show electrodes on
+show threed off
+draw 1
+# contour set 1
+contours 1 impurity "Net Doping"
+contours 1 materials all
+contours 1 min auto
+contours 1 max auto
+contours 1 nsteps 33
+contours 1 type fill
+contours 1 outline off
+contours 1 color 0
+contours 1 apply
+# contour set 2
+contours 2 impurity "(unknown impurity)"
+contours 2 materials all
+contours 2 min auto
+contours 2 max auto
+contours 2 nsteps 33
+contours 2 type fill
+contours 2 outline off
+contours 2 color 0
+contours 2 apply
+# contour set 3
+contours 3 impurity "(unknown impurity)"
+contours 3 materials all
+contours 3 min auto
+contours 3 max auto
+contours 3 nsteps 33
+contours 3 type fill
+contours 3 outline off
+contours 3 color 0
+contours 3 apply
+# junctions/depletion set
+junctions show none
+junctions show junctions
+junctions contours 0.5
+junctions apply
+region param -101
+# key positions
+key contours 1 at 3
+key contours 2 at 1
+key contours 3 at 6
+key electrical at 6
+key vectors at 6
+key overlay at 2
+key regions at 4
+key apply 
+# annotation, titles
+title main auto
+title sub auto
+# annotation, footers
+footer right none
+footer left none
+# annotation, show
+show xaxis on
+show yaxis on
+show grid off
+show label xaxis on
+show label yaxis on
+# annotation, axes
+range xaxis auto
+range yaxis auto
+label xaxis "Microns"
+label yaxis "Microns"
+# zoom
+zoom from 0, 0 scale 1, 1
+# user labels
+# overlay level names
+label overlay 0 "mos0.str"

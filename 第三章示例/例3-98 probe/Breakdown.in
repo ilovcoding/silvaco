@@ -1,0 +1,64 @@
+go atlas 
+# 
+mesh 
+x.mesh loc=0.00 spac=0.1 
+x.mesh loc=0.50 spac=0.1
+ 
+y.mesh loc=0.00 spac=0.1 
+y.mesh loc=2.00 spac=0.25
+y.mesh loc=3.00 spac=0.1 
+y.mesh loc=5.00 spac=0.5
+y.mesh loc=10.00 spac=5  
+y.mesh loc=90 spac=5
+y.mesh loc=95 spac=1 
+y.mesh loc=90 spac=0.5 
+y.mesh loc=95 spac=0.1 
+y.mesh loc=98 spac=0.25
+y.mesh loc=100 spac=0.1 
+
+region number=1 x.min=0.0 x.max=0.5 y.min=0.0 y.max=200 material=silicon  
+# 
+electrode name=anode top
+electrode name=cathode bottom 
+# 
+doping region=1 uniform conc=2e14 n.type  
+doping region=1 gauss conc=1e18 p.type peak=0 junct=3 
+doping region=1 gauss conc=5e19 p.type peak=100 y.char=1.5 
+# 
+save outfile=PIN_0.str 
+#tonyplot PIN.str 
+
+################################################
+go atlas
+mesh infile=PIN_0.str
+
+models bipolar  print lat.temp
+impact selb
+thermcontact number=1 elec.num=1 ext.temper=300 
+thermcontact number=2 elec.num=2 ext.temper=300 
+
+output e.field impact e.line flowline  
+probe name=alphan_junc alphan x=0.25 y=3 dir=90
+probe name=alphap_junc alphap x=0.25 y=3 dir=90
+probe name=Field_junc field x=0.25 y=3 dir=90
+probe name=Generation_junc generation x=0.25 y=3 
+probe name=N_junc n.conc x=0.25 y=3 
+probe name=P_junc p.conc x=0.25 y=3  
+probe name=R_junc recombin x=0.25 y=3 
+probe name=Jn_junc j.electron x=0.25 y=3 
+probe name=Jp_junc j.hole x=0.25 y=3 
+probe name=lat.temp lat.temp max
+probe name=total_heat total.heat x=0.25 y=3 
+probe name=joule_heat joule.heat x=0.25 y=3 
+
+method block newton trap maxtraps=10
+solve init
+log outfile=PIN_breakdown.log 
+solve vcathode=0.1 vstep=0.1 vfinal=0.5 name=cathode
+solve vstep=0.25 vfinal=1 name=cathode
+solve vstep=1 vfinal=10 name=cathode
+solve vstep=2 vfinal=20 name=cathode
+solve vstep=5 vfinal=800 name=cathode
+save outf=Vc_800.str
+solve vstep=5 vfinal=1200 name=cathode
+quit

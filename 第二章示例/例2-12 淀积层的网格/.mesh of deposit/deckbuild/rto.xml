@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<!DOCTYPE rto SYSTEM "rto.dtd">
+<rto>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="deckbuild" timestamp="1613099498" type="out">
+*** this is deckbuild version 5.0.10.R ***
+
+</text>
+
+  <text deck-line="1" is-extract="false" line-id="1" simulator="athena" timestamp="1613099498" type="out">go athena
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613099498" type="out">
+
+
+                                  A T H E N A
+
+     Version: athena 5.21.2 (aka 5.22.3.R) (Fri Jul 12 14:21:19 PDT 2013)
+
+                            Copyright � 1984 - 2013
+
+                       Silvaco Inc. All rights reserved
+
+   We acknowledge the contribution of the following collaborative partners:
+
+                              Stanford University
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613099499" type="out">
+
+	==============================================================
+	 ATHENA                           :  Enabled
+	 SSUPREM4                         :  Enabled
+	   Monte Carlo Implant            :  Enabled
+	 ELITE                            :  Enabled
+	   Monte Carlo Etch &amp; Deposit     :  Enabled
+	 OPTOLITH                         :  Enabled
+	==============================================================
+
+                      It is now Fri Feb 12 11:11:39 2021
+
+                       Executing </text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613099499" type="out">on host: DESKTOP-VV1IB23
+
+
+Loading model file 'D:\sedatools\\lib\athena\5.22.3.R\common\athenamod'...</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613099499" type="out"> done.
+ATHENA&gt; </text>
+
+  <text deck-line="2" is-extract="false" line-id="32" simulator="athena" timestamp="1613099499" type="out">
+</text>  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613099499" type="out">ATHENA&gt; </text>
+
+  <text deck-line="3" is-extract="false" line-id="5" simulator="athena" timestamp="1613099499" type="out">line x loc = 0.0  spacing=0.02
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613099499" type="out">ATHENA&gt; </text>
+
+  <text deck-line="4" is-extract="false" line-id="6" simulator="athena" timestamp="1613099499" type="out">line x loc = 1   spacing=0.1
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613099499" type="out">ATHENA&gt; </text>
+
+  <text deck-line="5" is-extract="false" line-id="7" simulator="athena" timestamp="1613099499" type="out">line y loc = 0   spacing = 0.02
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613099499" type="out">ATHENA&gt; </text>
+
+  <text deck-line="6" is-extract="false" line-id="8" simulator="athena" timestamp="1613099499" type="out">line y loc = 2.0  spacing = 0.20
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613099499" type="out">ATHENA&gt; </text>
+
+  <text deck-line="7" is-extract="false" line-id="9" simulator="athena" timestamp="1613099499" type="out">init two.d
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613099499" type="out">ATHENA&gt; </text>
+
+  <text deck-line="8" is-extract="false" line-id="33" simulator="athena" timestamp="1613099499" type="out">
+</text>  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613099499" type="out">ATHENA&gt; </text>
+
+  <text deck-line="9" is-extract="false" line-id="12" simulator="athena" timestamp="1613099499" type="out">deposit polysilicon thick=0.50 divisions=10 dy=0.1 ydy=0.25
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613099500" type="out">ATHENA&gt; </text>
+
+  <text deck-line="10" is-extract="false" line-id="14" simulator="athena" timestamp="1613099500" type="out">structure outfile=deposit_mesh1.str
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613099500" type="out">ATHENA&gt; </text>
+
+  <text deck-line="11" is-extract="false" line-id="15" simulator="athena" timestamp="1613099500" type="out">##########################################
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613099500" type="out">ATHENA&gt; </text>
+
+  <text deck-line="12" is-extract="false" line-id="16" simulator="athena" timestamp="1613099500" type="out">quit
+</text>
+
+  <text deck-line="12" is-extract="false" line-id="16" simulator="athena" timestamp="1613099500" type="out">go athena
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613099500" type="out">
+
+
+                                  A T H E N A
+
+     Version: athena 5.21.2 (aka 5.22.3.R) (Fri Jul 12 14:21:19 PDT 2013)
+
+                            Copyright � 1984 - 2013
+
+                       Silvaco Inc. All rights reserved
+
+   We acknowledge the contribution of the following collaborative partners:
+
+                              Stanford University
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613099500" type="out">
+
+	==============================================================
+	 ATHENA                           :  Enabled
+	 SSUPREM4                         :  Enabled
+	   Monte Carlo Implant            :  Enabled
+	 ELITE                            :  Enabled
+	   Monte Carlo Etch &amp; Deposit     :  Enabled
+	 OPTOLITH                         :  Enabled
+	==============================================================
+
+                      It is now Fri Feb 12 11:11:40 2021
+
+                       Executing </text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613099500" type="out">on host: DESKTOP-VV1IB23
+
+
+Loading model file 'D:\sedatools\\lib\athena\5.22.3.R\common\athenamod'...</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613099501" type="out"> done.
+ATHENA&gt; </text>
+
+  <text deck-line="13" is-extract="false" line-id="34" simulator="athena" timestamp="1613099501" type="out">line x loc = 0.0  spacing=0.02
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613099501" type="out">ATHENA&gt; </text>
+
+  <text deck-line="14" is-extract="false" line-id="19" simulator="athena" timestamp="1613099501" type="out">line x loc = 1   spacing=0.1
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613099501" type="out">ATHENA&gt; </text>
+
+  <text deck-line="15" is-extract="false" line-id="20" simulator="athena" timestamp="1613099501" type="out">line y loc = 0   spacing = 0.02
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613099501" type="out">ATHENA&gt; </text>
+
+  <text deck-line="16" is-extract="false" line-id="21" simulator="athena" timestamp="1613099501" type="out">line y loc = 2.0  spacing = 0.20
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613099501" type="out">ATHENA&gt; </text>
+
+  <text deck-line="17" is-extract="false" line-id="22" simulator="athena" timestamp="1613099501" type="out">init two.d
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613099501" type="out">ATHENA&gt; </text>
+
+  <text deck-line="18" is-extract="false" line-id="25" simulator="athena" timestamp="1613099501" type="out">deposit polysilicon thick=0.50 divisions=10 dy=0.02 ydy=0.25
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613099501" type="out">ATHENA&gt; </text>
+
+  <text deck-line="19" is-extract="false" line-id="27" simulator="athena" timestamp="1613099501" type="out">structure outfile=deposit_mesh2.str
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613099501" type="out">ATHENA&gt; </text>
+
+  <text deck-line="-1" is-extract="false" line-id="35" simulator="athena" timestamp="1613099501" type="out">tonyplot deposit_mesh1.str deposit_mesh2.str -set mesh.set
+</text>
+
+  <text deck-line="21" is-extract="false" line-id="29" simulator="athena" timestamp="1613099501" type="out">quit
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="deckbuild" timestamp="1613099624" type="out">
+*** this is deckbuild version 5.0.10.R ***
+
+</text>
+
+  <text deck-line="1" is-extract="false" line-id="1" simulator="athena" timestamp="1613099624" type="out">go athena
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613099624" type="out">
+
+
+                                  A T H E N A
+
+     Version: athena 5.21.2 (aka 5.22.3.R) (Fri Jul 12 14:21:19 PDT 2013)
+
+                            Copyright � 1984 - 2013
+
+                       Silvaco Inc. All rights reserved
+
+   We acknowledge the contribution of the following collaborative partners:
+
+                              Stanford University
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613099624" type="out">
+
+	==============================================================
+	 ATHENA                           :  Enabled
+	 SSUPREM4                         :  Enabled
+	   Monte Carlo Implant            :  Enabled
+	 ELITE                            :  Enabled
+	   Monte Carlo Etch &amp; Deposit     :  Enabled
+	 OPTOLITH                         :  Enabled
+	==============================================================
+
+                      It is now Fri Feb 12 11:13:44 2021
+
+                       Executing </text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613099624" type="out">on host: DESKTOP-VV1IB23
+
+
+Loading model file 'D:\sedatools\\lib\athena\5.22.3.R\common\athenamod'...</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613099625" type="out"> done.
+ATHENA&gt; </text>
+
+  <text deck-line="2" is-extract="false" line-id="32" simulator="athena" timestamp="1613099625" type="out">
+</text>  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613099625" type="out">ATHENA&gt; </text>
+
+  <text deck-line="3" is-extract="false" line-id="5" simulator="athena" timestamp="1613099625" type="out">line x loc = 0.0  spacing=0.02
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613099625" type="out">ATHENA&gt; </text>
+
+  <text deck-line="4" is-extract="false" line-id="6" simulator="athena" timestamp="1613099625" type="out">line x loc = 1   spacing=0.1
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613099625" type="out">ATHENA&gt; </text>
+
+  <text deck-line="5" is-extract="false" line-id="7" simulator="athena" timestamp="1613099625" type="out">line y loc = 0   spacing = 0.02
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613099625" type="out">ATHENA&gt; </text>
+
+  <text deck-line="6" is-extract="false" line-id="8" simulator="athena" timestamp="1613099625" type="out">line y loc = 2.0  spacing = 0.20
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613099625" type="out">ATHENA&gt; </text>
+
+  <text deck-line="7" is-extract="false" line-id="9" simulator="athena" timestamp="1613099625" type="out">init two.d
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613099625" type="out">ATHENA&gt; </text>
+
+  <text deck-line="8" is-extract="false" line-id="33" simulator="athena" timestamp="1613099625" type="out">
+</text>  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613099625" type="out">ATHENA&gt; </text>
+
+  <text deck-line="9" is-extract="false" line-id="12" simulator="athena" timestamp="1613099625" type="out">deposit polysilicon thick=0.50 divisions=10 dy=0.1 ydy=0.25
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613099625" type="out">ATHENA&gt; </text>
+
+  <text deck-line="10" is-extract="false" line-id="14" simulator="athena" timestamp="1613099625" type="out">structure outfile=deposit_mesh1.str
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613099625" type="out">ATHENA&gt; </text>
+
+  <text deck-line="11" is-extract="false" line-id="15" simulator="athena" timestamp="1613099625" type="out">##########################################
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613099625" type="out">ATHENA&gt; </text>
+
+  <text deck-line="12" is-extract="false" line-id="16" simulator="athena" timestamp="1613099625" type="out">quit
+</text>
+
+  <text deck-line="12" is-extract="false" line-id="16" simulator="athena" timestamp="1613099625" type="out">go athena
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613099625" type="out">
+
+
+                                  A T H E N A
+
+     Version: athena 5.21.2 (aka 5.22.3.R) (Fri Jul 12 14:21:19 PDT 2013)
+
+                            Copyright � 1984 - 2013
+
+                       Silvaco Inc. All rights reserved
+
+   We acknowledge the contribution of the following collaborative partners:
+
+                              Stanford University
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613099625" type="out">
+
+	==============================================================
+	 ATHENA                           :  Enabled
+	 SSUPREM4                         :  Enabled
+	   Monte Carlo Implant            :  Enabled
+	 ELITE                            :  Enabled
+	   Monte Carlo Etch &amp; Deposit     :  Enabled
+	 OPTOLITH                         :  Enabled
+	==============================================================
+
+                      It is now Fri Feb 12 11:13:45 2021
+
+                       Executing </text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613099625" type="out">on host: DESKTOP-VV1IB23
+
+
+Loading model file 'D:\sedatools\\lib\athena\5.22.3.R\common\athenamod'...</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613099626" type="out"> done.
+ATHENA&gt; </text>
+
+  <text deck-line="13" is-extract="false" line-id="34" simulator="athena" timestamp="1613099626" type="out">line x loc = 0.0  spacing=0.02
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613099626" type="out">ATHENA&gt; </text>
+
+  <text deck-line="14" is-extract="false" line-id="19" simulator="athena" timestamp="1613099626" type="out">line x loc = 1   spacing=0.1
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613099626" type="out">ATHENA&gt; </text>
+
+  <text deck-line="15" is-extract="false" line-id="20" simulator="athena" timestamp="1613099626" type="out">line y loc = 0   spacing = 0.02
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613099626" type="out">ATHENA&gt; </text>
+
+  <text deck-line="16" is-extract="false" line-id="21" simulator="athena" timestamp="1613099626" type="out">line y loc = 2.0  spacing = 0.20
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613099626" type="out">ATHENA&gt; </text>
+
+  <text deck-line="17" is-extract="false" line-id="22" simulator="athena" timestamp="1613099626" type="out">init two.d
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613099626" type="out">ATHENA&gt; </text>
+
+  <text deck-line="18" is-extract="false" line-id="25" simulator="athena" timestamp="1613099626" type="out">deposit polysilicon thick=0.50 divisions=10 dy=0.02 ydy=0.25
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613099626" type="out">ATHENA&gt; </text>
+
+  <text deck-line="19" is-extract="false" line-id="27" simulator="athena" timestamp="1613099626" type="out">structure outfile=deposit_mesh2.str
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613099626" type="out">ATHENA&gt; </text>
+
+  <text deck-line="-1" is-extract="false" line-id="35" simulator="athena" timestamp="1613099626" type="out">tonyplot deposit_mesh1.str deposit_mesh2.str -set mesh.set
+</text>
+
+  <text deck-line="21" is-extract="false" line-id="29" simulator="athena" timestamp="1613099626" type="out">quit
+</text>
+
+</rto>

@@ -1,0 +1,72 @@
+go devedit simflags="-3d"
+
+# load file with specified Z extent
+init inf=mos2d_0.str z1=0 z2=1.1
+
+region reg=1 mat=Silicon Z1=0 Z2=1.1 
+
+region reg=2 mat="Silicon Oxide" Z1=0 Z2=1.1 
+
+region reg=3 mat=PolySilicon  Z1=0.3 Z2=0.8 
+
+region reg=4 name=source mat=Aluminum elec.id=1 work.func=0 color=0xffc8c8 pattern=0x7 Z1=0 Z2=0.1 \
+	points="0.6,-0.007 0.6,0.005 0.6,0.05 0.2018696,0.05 0.15,0.05 0.15,0.004 0.15,-0.1 0.6,-0.1 0.6,-0.007"
+
+region reg=5 name=drain mat=Aluminum elec.id=2 work.func=0 color=0xffc8c8 pattern=0x7 Z1=1 Z2=1.1 \
+	points="0.15,0.05 0.15,0.004 0.15,-0.1 0.6,-0.1 0.6,-0.007 0.6,0.005 0.6,0.05 0.2018696,0.05 0.15,0.05"
+
+
+impurity id=1 imp=Arsenic color=0x8c5d00 \
+	x1=0.15 x2=0.6 y1=0 y2=0 \
+	peak.value=1e+20 ref.value=1e+15 z1=0 z2=0.2 comb.func=Multiply \
+	rolloff.y=both conc.func.y="Gaussian (Dist)" conc.param.y=0.25 \
+	rolloff.x=both conc.func.x="Gaussian (Dist)" conc.param.x=0.15 \
+	rolloff.z=both conc.func.z="Gaussian (Dist)" conc.param.z=0.15
+impurity id=2 imp=Arsenic color=0x8c5d00 \
+	x1=0.15 x2=0.6 y1=0 y2=0 \
+	peak.value=1e+20 ref.value=1e+15 z1=0.9 z2=1.1 comb.func=Multiply \
+	rolloff.y=both conc.func.y="Gaussian (Dist)" conc.param.y=0.25 \
+	rolloff.x=both conc.func.x="Gaussian (Dist)" conc.param.x=0.15 \
+	rolloff.z=both conc.func.z="Gaussian (Dist)" conc.param.z=0.15
+impurity id=3 imp=Phosphorus color=0x8c5d00 \
+	x1=0.15 x2=0.6 y1=0 y2=0 \
+	peak.value=1e+18 ref.value=1e+15 z1=0.8 z2=1.1 comb.func=Multiply \
+	rolloff.y=both conc.func.y="Gaussian (Dist)" conc.param.y=0.2 \
+	rolloff.x=both conc.func.x="Gaussian (Dist)" conc.param.x=0.1 \
+	rolloff.z=both conc.func.z="Gaussian (Dist)" conc.param.z=0.1
+impurity id=4 imp=Phosphorus color=0x8c5d00 \
+	x1=0.15 x2=0.6 y1=0 y2=0 \
+	peak.value=1e+18 ref.value=1e+15 z1=0 z2=0.3 comb.func=Multiply \
+	rolloff.y=both conc.func.y="Gaussian (Dist)" conc.param.y=0.2 \
+	rolloff.x=both conc.func.x="Gaussian (Dist)" conc.param.x=0.1 \
+	rolloff.z=both conc.func.z="Gaussian (Dist)" conc.param.z=0.1
+
+constr.mesh region=1 default max.height=0.2 max.width=0.2
+
+#
+# Perform mesh operations
+#
+Mesh Mode=MeshBuild
+refine mode=both x1=0.4098 y1=0.0048 x2=0.5988 y2=0.1799
+refine mode=both x1=0.2216 y1=0.0376 x2=0.3718 y2=0.1849
+
+z.plane z=0 spacing=0.1
+#
+z.plane z=0.1 spacing=0.1
+#
+z.plane z=0.3 spacing=0.05
+#
+z.plane z=0.55 spacing=0.2
+#
+z.plane z=0.8 spacing=0.05
+#
+z.plane z=1 spacing=0.1
+#
+z.plane z=1.1 spacing=0.1
+#
+z.plane max.spacing=1000000 max.ratio=1.5
+
+structure outf=mos3d_0.str
+
+tonyplot3d mos3d_0.str
+quit

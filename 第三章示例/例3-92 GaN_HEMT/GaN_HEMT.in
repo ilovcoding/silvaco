@@ -1,0 +1,152 @@
+go atlas  simflags="-V 5.16.3.R"  
+mesh width=300
+
+x.mesh loc=-4     spac=0.4
+x.mesh loc=-2.25  spac=0.01
+x.mesh loc=-1.21  spac=0.15
+x.mesh loc=-0.175 spac=0.01
+x.mesh loc=0      spac=0.05
+x.mesh loc=0.175  spac=0.01
+x.mesh loc=1.21   spac=0.15
+x.mesh loc=2.25   spac=0.01
+x.mesh loc=4      spac=0.4
+
+y.mesh loc=-0.005 spac=0.001
+y.mesh loc=0      spac=0.001
+y.mesh loc=0.005  spac=0.001
+y.mesh loc=0.01   spac=0.001
+y.mesh loc=1      spac=0.2
+y.mesh loc=3     spac=0.4
+
+region number=1 material=oxide y.max=0                                                                       
+region number=2 material=GaN  y.min=0 y.max=0.005  polarization                                                                       
+region number=3 material=AlN  y.min=0.005 y.max=0.01 polarization calc.strain     
+region number=4 material=GaN  y.min=0.01 y.max=1  polarization                            
+region number=5 material=sapphire  y.min=1
+
+electrode name=source x.min=-4  x.max=-2.25 y.min=-0.005 y.max=0                                                                       
+electrode name=gate  x.min=-0.175 x.max=0.175 y.min=-0.005 y.max=-0.002                                                                        
+electrode name=drain  x.min=2.25  x.max=4  y.min=-0.005 y.max=0  
+ 
+doping n.type region=1 concentration=1e14 uniform
+doping n.type region=2 concentration=1e14 uniform
+doping n.type region=3 concentration=1e14 uniform
+doping n.type region=4 concentration=1e14 uniform
+
+material ni.min=1e-10 taun0=1e-9 taup0=1e-9
+mobility fmct.n GaNsat.n 
+models   srh fermi print 
+
+contact  name=gate      workfunc=4.31 
+contact  name=source    workfunc=4.31 surf.rec
+contact  name=drain     workfunc=4.31 surf.rec
+
+output   charge  polar.charge
+method   newton climit=1e-4 itlimit=50 maxtrap=20 carriers=1 electrons
+
+solve init
+solve previous
+
+structure outfile=GaN_sapphire.str
+tonyplot GaN_sapphire.str
+log outfile=sapphire_0.log
+solve vdrain=0.1 vstep=0.1 vfinal=5 name=drain 
+log off
+
+solve init
+solve vgate=-0.05 vstep=-0.05 vfinal=-1 name=gate
+log outfile=sapphire_1.log
+solve vdrain=0.1 vstep=0.1 vfinal=5 name=drain 
+log off
+
+solve init
+solve vgate=-0.05 vstep=-0.05 vfinal=-2 name=gate
+log outfile=sapphire_2.log
+solve vdrain=0.1 vstep=0.1 vfinal=5 name=drain 
+log off
+
+solve init
+solve vgate=-0.05 vstep=-0.05 vfinal=-3 name=gate
+log outfile=sapphire_3.log
+solve vdrain=0.1 vstep=0.1 vfinal=5 name=drain 
+log off
+
+tonyplot -overlay  sapphire_0.log sapphire_1.log sapphire_2.log sapphire_3.log -set hemt.set
+#######################################################################################
+go atlas simflags="-V 5.16.3.R"  
+
+mesh width=300
+
+x.mesh loc=-4     spac=0.4
+x.mesh loc=-2.25  spac=0.01
+x.mesh loc=-1.21  spac=0.15
+x.mesh loc=-0.175 spac=0.01
+x.mesh loc=0      spac=0.05
+x.mesh loc=0.175  spac=0.01
+x.mesh loc=1.21   spac=0.15
+x.mesh loc=2.25   spac=0.01
+x.mesh loc=4      spac=0.4
+
+y.mesh loc=-0.005 spac=0.001
+y.mesh loc=0      spac=0.001
+y.mesh loc=0.005  spac=0.001
+y.mesh loc=0.01   spac=0.001
+y.mesh loc=1      spac=0.2
+y.mesh loc=3     spac=0.4
+
+region number=1 material=oxide y.max=0
+region number=2 material=GaN   y.min=0 y.max=0.005    polarization
+region number=3 material=AlN   y.min=0.005 y.max=0.01 polarization calc.strain
+region number=4 material=GaN   y.min=0.01             polarization 
+region number=5 material=sapphire y.min=1
+
+electrode name=source x.min=-4     x.max=-2.25 y.min=-0.005 y.max=0
+electrode name=gate   x.min=-0.175 x.max=0.175 y.min=-0.005 y.max=-0.002
+electrode name=drain  x.min=2.25   x.max=4     y.min=-0.005 y.max=0
+
+doping n.type region=1 concentration=1e14 uniform
+doping n.type region=2 concentration=1e14 uniform
+doping n.type region=3 concentration=1e14 uniform
+doping n.type region=4 concentration=1e14 uniform
+
+material ni.min=1e-10 taun0=1e-9 taup0=1e-9
+mobility fmct.n GaNsat.n
+models   srh  print lat.temp fermi
+
+contact  name=gate      workfunc=4.31
+contact  name=source    workfunc=4.31 surf.rec
+contact  name=drain     workfunc=4.31 surf.rec
+
+thermcontact num=1  y.min=3 ext.temper=300 alpha=980
+
+output charge band.param con.band val.band polar.charge
+method block newton climit=1e-4 itlimit=50  maxtrap=20 carriers=1 electrons
+
+solve init
+
+save outfile=GaN_hemt_sapphire.str
+tonyplot GaN_hemt_sapphire.str
+log outfile=sapphire_therm_0.log
+solve vdrain=0.1 vstep=0.1 vfinal=5 name=drain 
+log off
+
+solve init
+solve vgate=-0.05 vstep=-0.05 vfinal=-1 name=gate
+log outfile=sapphire_therm_1.log
+solve vdrain=0.1 vstep=0.1 vfinal=5 name=drain 
+log off
+
+solve init
+solve vgate=-0.05 vstep=-0.05 vfinal=-2 name=gate
+log outfile=sapphire_therm_2.log
+solve vdrain=0.1 vstep=0.1 vfinal=5 name=drain 
+log off
+
+solve init
+solve vgate=-0.05 vstep=-0.05 vfinal=-3 name=gate
+log outfile=sapphire_therm_3.log
+solve vdrain=0.1 vstep=0.1 vfinal=5 name=drain 
+log off
+
+tonyplot -overlay  sapphire_therm_0.log sapphire_therm_1.log sapphire_therm_2.log sapphire_therm_3.log -set hemt.set
+##################################################################################################################################################3

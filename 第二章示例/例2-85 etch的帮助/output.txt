@@ -1,0 +1,106 @@
+r
+r
+r
+                                  A T H E N A
+r
+            Version: athena 5.20.0.R (Fri Feb  3 13:44:29 PST 2012)
+r
+                            Copyright ?1984 - 2011
+r
+                       Silvaco Inc. All rights reserved
+r
+   We acknowledge the contribution of the following collaborative partners:
+r
+                              Stanford University
+r
+r
+	==============================================================
+	 ATHENA                           :  Enabled
+	 SSUPREM4                         :  Enabled
+	   Monte Carlo Implant            :  Enabled
+	 ELITE                            :  Enabled
+	   Monte Carlo Deposit/Etch       :  Enabled
+	 OPTOLITH                         :  Enabled
+	==============================================================
+r
+                      It is now Sat Aug 17 22:26:14 2013
+r
+                          Executing on host: M-6SHF42X
+r
+r
+Loading model file 'C:\sedatools\lib\athena\5.20.0.R\common\athenamod'... done.
+ATHENA> help etch
+switch stdmaterial =             	Standard material to etch.
+Choose one of:
+    boolean silicon = F
+    boolean oxide = F
+    boolean oxynitride = F
+    boolean nitride = F
+    boolean polysilicon = F
+    boolean photoresist = F
+    boolean barrier = F
+    boolean aluminum = F
+    boolean tungsten = F
+    boolean titanium = F
+    boolean platinum = F
+    boolean cobalt = F
+    boolean wsix = F
+    boolean tisix = F
+    boolean ptsix = F
+    boolean cosix = F
+    boolean gaas = F
+    boolean algaas = F
+    boolean ingaas = F
+    boolean sige = F
+    boolean inp = F
+    boolean sic_6h = F
+    boolean sic_4h = F
+    boolean sic_3c = F
+    boolean germanium = F
+string material	User defined material to be etched.
+string name.resist	User defined photoresist to be etched.
+boolean top.layer = T	Etch only top layer of specified material.
+boolean exact = F	Exact algorithm to be used.
+switch type_etch = left        
+Choose one of:
+    boolean left = F	Etch left of the p1,p2 line.
+    boolean right = F	Etch right of the p1,p2 line.
+    boolean above = F	Etch above of the p1,p2 line.
+    boolean below = F	Etch below of the p1,p2 line.
+    boolean start = F	First of a series of coordinates.
+    boolean continue = F	One of many of a series of coordinates.
+    boolean done = F	Last of a series of coordinates.
+    boolean end.etch = F	Alias for done.
+    boolean dry = T	Straight down from the top.
+    boolean trapezoi = T	Alias for dry.
+	double thickness =     0	Distance for the etch to penetrate (microns).
+	double angle =     0	Wall slope in degrees. 90 - vertical (default)
+	double undercut =     0	The distance that etch extends under a mask when dry etch is performed. (microns)
+    boolean all = F	Etch an entire material.
+    string infile	File containing coordinates for etching.
+double direct.angle =     0	Angle of directional etching.(degrees from the vertical.)
+double x =     0	X value of coordinates (microns).
+double y =     0	Y value of coordinates (microns).
+double p1.x =     0	X coordinate of boundary line for left/right etching (microns).
+double p1.y =     0	Y coordinate of boundary line for left/right etching (microns).
+double p2.x =     0	X coordinate of boundary line for left/right etching (microns).
+double p2.y =     0	Y coordinate of boundary line for left/right etching (microns).
+string machine	Name of machine (must be the same as in rate.etch).
+double time =  -999	Etching time for the defined etch machine.
+double dx.mult =     1	Surface segment accuracy multiplier.
+double dt.fact =  -999	Timestep optimization parameter.
+double dt.max =  -999	Maximum time step size (sec).
+switch tunits = minutes     	Time units.
+Choose one of:
+    boolean hours = F
+    boolean minutes = F
+    boolean seconds = F
+boolean ionrotation = T	Specifies that in ion milling substrate (or equivalently ion beam) rotates around the azimuth plane
+double iontilt =     0	Specifies the tilt angle  (of the normal to substrate) ion ion milling beam
+boolean noexpose = F	Specifies that the new surface after regular etch is neutral.
+boolean mc.redepo = T	Specifies that redeposition of polymer should be simulated.
+double mc.smooth =     1	Specifies smoothing for MC etch and redeposition
+double mc.dt.fact =     1	Time step control parameter forg MC etch and redeposition
+string mc.modfname	File with MC etching models for the C-interpreter 
+double temperature =     0	Etch temperature used for stress evaluation when Stress History Model is used.
+ATHENA> 

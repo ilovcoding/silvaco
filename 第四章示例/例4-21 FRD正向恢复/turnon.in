@@ -1,0 +1,49 @@
+#######################################################
+go atlas
+.begin
+#
+#  Steady-state simulation of circuit with FRD
+#
+i1 0 1 0 
+adiode  0=cathode 1=anode width=5.e7 infile=frd.str
+
+.nodeset v(1)=0 
+.numeric lte=1e-3 toltr=1e-3 vchange=0.1 imaxdc=200
+#
+.save outfile=frd_save
+.options fulln print debug 
+.end
+
+models device=adiode reg=1 conmob fldmob consrh auger bgn
+material device=adiode reg=1 taun0=5e-6 taup0=2e-6
+method gummel block newton maxtrap=10
+############################################################
+go atlas
+.begin
+#   turn on of FRD
+#didt=200A/us
+i1 0 1 0 pwl 0 0 1e-6 0 5e-6 800
+adiode  0=cathode 1=anode width=5.e7 infile=frd.str
+#
+.numeric lte=1e-3 toltr=1.e-4 vchange=10.
+.options print relpot write=5
+#
+.log outfile=frd
+.load infile=frd_save
+.save master=frd
+#
+.tran 0.1ns 10us
+#
+.end
+
+models device=adiode reg=1 conmob fldmob consrh auger bgn lat.temp
+material device=adiode reg=1 taun0=5e-6 taup0=2e-6
+impact device=adiode reg=1 selb
+thermcontact device=adiode num=1 y.max=0   ext.temp=300
+thermcontact device=adiode num=2 y.min=350 ext.temp=300
+probe device=adiode  name=n_junc n.conc x=5 y=20  
+probe device=adiode  name=p_junc p.conc x=5 y=20
+probe device=adiode  name=Field_junc field x=5 y=20 dir=270 
+probe device=adiode  name=lat.temp lat.temp max 
+
+quit

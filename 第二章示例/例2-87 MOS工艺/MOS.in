@@ -1,0 +1,105 @@
+go athena 
+# 
+line x loc=0 spac=0.1
+line x loc=0.2 spac=0.006 
+line x loc=0.4 spac=0.006 
+line x loc=0.5 spac=0.01
+# 
+line y loc=0.00 spac=0.002
+line y loc=0.2 spac=0.005 
+line y loc=0.5 spac=0.05 
+line y loc=0.8 spac=0.15
+# 
+init orientation=100 c.phos=1e14 space.mul=2
+
+# pwell formation including masking off of the nwell 
+# 
+diffus time=30 temp=1000 dryo2 press=1.00 hcl=3
+#
+etch oxide thick=0.02 
+#
+#P--well Implant 
+implant boron dose=8e12 energy=100 pears
+# 
+diffus temp=950 time=100 weto2 hcl=3 
+# 
+# N--well implant not shown 
+diffus time=50 temp=1000 t.rate=4.000 dryo2 press=0.10 hcl=3
+#
+diffus time=220 temp=1200 nitro press=1 
+# 
+diffus time=90 temp=1200 t.rate=-4.444 nitro press=1 
+# 
+etch oxide all
+#
+# sacrificial ¡°cleaning¡± oxide
+diffus time=20 temp=1000 dryo2 press=1 hcl=3 
+#
+etch oxide all
+# gate oxide grown here
+diffus time=11 temp=925 dryo2 press=1.00 hcl=3 
+
+# Extract a design parameter
+extract name="gateox" thickness oxide mat.occno=1 x.val=0.5
+
+#vt adjust implant 
+implant boron dose=9.5e11 energy=10 pearson 
+#
+depo poly thick=0.2 divi=10 
+# 
+#from now on the situation is 2--D 
+#
+etch poly left p1.x=0.35
+#
+method fermi compress 
+diffuse time=3 temp=900 weto2 press=1.0 
+# 
+implant phosphor dose=3.0e13 energy=20 pearson 
+#
+depo oxide thick=0.120 divisions=8
+# 
+etch oxide dry thick=0.120
+# 
+implant arsenic dose=5.0e15 energy=50 pearson 
+# 
+method fermi compress
+diffuse time=1 temp=900 nitro press=1.0 
+ 
+# pattern s/d contact metal 
+etch oxide left p1.x=0.2 
+deposit alumin thick=0.03 divi=2
+etch alumin right p1.x=0.18
+
+# extract final S/D Xj
+extract name="nxj" xj silicon mat.occno=1 x.val=0.1 junc.occno=1 
+ 
+# extract the N++ regions sheet resistance
+extract name="n++ sheet rho" sheet.res material="Silicon" \
+mat.occno=1 x.val=0.05 region.occno=1
+ 
+# extract the sheet rho under the spacer, of the LDD region
+extract name="ldd sheet rho" sheet.res material="Silicon" \
+mat.occno=1 x.val=0.3 region.occno=1 
+
+# extract the surface conc under the channel.
+extract name="chan surf conc" surf.conc impurity="Net Doping" \ 
+material="Silicon" mat.occno=1 x.val=0.45
+ 
+# extract a curve of conductance versus bias. 
+extract start material="Polysilicon" mat.occno=1 bias=0 bias.step=.2 \
+bias.stop=2 x.val=0.45
+ 
+extract done name="sheet cond v bias" curve(bias, 1dn.conduct material="Silicon" \
+mat.occno=1 region.occno=1) outfile="extract.dat" 
+ 
+structure mirror right 
+ 
+electrode name=gate x=0.5 y=0.1
+electrode name=source x=0.1
+electrode name=drain x=0.9
+electrode name=substrate backside
+ 
+structure outfile=mos0.str
+ 
+tonyplot mos0.str -set mos0.set 
+quit

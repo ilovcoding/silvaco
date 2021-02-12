@@ -1,0 +1,48 @@
+go atlas 
+# 
+mesh 
+x.mesh loc=0.00 spac=0.025 
+x.mesh loc=0.50 spac=0.025 
+y.mesh loc=0.00 spac=0.05 
+y.mesh loc=2.00 spac=0.05 
+
+region number=1 x.min=0.0 x.max=0.5 y.min=0.0 y.max=1.0 material=silicon 
+region number=2 x.min=0.0 x.max=0.5 y.min=1.0 y.max=2.0 material=silicon 
+region number=3 x.min=0.0 x.max=0.05 y.min=0.0 y.max=0.05 material=oxide
+region number=4 x.min=0.45 x.max=0.5 y.min=0.0 y.max=0.05 material=oxide
+# 
+electrode name=anode x.min=0.05 x.max=0.45 y.max=0
+electrode name=cathode bottom 
+# 
+doping uniform conc=1e20 n.type region=1 
+doping uniform conc=1e18 p.type region=2 
+# 
+save outfile=diode_0.str 
+tonyplot diode_0.str 
+################################################
+go atlas
+
+mesh infile=diode_0.str
+
+models bipolar print 
+impact selb
+#output e.field impact e.line flowline  
+
+method newton trap maxtraps=10
+solve init
+save outf=diode_1.str
+################################################
+go atlas
+
+mesh infile=diode_0.str
+
+models bipolar print 
+impact selb
+output  charge qss  impact recomb u.srh e.line h.mobility e.mobility \
+     flowline con.band val.band band.param j.diffusion j.disp j.electron j.hole j.drift 
+
+method newton trap maxtraps=10
+solve init
+save outf=diode_2.str
+tonyplot diode_0.str diode_1.str diode_2.str
+quit

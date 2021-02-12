@@ -1,0 +1,6 @@
+init infile="AIa05016"
+extract name="max_conc" max(curve(depth, (impurity="aluminum" material="4h-sic" mat.occno=1 ))) outfile="MaxConc_energy500.dat"
+max_conc=3.96583e+017 
+extract name="Rp" x.val from curve(depth, (impurity="aluminum" material="4h-sic" mat.occno=1 )) where y.val=3.96583e+017 outfile="result_energy500.dat"
+Rp=0.563568 
+quit

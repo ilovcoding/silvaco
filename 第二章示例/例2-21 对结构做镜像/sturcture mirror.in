@@ -1,0 +1,20 @@
+go athena  
+
+line x loc = 0.0  spacing=0.1
+line x loc = 0.3  spacing=0.02 
+line x loc = 1   spacing=0.1
+
+line y loc = 0   spacing = 0.02
+line y loc = 2.0  spacing = 0.20
+
+init two.d
+
+deposit polysilicon thick=0.50 divisions=10 dy=0.1 ydy=0.25
+etch poly p1.x=0.3 left
+
+structure outfile=original.str
+structure mirror left
+
+structure outfile=structure_mirror.str
+tonyplot original.str structure_mirror.str -set mirror.set
+quit

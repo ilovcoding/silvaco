@@ -1,0 +1,553 @@
+r
+r
+                                   A T L A S
+r
+            Version:  atlas 5.14.0.R (Mon Jun  9 14:36:08 PDT 2008)
+r
+                           Copyright (c) 1984 - 2008
+                 Silvaco Data Systems, Inc. All rights reserved
+r
+    We acknowledge the contribution of the following collaborative partners:
+r
+                              Stanford University
+                         University of Texas at Austin
+                                    Intersil
+
+r
+r
+r
+ATLAS> init infile=InGaAs_PIN.str
+	####################################################
+	######                                        ######
+	######           Running on  2 CPUs           ######
+	######                                        ######
+	####################################################
+r
+Reading MASTER format file InGaAs_PIN.str from ATLAS.
+ Read 3108 nodes.
+ Read 5880 triangles.
+ Read 7 regions.
+ Read 4 electrodes.
+ 2027744 net bytes allocated during read.
+r
+Electrode bias information:
+ V(  anode   ) =  0.000000E+00
+ V( cathode  ) =  0.000000E+00
+ V(  anode   ) =  0.000000E+00
+ V( cathode  ) =  0.000000E+00
+r
+Electrode geometry information: 
+ No.  Name       x.min      x.max      y.min      y.max
+  1 anode      -1.000E+00 -8.000E-01 -2.500E-02  0.000E+00
+  2 cathode    -1.300E+00 -1.100E+00  2.175E+00  2.200E+00
+  3 anode       8.000E-01  1.000E+00 -2.500E-02  0.000E+00
+  4 cathode     1.100E+00  1.300E+00  2.175E+00  2.200E+00
+ATLAS> material material=InGaAs align=0.36 mun0=10000 mup0=400 taun0=8e-008 \
+> taup0=8e-008 augn=7e-029 augp=7e-029 nc300=2.1e+017 nv300=7.7e+018 \
+> permittivity=13.9 copt=9.6e-011 eg300=0.75
+r
+Mesh
+ Type:               non-cylindrical
+ Total grid points:  3108
+ Total triangles:    5880
+ Obtuse triangles:   0  (0 %)
+ATLAS> material material=InP align=0.36 affinity=4.4 taun0=6e-012 taup0=6e-012 augn=9e-031 \
+> augp=9e-031 nc300=5.7e+017 nv300=1.1e+019 permittivity=12.5 copt=1.2e-010
+ATLAS> models auger srh optr fldmob print
+ATLAS> method newton gummel trap
+r
+r
+CONSTANTS:
+ Boltzmann's constant  = 1.38066e-023 J/K
+ Elementary charge     = 1.60219e-019 C
+ Permitivity in vacuum = 8.85419e-014 F/cm
+ Temperature           = 300 K
+ Thermal voltage       = 0.025852 V
+r
+REGIONAL MATERIAL PARAMETERS:
+ Region       :        1         2         3         4         5         6         7   
+ Material     :        InP    InGaAs       InP   Contact   Contact   Contact   Contact 
+ Type         :    semicond. semicond. semicond.   metal     metal     metal     metal  
+r
+ Average Composition Fraction 
+ X-composition:         0         0         0         0         0         0         0 
+ Y-composition:         0         0         0         0         0         0         0 
+ Epsilon      :      12.5      13.9      12.5                                         
+r
+ Band Parameters
+ Eg (eV)      :      1.35      0.75      1.35                                         
+ Chi (eV)     :       4.4      4.67       4.4                                         
+ Nc (per cc)  :  5.7e+017  2.1e+017  5.7e+017                                         
+ Nv (per cc)  :  1.1e+019  7.7e+018  1.1e+019                                         
+ ni (per cc)  : 1.15e+007 6.38e+011 1.15e+007                                         
+ Gc           :         2         2         2                                         
+ Gv           :         4         4         4                                         
+ Ed (eV)      :     0.044     0.044     0.044                                         
+ Ea (eV)      :     0.045     0.045     0.045                                         
+r
+ An**         :      9.64      4.95      9.64                                         
+ Ap**         :      69.3      54.7      69.3                                         
+r
+ Recombination Parameters
+ taun0        :    6e-012    8e-008    6e-012                                         
+ taup0        :    6e-012    8e-008    6e-012                                         
+ etrap        :         0         0         0                                         
+ nsrhn        :   -1e+003   -1e+003   -1e+003                                         
+ nsrhp        :   -1e+003   -1e+003   -1e+003                                         
+ ksrhtn       :    0.0025    0.0025    0.0025                                         
+ ksrhtp       :    0.0025    0.0025    0.0025                                         
+ ksrhcn       :    3e-013    3e-013    3e-013                                         
+ ksrhcp       : 1.18e-012 1.18e-012 1.18e-012                                         
+ ksrhgn       :      1.77      1.77      1.77                                         
+ ksrhgp       :      0.57      0.57      0.57                                         
+ nsrhn        :   -1e+003   -1e+003   -1e+003                                         
+ nsrhp        :   -1e+003   -1e+003   -1e+003                                         
+ augn         :    9e-031    7e-029    9e-031                                         
+ augp         :    9e-031    7e-029    9e-031                                         
+ augkn        :         0         0         0                                         
+ augkp        :         0         0         0                                         
+ kaugcn       : 1.83e-031 1.83e-031 1.83e-031                                         
+ kaugcp       : 2.78e-031 2.78e-031 2.78e-031                                         
+ kaugdn       :      1.18      1.18      1.18                                         
+ kaugdp       :      0.72      0.72      0.72                                         
+ copt         :  1.2e-010  9.6e-011  1.2e-010                                         
+r
+ Band-to-band tunneling Parameters
+ bb.a         :    4e+014    4e+014    4e+014                                         
+ bb.b         :  1.9e+007  1.9e+007  1.9e+007                                         
+ bb.gamma     :       2.5       2.5       2.5                                         
+ mass.tunnel  :      0.25      0.25      0.25                                         
+ me.tunnel    :    0.0795    0.0412    0.0795                                         
+ mh.tunnel    :       0.6     0.455       0.6                                         
+r
+ Saturation Velocities
+ vsatn (cm/s) :    1e+006  7.7e+006    1e+006                                         
+ vsatp (cm/s) :    1e+006  7.7e+006    1e+006                                         
+r
+REGIONAL MODEL FLAGS:
+ Region:          1    2    3    4    5    6    7 
+ SRH              T    T    T                      
+ consrh           F    F    F                      
+ klasrh           F    F    F                      
+ Auger            T    T    T                      
+ klaaug           F    F    F                      
+ optr             T    T    T                      
+ bgn              F    F    F                      
+ incomplete       F    F    F                      
+ bbt              F    F    F                      
+ bbtauto          F    F    F                      
+ bbthurkx         F    F    F                      
+ bbtnonlocal      F    F    F                      
+ bbtkane          F    F    F                      
+ tat(local)       F    F    F                      
+ tatnonlocal      F    F    F                      
+ tat(coulombic)   F    F    F                      
+ impact           F    F    F                      
+ Boltzmann        T    T    T                      
+ Fermi-Dirac      F    F    F                      
+Laser gain model
+ gain model       0    0    0    0    0    0    0  
+r
+r
+REGIONAL MOBILITY MODEL SUMMARY:
+r
+  Region #1:
+r
+    Model for Electrons:
+r
+      Concentration Independent Mobility
+      @ Temperature =     300 Kelvin 
+        mu  = 4600
+        tmu = 1.5
+r
+      Parallel Field Dependent Mobility
+        Using parallel field model.
+                    beta = 2
+r
+r
+    Model for Holes:
+r
+      Concentration Independent Mobility
+      @ Temperature =     300 Kelvin 
+        mu  = 150
+        tmu = 1.5
+r
+      Parallel Field Dependent Mobility
+        Using parallel field model.
+                    beta = 1
+r
+r
+  Region #2:
+r
+    Model for Electrons:
+r
+      Concentration Independent Mobility
+      @ Temperature =     300 Kelvin 
+        mu  = 10000
+        tmu = 1.5
+r
+      Parallel Field Dependent Mobility
+        Using parallel field model.
+          Using built-in GaAs model for Vsat.
+          vsatn.t0 = 1.13e+007
+          vsatn.t1 = 12000
+          beta = 2
+r
+r
+    Model for Holes:
+r
+      Concentration Independent Mobility
+      @ Temperature =     300 Kelvin 
+        mu  = 400
+        tmu = 1.5
+r
+      Parallel Field Dependent Mobility
+        Using parallel field model.
+          Using built-in GaAs model for Vsat.
+          vsatp.t0 = 1.13e+007
+          vsatp.t1 = 12000
+          beta = 1
+r
+r
+  Region #3:
+r
+    Model for Electrons:
+r
+      Concentration Independent Mobility
+      @ Temperature =     300 Kelvin 
+        mu  = 4600
+        tmu = 1.5
+r
+      Parallel Field Dependent Mobility
+        Using parallel field model.
+                    beta = 2
+r
+r
+    Model for Holes:
+r
+      Concentration Independent Mobility
+      @ Temperature =     300 Kelvin 
+        mu  = 150
+        tmu = 1.5
+r
+      Parallel Field Dependent Mobility
+        Using parallel field model.
+                    beta = 1
+r
+r
+r
+Contacts :
+Name         Num  Work fn    Resist.    Capacit.   Induct.
+                   (eV)      (Ohms)     (Farads)   (Henrys)
+anode         1     0.000   0.000E+00  0.000E+00  0.000E+00
+cathode       2     0.000   0.000E+00  0.000E+00  0.000E+00
+anode         3     0.000   0.000E+00  0.000E+00  0.000E+00
+cathode       4     0.000   0.000E+00  0.000E+00  0.000E+00
+  
+ATLAS> output band.param con.band val.band recomb u.srh u.rad
+ATLAS> #
+ATLAS> method newton gummel trap maxtrap=10
+ATLAS> solve init
+r
+Starting:   BLAZE                           module. 
+r
+r
+Obtaining static solution:
+r
+r
+r
+init           psi    psi 
+direct          x     rhs 
+   i    j  m  -5.00* -26.0*
+---------------------------
+   1    1  G  -0.424 -15.30
+   2    1  G  -0.219 -15.72
+   3    1  G   0.182 -15.98
+   4    1  G   0.465 -16.24
+   5    1  G  -0.424 -16.95
+   6    1  G  -2.231 -19.99
+   7    1  G  -5.55* -24.39
+  
+ATLAS> solve vcathode=0.01
+r
+Obtaining static solution:
+r
+ V( cathode ) = 0.01        
+r
+r
+prev           psi     n      p     psi     n      p  
+direct          x      x      x     rhs    rhs    rhs 
+   i    j  m  -5.00* -5.00* -5.00* -26.0* -17.3* -17.3*
+-------------------------------------------------------
+   1    1  G  -1.547               -17.35              
+   2    1  G  -3.788               -21.63              
+   3    1  G  -8.73*               -27.9*              
+   4    1  G         -0.467               -14.88       
+   5    1  G                -6.87*               -15.61
+   1    1  G  -0.729               -15.60              
+   2    1  G  -1.448               -16.11              
+   3    1  G  -2.741               -17.44              
+   4    1  G  -5.35*               -20.06              
+   5    3  G         -1.403               -16.03       
+   6    1  G                -8.65*               -17.28
+   1    1  G  -1.840               -16.53              
+   2    1  G  -3.550               -18.26              
+   3    1  G  -6.98*               -21.69              
+   4    3  G         -2.004               -16.12       
+   5    1  G                -9.11*               -17.29
+   1    1  G  -2.422               -17.13              
+   2    1  G  -4.726               -19.43              
+   3    1  G  -9.33*               -24.04              
+   4    3  G         -2.919               -16.17       
+   5    1  G                -10.0*               -17.11
+   1    1  G  -3.341               -18.05              
+   2    1  G  -6.56*               -21.27              
+   3    3  G         -3.906               -16.17       
+   4    1  G                -10.9*               -17.3*
+   1    1  G  -4.327               -19.03              
+   2    1  G  -8.53*               -23.24              
+   3    3  G         -4.630               -16.20       
+   4    1  G                -11.7*               -17.4*
+   1    1  G  -5.05*               -19.76              
+   2    3  G         -5.57*               -16.34       
+   3    1  G                -12.7*               -17.5*
+r
+Electrode       Va(V)        Jn(A/um)    Jp(A/um)    Jc(A/um)    Jt(A/um)
+=========================================================================
+anode          0.000e+000 -3.812e-026 -4.107e-019 -4.107e-019 -4.107e-019
+cathode        1.000e-002  4.088e-020  2.012e-021  4.289e-020  4.289e-020
+Total                                                         -3.678e-019
+r
+Time for bias point:     1.44 sec.
+Total time:              3.88 sec.
+  
+ATLAS> measure u.total
+r
+Total recombination rate       is -1.08510450E-01 per sec    /um width (Z-dir.)
+          between X=-1.300E+00 and X= 1.300E+00
+          between Y=-2.500E-02 and Y= 3.000E+00
+r
+ATLAS> solve vcathode=0.02
+r
+Obtaining static solution:
+r
+ V( cathode ) = 0.02        
+r
+r
+proj           psi     n      p     psi     n      p  
+direct          x      x      x     rhs    rhs    rhs 
+   i    j  m  -5.00* -5.00* -5.00* -26.0* -17.3* -17.3*
+-------------------------------------------------------
+   1    1  G  -3.862               -18.89              
+   2    1  G  -7.27*               -22.30              
+   3    1  G         -6.33*               -15.79       
+   4    1  G                -10.9*               -16.97
+r
+Electrode       Va(V)        Jn(A/um)    Jp(A/um)    Jc(A/um)    Jt(A/um)
+=========================================================================
+anode          0.000e+000 -3.812e-026 -3.334e-018 -3.334e-018 -3.334e-018
+cathode        2.000e-002  3.076e-020  1.512e-021  3.227e-020  3.227e-020
+Total                                                         -3.301e-018
+r
+Time for bias point:     0.20 sec.
+Total time:              4.17 sec.
+  
+ATLAS> measure u.total
+r
+Total recombination rate       is -1.81208879E-01 per sec    /um width (Z-dir.)
+          between X=-1.300E+00 and X= 1.300E+00
+          between Y=-2.500E-02 and Y= 3.000E+00
+r
+ATLAS> solve vcathode=0.05
+r
+Obtaining static solution:
+r
+ V( cathode ) = 0.05        
+r
+r
+proj           psi     n      p     psi     n      p  
+direct          x      x      x     rhs    rhs    rhs 
+   i    j  m  -5.00* -5.00* -5.00* -26.0* -17.3* -17.3*
+-------------------------------------------------------
+   1    1  G  -3.139               -18.20              
+   2    1  G  -6.02*               -21.08              
+   3    1  G         -5.53*               -15.80       
+   4    1  G                -10.4*               -17.4*
+r
+Electrode       Va(V)        Jn(A/um)    Jp(A/um)    Jc(A/um)    Jt(A/um)
+=========================================================================
+anode          0.000e+000 -6.383e-026 -2.575e-019 -2.575e-019 -2.575e-019
+cathode        5.000e-002  9.445e-020  4.644e-021  9.910e-020  9.910e-020
+Total                                                         -1.584e-019
+r
+Time for bias point:     0.27 sec.
+Total time:              4.53 sec.
+  
+ATLAS> measure u.total
+r
+Total recombination rate       is -2.92920440E-01 per sec    /um width (Z-dir.)
+          between X=-1.300E+00 and X= 1.300E+00
+          between Y=-2.500E-02 and Y= 3.000E+00
+r
+ATLAS> solve vcathode=0.1
+r
+Obtaining static solution:
+r
+ V( cathode ) = 0.1         
+r
+r
+proj           psi     n      p     psi     n      p  
+direct          x      x      x     rhs    rhs    rhs 
+   i    j  m  -5.00* -5.00* -5.00* -26.0* -17.3* -17.3*
+-------------------------------------------------------
+   1    1  G  -2.747               -17.84              
+   2    1  G  -5.61*               -20.71              
+   3    1  G         -5.39*               -15.74       
+   4    1  G                -10.3*               -17.20
+r
+Electrode       Va(V)        Jn(A/um)    Jp(A/um)    Jc(A/um)    Jt(A/um)
+=========================================================================
+anode          0.000e+000 -1.006e-025  8.882e-019  8.882e-019  8.882e-019
+cathode        1.000e-001  1.165e-019  5.724e-021  1.222e-019  1.222e-019
+Total                                                          1.010e-018
+r
+Time for bias point:     0.30 sec.
+Total time:              4.94 sec.
+  
+ATLAS> measure u.total
+r
+Total recombination rate       is -3.50502700E-01 per sec    /um width (Z-dir.)
+          between X=-1.300E+00 and X= 1.300E+00
+          between Y=-2.500E-02 and Y= 3.000E+00
+r
+ATLAS> solve vcathode=0.2
+r
+Obtaining static solution:
+r
+ V( cathode ) = 0.2         
+r
+r
+proj           psi     n      p     psi     n      p  
+direct          x      x      x     rhs    rhs    rhs 
+   i    j  m  -5.00* -5.00* -5.00* -26.0* -17.3* -17.3*
+-------------------------------------------------------
+   1    1  G  -2.506               -17.65              
+   2    1  G  -5.88*               -20.28              
+   3    1  G         -5.65*               -15.56       
+   4    1  G                -10.5*               -17.4*
+r
+Electrode       Va(V)        Jn(A/um)    Jp(A/um)    Jc(A/um)    Jt(A/um)
+=========================================================================
+anode          0.000e+000 -1.139e-025 -7.198e-019 -7.198e-019 -7.198e-019
+cathode        2.000e-001  9.589e-020  4.713e-021  1.006e-019  1.006e-019
+Total                                                         -6.192e-019
+r
+Time for bias point:     0.28 sec.
+Total time:              5.39 sec.
+  
+ATLAS> measure u.total
+r
+Total recombination rate       is -3.93949062E-01 per sec    /um width (Z-dir.)
+          between X=-1.300E+00 and X= 1.300E+00
+          between Y=-2.500E-02 and Y= 3.000E+00
+r
+ATLAS> solve vcathode=0.3
+r
+Obtaining static solution:
+r
+ V( cathode ) = 0.3         
+r
+r
+proj           psi     n      p     psi     n      p  
+direct          x      x      x     rhs    rhs    rhs 
+   i    j  m  -5.00* -5.00* -5.00* -26.0* -17.3* -17.3*
+-------------------------------------------------------
+   1    1  G  -2.959               -17.79              
+   2    1  G  -6.49*               -20.40              
+   3    1  G         -6.77*               -15.65       
+   4    1  G                -11.9*               -17.3*
+r
+Electrode       Va(V)        Jn(A/um)    Jp(A/um)    Jc(A/um)    Jt(A/um)
+=========================================================================
+anode          0.000e+000 -1.142e-025 -1.408e-018 -1.408e-018 -1.408e-018
+cathode        3.000e-001  7.117e-020  3.498e-021  7.466e-020  7.466e-020
+Total                                                         -1.333e-018
+r
+Time for bias point:     0.30 sec.
+Total time:              5.80 sec.
+  
+ATLAS> measure u.total
+r
+Total recombination rate       is -4.41440463E-01 per sec    /um width (Z-dir.)
+          between X=-1.300E+00 and X= 1.300E+00
+          between Y=-2.500E-02 and Y= 3.000E+00
+r
+ATLAS> solve vcathode=0.4
+r
+Obtaining static solution:
+r
+ V( cathode ) = 0.4         
+r
+r
+proj           psi     n      p     psi     n      p  
+direct          x      x      x     rhs    rhs    rhs 
+   i    j  m  -5.00* -5.00* -5.00* -26.0* -17.3* -17.3*
+-------------------------------------------------------
+   1    1  G  -3.380               -17.77              
+   2    1  G  -5.89*               -20.30              
+   3    1  G         -5.52*               -15.46       
+   4    1  G                -11.5*               -17.27
+r
+Electrode       Va(V)        Jn(A/um)    Jp(A/um)    Jc(A/um)    Jt(A/um)
+=========================================================================
+anode          0.000e+000 -1.124e-025  1.930e-018  1.930e-018  1.930e-018
+cathode        4.000e-001  7.225e-020  3.552e-021  7.580e-020  7.580e-020
+Total                                                          2.005e-018
+r
+Time for bias point:     0.28 sec.
+Total time:              6.25 sec.
+  
+ATLAS> measure u.total
+r
+Total recombination rate       is -5.22007883E-01 per sec    /um width (Z-dir.)
+          between X=-1.300E+00 and X= 1.300E+00
+          between Y=-2.500E-02 and Y= 3.000E+00
+r
+ATLAS> solve vcathode=0.5
+r
+Obtaining static solution:
+r
+ V( cathode ) = 0.5         
+r
+r
+proj           psi     n      p     psi     n      p  
+direct          x      x      x     rhs    rhs    rhs 
+   i    j  m  -5.00* -5.00* -5.00* -26.0* -17.3* -17.3*
+-------------------------------------------------------
+   1    1  G  -3.390               -17.75              
+   2    1  G  -5.82*               -20.19              
+   3    1  G         -4.879               -15.37       
+   4    1  G                -11.2*               -17.4*
+   1    1  G  -6.21*               -20.01              
+   2    3  G         -5.64*               -15.48       
+   3    1  G                -12.8*               -17.6*
+r
+Electrode       Va(V)        Jn(A/um)    Jp(A/um)    Jc(A/um)    Jt(A/um)
+=========================================================================
+anode          0.000e+000 -1.088e-025 -1.762e-018 -1.762e-018 -1.762e-018
+cathode        5.000e-001  2.642e-019  1.299e-020  2.772e-019  2.772e-019
+Total                                                         -1.485e-018
+r
+Time for bias point:     0.52 sec.
+Total time:              6.88 sec.
+  
+ATLAS> measure u.total
+r
+Total recombination rate       is -7.69339323E-01 per sec    /um width (Z-dir.)
+          between X=-1.300E+00 and X= 1.300E+00
+          between Y=-2.500E-02 and Y= 3.000E+00
+r
+ATLAS> quit
+r
+ATLAS version 5.14.0.R finished at Sun Mar 03 23:18:44 2013
+r

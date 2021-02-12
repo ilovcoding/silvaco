@@ -1,0 +1,8 @@
+init infile="AIa03636"
+extract name="Tox1" thickness oxide mat.occno=1 x.val=0
+Tox1=415.008 angstroms (0.0415008 um)  X.val=0
+quit
+init infile="AIb03636"
+extract name="Tox2" thickness oxide mat.occno=1 x.val=0
+Tox2=327.271 angstroms (0.0327271 um)  X.val=0
+quit

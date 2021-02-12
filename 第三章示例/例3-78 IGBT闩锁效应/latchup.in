@@ -1,0 +1,17 @@
+go atlas
+init infile=IGBT.str 
+thermcontact num=1 elec.num=3 temp=300 
+
+models srh auger fldmob surfmob lat.temp 
+impact  selb 
+method newton trap 
+
+curvetrace contr.name=collector step.init=0.05 nextst.ratio=1.1 mincur=1e-13  \  
+    end.val=1e-3 curr.cont  
+solve init 
+solve vgate=0.1 vstep=0.1 vfinal=10 name=gate
+
+log outfile=latchup.log  
+solve curvetrace 
+
+tonyplot latchup.log  -set latchup.set

@@ -1,0 +1,18 @@
+go athena1d 
+
+line y loc=0.0 spac=0.05 
+line y loc=1 spac=0.05
+line y loc=3 spac=0.025
+line y loc=4 spac=0.05
+line y loc=20 spac=0.2
+
+init orientation=111 c.phos=1e15
+
+profile infile=profile aluminum 
+save outfile=pre.str
+
+diffuse temp=1150 time=1 hours dryo2 
+save outfile=diff.str
+
+tonyplot -overlay pre.str diff.str
+quit

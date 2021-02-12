@@ -1,0 +1,43 @@
+# TPCS version: 6
+# key positions
+key contours 1 at 3
+key contours 2 at 1
+key contours 3 at 6
+key electrical at 6
+key vectors at 6
+key overlay at 2
+key regions at 4
+# various properties
+log label 0
+select 1
+# xygraph flags
+show points on
+show lines on
+# xygraph types
+xygraph type 2 convert 0
+xygraph smith 0 "Real(S11)", "Imag(S11)"
+xygraph smith 1 "Real(S22)", "Imag(S22)"
+xygraph smith 2 "None", "None"
+xygraph smith 3 "None", "None"
+xygraph smith show 0 angle 4, 0.5
+# annotation, titles
+title main auto
+title sub auto
+# annotation, footers
+footer right none
+footer left none
+# annotation, show
+show xaxis on
+show yaxis on
+show grid off
+show label xaxis on
+show label yaxis on
+# annotation, axes
+range xaxis auto
+range yaxis auto
+# zoom
+zoom from 0, 0 scale 1, 1
+# user labels
+# overlay level names
+label overlay 0 "hemtex06_ac.log"
+draw all

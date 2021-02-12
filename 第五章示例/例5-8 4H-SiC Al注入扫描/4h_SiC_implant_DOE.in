@@ -1,0 +1,33 @@
+go internal                                                                           
+                                                                                   
+load infile=implant_tmpl.in                                                                
+##########################################################################                      
+#go athena1d                                                              #  
+#                                                                         #
+#set clear                                                                #           
+#set energy=500                                                           #                                                             
+#                                                                         #                                                
+#line y loc=0  spac=0.01                                                  #
+#line y loc=2  spac=0.05                                                  #
+#                                                                         #
+#init sic_4h rot.sub=0                                                    #
+#                                                                         #                                 
+#implant aluminum dose=1e13 energy=$energy n.ion=10000 tilt=7 \           #
+#   rot=0 bca sampling  temperature=700                                   #
+#                                                                         #  
+#struct outfile=energy$"energy"keV_dose1e13.str remove.gas                #
+#                                                                         #
+#extract name="max_conc" max(curve(depth, (impurity="aluminum"  \         #
+#  material="4h-sic" mat.occno=1 ))) outfile="MaxConc_energy$"energy".dat"#                                                           #
+#                                                                         #
+#extract name="Rp" x.val from curve(depth, (impurity="aluminum" \         #
+#   material="4h-sic" mat.occno=1 ))  where y.val=$max_conc \             #
+#   outfile="result_energy$"energy".dat"                                  #
+##########################################################################                   
+sweep  parameter=energy type=linear range="100, 500, 5"                                       
+save type=sdb outfile=4h-SiC_implant.dat  
+                                                                                
+tonyplot -overlay *_dose1e13.str -set 4H-SiC_implant.set    
+
+tonyplot 4h-SiC_implant.dat -set energy_Rp.set                                    
+quit 

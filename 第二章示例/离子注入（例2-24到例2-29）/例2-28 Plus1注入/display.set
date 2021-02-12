@@ -1,0 +1,112 @@
+# TPCS version: 8
+# various properties
+log label 0
+key opaque 0
+mark frequency 0
+mark overlay 0
+graph width 0 2
+graph width 1 1
+graph width 2 1
+graph width 3 1
+graph width 4 2
+graph width 5 1
+sequence size 1
+sequence width 1
+log zero 0
+sequence mark 0 0
+sequence mark 1 1
+sequence mark 2 2
+sequence mark 3 3
+sequence mark 4 4
+sequence mark 5 5
+# Functions
+function 1 "" ""
+function 2 "" ""
+function 3 "" ""
+function 4 "" ""
+select 1
+# xsection flags
+show mesh off
+show edges on
+show materials off
+show points on
+show lines on
+# xsection impurities
+xsection impurity none
+xsection impurity "Interstitials"
+xsection impurity "Phosphorus"
+# key positions
+key contours 1 at 3
+key contours 2 at 3
+key contours 3 at 6
+key electrical at 0
+key vectors at 5
+key overlay at 2
+key regions at 4
+key apply 
+# annotation, titles
+title main auto
+title sub auto
+# annotation, footers
+footer right none
+footer left none
+# annotation, show
+show xaxis on
+show yaxis on
+show grid on
+show label xaxis on
+show label yaxis on
+# annotation, axes
+range xaxis 0, 0.15 increment 0.02,5
+range yaxis 12, 20 increment 1,4
+label xaxis "Microns"
+# zoom
+zoom from 0, 0 scale 1, 1
+# user labels
+label "Phosphorus(/cm3)" from 0.0589613, 17.577 color 2 scale 2
+label 0 at 7 7
+label "Interstitals(/cm3)" from 0.0332994, 14.7363 color 0 scale 2 to 0.0332994, 14.7572
+label 1 at 8 8
+# overlay level names
+label overlay 0 "damage.str"
+select 2
+# xsection flags
+show mesh off
+show edges on
+show materials off
+show points on
+show lines on
+# xsection impurities
+xsection impurity none
+xsection impurity "Interstitials"
+xsection impurity "Phosphorus"
+# key positions
+key contours 1 at 3
+key contours 2 at 3
+key contours 3 at 6
+key electrical at 0
+key vectors at 5
+key overlay at 2
+key regions at 4
+key apply 
+# annotation, titles
+title main auto
+title sub auto
+# annotation, footers
+footer right none
+footer left none
+# annotation, show
+show xaxis on
+show yaxis on
+show grid on
+show label xaxis on
+show label yaxis on
+# annotation, axes
+range xaxis 0, 0.15 increment 5.28969e-315,4
+range yaxis 12, 20 increment 1.08753e-305,8
+label xaxis "Distance along line"
+# zoom
+zoom from 0, 0 scale 1, 1
+# user labels
+# overlay level names
+label overlay 0 "damage.str"

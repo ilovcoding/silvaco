@@ -1,0 +1,14 @@
+go athena 
+line x loc = 0.0  spacing=0.1
+line x loc = 1   spacing=0.1
+
+line y loc = 0   spacing = 0.02
+line y loc = 1.5  spacing = 0.05
+init 
+
+deposit oxide thick=0.03 divisions=4
+implant phosph dose=1e14 energy=100 tilt=7
+
+structure outfile=analytical_implant.str
+tonyplot analytical_implant.str
+quit

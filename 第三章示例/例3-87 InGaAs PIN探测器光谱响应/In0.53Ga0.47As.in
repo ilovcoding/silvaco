@@ -1,0 +1,149 @@
+go atlas 
+
+mesh
+
+x.mesh loc=0.0 spac=0.1
+x.mesh loc=0.3 spac=0.05
+x.mesh loc=0.6 spac=0.05
+x.mesh loc=1.0 spac=0.1
+
+y.mesh loc=0.00 spac=0.02
+y.mesh loc=0.30 spac=0.002
+y.mesh loc=0.5 spac=0.01
+y.mesh loc=0.90 spac=0.02
+y.mesh loc=1.29 spac=0.01
+y.mesh loc=1.30 spac=0.002
+y.mesh loc=1.31 spac=0.01
+y.mesh loc=1.55 spac=0.02
+y.mesh loc=1.79 spac=0.01
+y.mesh loc=1.80 spac=0.002
+y.mesh loc=1.81 spac=0.01
+y.mesh loc=2.40 spac=0.02
+y.mesh loc=3.00 spac=0.02
+
+region num=1  material=air
+region num=2  material=InP    x.min=0.2 x.max=0.8 y.min=0.00 y.max=0.30
+region num=3  material=InGaAs x.min=0.2 x.max=0.8 y.min=0.30 y.max=1.30 x.comp=0.47
+region num=4  material=InP    x.min=0.0 x.max=1.0 y.min=1.30 y.max=1.80   
+region num=5  material=InP    x.min=0.0 x.max=1.0 y.min=1.80 y.max=3.00
+
+
+electrode name=anode top x.min=0.35 x.max=0.65
+electrode name=cathode bottom
+
+doping uniform conc=1e18 p.type region=2
+doping uniform conc=5e15 n.type region=3
+doping uniform conc=1e15 n.type region=4
+doping uniform conc=1e18 n.type region=5
+
+material material=InGaAs align=0.36 mun0=10000 mup0=400 taun0=8e-8 taup0=8e-8 \
+     augn=7e-29 augp=7e-29  nc300=2.1e17 nv300=7.7e18 permittivity=13.9 \
+     copt=9.6e-11 eg300=0.75 index.file=index.c
+material material=InP affinity=4.4 taun0=6e-12 taup0=6e-12 augn=9e-31 \
+     augp=9e-31 nc300=5.7e17 nv300=1.1e19 permittivity=12.5 copt=1.2e-10
+
+models auger srh  fermi optr  fldmob print
+impact selb material=InGaAs  an2=5.15e7  ap2=9.69e7  bn2=1.95e6  bp2=2.27e6 
+impact selb material=InP  an2=1e7  ap2=9.36e6  bn2=3.45e6  bp2=2.78e6
+
+output charge flowlines photogen opt.intens recomb u.auger u.srh u.radiative
+method  gummel newton  trap
+
+beam num=1 x.origin=0.75 y.origin=-1 angle=90.0 wavelength=.4 back.refl front.refl \
+     reflect=5 min.power=0.001 rays=101
+solve init 
+
+save outfile=InGaAs.str
+tonyplot InGaAs.str
+
+solve vcathode=0.05
+solve vcathode=0.1
+solve vstep=0.25 vfinal=3 name=cathode
+
+log outf=SR_PIN_0.log master
+solve prev b1=1 lambda=0.6
+solve prev b1=1 lambda=0.625
+solve prev b1=1 lambda=0.65
+solve prev b1=1 lambda=0.675
+solve prev b1=1 lambda=0.7
+solve prev b1=1 lambda=0.725
+solve prev b1=1 lambda=0.75
+solve prev b1=1 lambda=0.775
+solve prev b1=1 lambda=0.8
+save outfile=lambda0.8.str
+ 
+solve prev b1=1 lambda=0.81
+solve prev b1=1 lambda=0.825
+solve prev b1=1 lambda=0.85
+solve prev b1=1 lambda=0.875
+solve prev b1=1 lambda=0.9
+save outfile=lambda0.9.str
+
+solve prev b1=1 lambda=0.925
+solve prev b1=1 lambda=0.93
+solve prev b1=1 lambda=0.94
+solve prev b1=1 lambda=0.95
+solve prev b1=1 lambda=0.975
+solve prev b1=1 lambda=1.0
+save outfile=lambda1.str
+
+solve prev b1=1 lambda=1.05
+solve prev b1=1 lambda=1.075
+solve prev b1=1 lambda=1.1
+solve prev b1=1 lambda=1.125
+solve prev b1=1 lambda=1.15
+solve prev b1=1 lambda=1.175
+solve prev b1=1 lambda=1.2
+solve prev b1=1 lambda=1.225
+solve prev b1=1 lambda=1.25
+solve prev b1=1 lambda=1.275
+solve prev b1=1 lambda=1.3
+save outfile=lambda1.3.str
+
+solve prev b1=1 lambda=1.33
+solve prev b1=1 lambda=1.35
+solve prev b1=1 lambda=1.375
+solve prev b1=1 lambda=1.4
+solve prev b1=1 lambda=1.425
+solve prev b1=1 lambda=1.45
+solve prev b1=1 lambda=1.475
+solve prev b1=1 lambda=1.5
+solve prev b1=1 lambda=1.51
+solve prev b1=1 lambda=1.525
+solve prev b1=1 lambda=1.54
+solve prev b1=1 lambda=1.55
+solve prev b1=1 lambda=1.575
+solve prev b1=1 lambda=1.6
+save outfile=lambda1.6.str
+
+solve prev b1=1 lambda=1.61
+solve prev b1=1 lambda=1.625
+solve prev b1=1 lambda=1.64
+solve prev b1=1 lambda=1.65
+solve prev b1=1 lambda=1.66
+solve prev b1=1 lambda=1.67
+solve prev b1=1 lambda=1.68
+solve prev b1=1 lambda=1.69
+solve prev b1=1 lambda=1.70
+save outfile=lambda1.7.str
+
+solve prev b1=1 lambda=1.71
+solve prev b1=1 lambda=1.72
+solve prev b1=1 lambda=1.73
+solve prev b1=1 lambda=1.74
+solve prev b1=1 lambda=1.75
+solve prev b1=1 lambda=1.76
+solve prev b1=1 lambda=1.77
+solve prev b1=1 lambda=1.78
+solve prev b1=1 lambda=1.79
+solve prev b1=1 lambda=1.8
+solve prev b1=1 lambda=1.825
+solve prev b1=1 lambda=1.85
+solve prev b1=1 lambda=1.875
+solve prev b1=1 lambda=1.9
+solve prev b1=1 lambda=1.925
+solve prev b1=1 lambda=1.95
+solve prev b1=1 lambda=1.975
+solve prev b1=1 lambda=2.0
+
+tonyplot SR_PIN_0.log

@@ -1,0 +1,36 @@
+go atlas
+
+init infile=hemt.str
+contact     name=gate   workfunction=4.55
+
+material material=GaAs   align=0.6
+material material=AlGaAs align=0.6 
+material material=InGaAs align=0.6 mun0=12000 mup0=2000 vsat=2.e7 \
+                         taun0=1.e-8 taup0=1.e-8 
+
+models material=GaAs   consrh conmob fldmob print 
+models material=AlGaAs consrh conmob fldmob print 
+models material=InGaAs srh           fldmob print 
+
+output con.band val.band flowlines 
+
+solve    init 
+
+solve vgate = 0    
+solve vdrain = 0.1
+solve vdrain=0.25 vfinal=2.0 vstep=0.25 name=drain
+
+log outf=hemt_ac.log master gains s.params inport=gate outport=drain width=50
+
+solve ac freq=10 fstep=10 mult.f nfstep=7
+solve ac freq=1e9
+solve ac freq=2e9 fstep=2e9 nfstep=3
+solve ac freq=1e10 fstep=5e9 nfstep=8
+
+tonyplot  hemt_ac.log -set hemt_S_Para.set
+tonyplot  hemt_ac.log -set hemt_CurrentGain.set
+quit
+
+
+
+

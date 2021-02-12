@@ -1,0 +1,50 @@
+##########################################
+#1源和衬底不短接
+########################################
+go  devedit
+init infile=mos_pre.str
+region reg=6 name=substrate  mat=Contact elec.id=4 work.func=0 points="0.0,0.8 1.2,0.8 1.2,0.81 0.0,0.81 0.0,0.8"
+
+base.mesh height=0.02 width=0.03
+imp.refine imp="NetDoping" sensitivity=1
+imp.refine min.spacing=0.005
+mesh mode=meshbuild
+
+struct  outfile=mos0.str
+tonyplot mos0.str -set structure.set
+#############
+go atlas
+
+init infile=mos0.str
+models  srh print 
+method  newton  trap
+log outfile=mos_cv_0.log
+solve vgate=-5 vstep=0.1 vfinal=5.0 name=gate ac freq=1e6 
+tonyplot mos_cv_0.log -set mos0_CV.set
+###################remesh#################
+#2源和衬底短接
+##########################################
+go  devedit
+
+init infile=mos_pre.str
+region reg=6 name=substrate  mat=Contact elec.id=4 work.func=0 points=" 0,0.8 1.1,0.8 1.1,0.81 -0.01,0.81 -0.01,0.2 0,0.2 0,0.8"
+base.mesh height=0.02 width=0.03
+imp.refine imp="NetDoping" sensitivity=1
+imp.refine min.spacing=0.005
+mesh mode=meshbuild
+
+struct  outfile=mos1.str
+tonyplot mos1.str  -set structure.set
+#######################################################################
+go atlas
+
+init infile=mos1.str
+models  srh print 
+method  newton  trap
+log outfile=mos_cv_1.log
+solve vgate=-5 vstep=0.1 vfinal=5.0 name=gate ac freq=1e6 
+tonyplot mos_cv_1.log -set mos1_CV.set
+
+quit
+
+

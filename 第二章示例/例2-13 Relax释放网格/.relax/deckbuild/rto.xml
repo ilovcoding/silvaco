@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<!DOCTYPE rto SYSTEM "rto.dtd">
+<rto>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="deckbuild" timestamp="1613099986" type="out">
+*** this is deckbuild version 5.0.10.R ***
+
+</text>
+
+  <text deck-line="1" is-extract="false" line-id="1" simulator="athena" timestamp="1613099986" type="out">go athena
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613099986" type="out">
+
+
+                                  A T H E N A
+
+     Version: athena 5.21.2 (aka 5.22.3.R) (Fri Jul 12 14:21:19 PDT 2013)
+
+                            Copyright � 1984 - 2013
+
+                       Silvaco Inc. All rights reserved
+
+   We acknowledge the contribution of the following collaborative partners:
+
+                              Stanford University
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613099986" type="out">
+
+	==============================================================
+	 ATHENA                           :  Enabled
+	 SSUPREM4                         :  Enabled
+	   Monte Carlo Implant            :  Enabled
+	 ELITE                            :  Enabled
+	   Monte Carlo Etch &amp; Deposit     :  Enabled
+	 OPTOLITH                         :  Enabled
+	==============================================================
+
+                      It is now Fri Feb 12 11:19:46 2021
+
+                       Executing </text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613099986" type="out">on host: DESKTOP-VV1IB23
+
+
+Loading model file 'D:\sedatools\\lib\athena\5.22.3.R\common\athenamod'...</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613099987" type="out"> done.
+ATHENA&gt; </text>
+
+  <text deck-line="2" is-extract="false" line-id="2" simulator="athena" timestamp="1613099987" type="out">
+</text>  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613099987" type="out">ATHENA&gt; </text>
+
+  <text deck-line="3" is-extract="false" line-id="3" simulator="athena" timestamp="1613099987" type="out">#
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613099987" type="out">ATHENA&gt; </text>
+
+  <text deck-line="4" is-extract="false" line-id="4" simulator="athena" timestamp="1613099987" type="out">line x loc=0.0 spac=0.01 
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613099987" type="out">ATHENA&gt; </text>
+
+  <text deck-line="5" is-extract="false" line-id="5" simulator="athena" timestamp="1613099987" type="out">line x loc=0.6 spac=0.01
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613099987" type="out">ATHENA&gt; </text>
+
+  <text deck-line="6" is-extract="false" line-id="6" simulator="athena" timestamp="1613099987" type="out">#
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613099987" type="out">ATHENA&gt; </text>
+
+  <text deck-line="7" is-extract="false" line-id="7" simulator="athena" timestamp="1613099987" type="out">line y loc=0.0 spac=0.01 
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613099987" type="out">ATHENA&gt; </text>
+
+  <text deck-line="8" is-extract="false" line-id="8" simulator="athena" timestamp="1613099987" type="out">line y loc=0.2 spac=0.025
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613099987" type="out">ATHENA&gt; </text>
+
+  <text deck-line="9" is-extract="false" line-id="9" simulator="athena" timestamp="1613099987" type="out">line y loc=0.8 spac=0.1 
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613099987" type="out">ATHENA&gt; </text>
+
+  <text deck-line="10" is-extract="false" line-id="10" simulator="athena" timestamp="1613099987" type="out">#
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613099987" type="out">ATHENA&gt; </text>
+
+  <text deck-line="11" is-extract="false" line-id="11" simulator="athena" timestamp="1613099987" type="out">init  c.phos=1e14  two.d
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613099987" type="out">ATHENA&gt; </text>
+
+  <text deck-line="12" is-extract="false" line-id="12" simulator="athena" timestamp="1613099987" type="out">structure outfile=origin.str
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613099987" type="out">ATHENA&gt; </text>
+
+  <text deck-line="13" is-extract="false" line-id="13" simulator="athena" timestamp="1613099987" type="out">###############################################
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613099987" type="out">ATHENA&gt; </text>
+
+  <text deck-line="14" is-extract="false" line-id="14" simulator="athena" timestamp="1613099987" type="out">quit
+</text>
+
+  <text deck-line="14" is-extract="false" line-id="14" simulator="athena" timestamp="1613099987" type="out">go athena
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613099987" type="out">
+
+
+                                  A T H E N A
+
+     Version: athena 5.21.2 (aka 5.22.3.R) (Fri Jul 12 14:21:19 PDT 2013)
+
+                            Copyright � 1984 - 2013
+
+                       Silvaco Inc. All rights reserved
+
+   We acknowledge the contribution of the following collaborative partners:
+
+                              Stanford University
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613099988" type="out">
+
+	==============================================================
+	 ATHENA                           :  Enabled
+	 SSUPREM4                         :  Enabled
+	   Monte Carlo Implant            :  Enabled
+	 ELITE                            :  Enabled
+	   Monte Carlo Etch &amp; Deposit     :  Enabled
+	 OPTOLITH                         :  Enabled
+	==============================================================
+
+                      It is now Fri Feb 12 11:19:47 2021
+
+                       Executing </text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613099988" type="out">on host: DESKTOP-VV1IB23
+
+
+Loading model file 'D:\sedatools\\lib\athena\5.22.3.R\common\athenamod'...</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613099988" type="out"> done.
+ATHENA&gt; </text>
+
+  <text deck-line="15" is-extract="false" line-id="15" simulator="athena" timestamp="1613099988" type="out">
+</text>  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613099988" type="out">ATHENA&gt; </text>
+
+  <text deck-line="16" is-extract="false" line-id="16" simulator="athena" timestamp="1613099988" type="out">#
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613099988" type="out">ATHENA&gt; </text>
+
+  <text deck-line="17" is-extract="false" line-id="17" simulator="athena" timestamp="1613099988" type="out">line x loc=0.0 spac=0.01 
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613099988" type="out">ATHENA&gt; </text>
+
+  <text deck-line="18" is-extract="false" line-id="18" simulator="athena" timestamp="1613099988" type="out">line x loc=0.6 spac=0.01
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613099988" type="out">ATHENA&gt; </text>
+
+  <text deck-line="19" is-extract="false" line-id="19" simulator="athena" timestamp="1613099988" type="out">#
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613099988" type="out">ATHENA&gt; </text>
+
+  <text deck-line="20" is-extract="false" line-id="20" simulator="athena" timestamp="1613099988" type="out">line y loc=0.0 spac=0.01 
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613099988" type="out">ATHENA&gt; </text>
+
+  <text deck-line="21" is-extract="false" line-id="21" simulator="athena" timestamp="1613099988" type="out">line y loc=0.2 spac=0.025
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613099988" type="out">ATHENA&gt; </text>
+
+  <text deck-line="22" is-extract="false" line-id="22" simulator="athena" timestamp="1613099988" type="out">line y loc=0.8 spac=0.1 
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613099988" type="out">ATHENA&gt; </text>
+
+  <text deck-line="23" is-extract="false" line-id="23" simulator="athena" timestamp="1613099988" type="out">#
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613099988" type="out">ATHENA&gt; </text>
+
+  <text deck-line="24" is-extract="false" line-id="24" simulator="athena" timestamp="1613099988" type="out">init  c.phos=1e14  two.d
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613099988" type="out">ATHENA&gt; </text>
+
+  <text deck-line="25" is-extract="false" line-id="25" simulator="athena" timestamp="1613099988" type="out">relax silicon x.min=0.1 x.max=0.5 y.min=0.2 y.max=0.6
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613099988" type="out">ATHENA&gt; </text>
+
+  <text deck-line="26" is-extract="false" line-id="26" simulator="athena" timestamp="1613099988" type="out">structure outfile=relax.str
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613099989" type="out">ATHENA&gt; </text>
+
+  <text deck-line="-1" is-extract="false" line-id="27" simulator="athena" timestamp="1613099989" type="out">tonyplot origin.str relax.str
+</text>
+
+  <text deck-line="28" is-extract="false" line-id="28" simulator="athena" timestamp="1613099989" type="out"> 
+</text>  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613099989" type="out">ATHENA&gt; </text>
+
+  <text deck-line="29" is-extract="false" line-id="29" simulator="athena" timestamp="1613099989" type="out">
+</text>  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613099989" type="out">ATHENA&gt; </text>
+
+</rto>

@@ -1,0 +1,58 @@
+r
+r
+r
+                                  A T H E N A
+r
+            Version: athena 5.20.0.R (Fri Feb  3 13:44:29 PST 2012)
+r
+                            Copyright ?1984 - 2011
+r
+                       Silvaco Inc. All rights reserved
+r
+   We acknowledge the contribution of the following collaborative partners:
+r
+                              Stanford University
+r
+r
+	==============================================================
+	 ATHENA                           :  Enabled
+	 SSUPREM4                         :  Enabled
+	   Monte Carlo Implant            :  Enabled
+	 ELITE                            :  Enabled
+	   Monte Carlo Deposit/Etch       :  Enabled
+	 OPTOLITH                         :  Enabled
+	==============================================================
+r
+                      It is now Sat Aug 17 22:32:05 2013
+r
+                          Executing on host: M-6SHF42X
+r
+r
+Loading model file 'C:\sedatools\lib\athena\5.20.0.R\common\athenamod'... done.
+ATHENA> ? expose
+string infile	Normalized light intensity file.
+switch typepolar = perpendicul 	Only one polarization may be specified.
+Choose one of:
+    boolean perpendicul = F	TE mode.
+    boolean parallel = F	TM mode.
+switch exposemeth = bpm         	Only one exposure method may be specified.
+Choose one of:
+    boolean bpm = F	Beam propagation method.
+    boolean rtm = F	Ray tracing method.
+switch typecross = x.cross     	Only one cross section may be specified.
+Choose one of:
+    boolean x.cross = F	Cross section with z = constant.
+    boolean z.cross = F	Cross section with x = constant.
+double cross.value =     0	The z or x coordinate for the cross section in (um).
+double dose =   240	Exposure dose in (mJ/cm*cm).
+double x.origin =     0	Shifts the cross section relative to structure in (um).
+double defocus =     0	Dummy parameter
+double flatness =  0.25	Change of surface topography to be ignored (degrees).
+double power.min = 0.0001	Minimum power loss.
+boolean mult.expose = F	Multiple exposures to be performed.
+int num.refl =    1	Number of reflections to be calculated.
+int front.refl =    1	Front surface reflection; off = 0, on = 1.
+int back.refl =    0	Back surface reflection; off = 0, on = 1.
+int all.mats =    0	Display intensity in all materials; no = 0, yes = 1.
+string mask	Dummy parameter for TS4 compatibility, Deckbuild uses it to insert etch statments from mask specifications
+ATHENA> 

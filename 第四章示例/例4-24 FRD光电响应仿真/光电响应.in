@@ -1,0 +1,132 @@
+{\rtf1\ansi\ansicpg936\deff0\deflang1033\deflangfe2052{\fonttbl{\f0\fnil\fcharset0 Courier New;}}
+\viewkind4\uc1\pard\lang2052\f0\fs18 go atlas\par
+\par
+mesh\par
+\par
+x.mesh loc=0.0   spac=2\par
+x.mesh loc=10.0  spac=0.1\par
+\par
+y.mesh loc=0.0   spac=0.5\par
+y.mesh loc=10.0   spac=0.75\par
+y.mesh loc=20.0   spac=2.5\par
+y.mesh loc=185   spac=5\par
+y.mesh loc=330.0 spac=2.5\par
+y.mesh loc=340.0 spac=0.75\par
+y.mesh loc=350.0 spac=0.5\par
+\par
+region num=1 silicon\par
+#\par
+elec num=1 top name=anode\par
+elec num=2 bottom name=cathode\par
+#\par
+doping  uniform conc=1e14    n.type\par
+doping  gauss conc=2.e19 p.type peak=0 junc=20\par
+doping  gauss conc=2.e19 n.type peak=350 char=7\par
+\pard\nowidctlpar\sl-360\slmult0\qj save outf=frd0.str master.out\lang1033\kerning2\par
+##########################################################\par
+\pard\nowidctlpar\sl-360\slmult0\kerning0 go atlas                                                                        \par
+init infile=frd0.str width=1e6                                                                        \par
+                                                                               \par
+models conmob  fldmob consrh   bgn                                                                          \par
+impact selb                                                                       \par
+material material=silicon taun0=20e-6 taup0=20e-6                                                                       \par
+beam num=1 x.origin=12 y.origin=175 angle=180  wavelength=0.3   rays=100                                                                  \par
+method newton trap                                                                        \par
+output opt.intens                                                                       \par
+                                                                        \par
+solve init                                                                       \par
+solve b1=5                                                                       \par
+save outfile=frd_opto.str                                                                       \par
+\pard\nowidctlpar\sl-360\slmult0\qj tonyplot frd_opto.str \kerning2\par
+\pard\nowidctlpar\sl-360\slmult0\kerning0 #######################################\par
+go atlas                                                                       \par
+.begin                                                                       \par
+#                                                                       \par
+r1 0 1 1                                                                       \par
+adiode 1=anode 2=cathode infile=frd0.str width=1e6                                                                       \par
+v1 2 0 0                                                                       \par
+o1 1 0                                                                       \par
+                                                                         \par
+.nodeset v(1)=0 v(2)=0                                                                       \par
+#                                                                       \par
+.numeric toldc=1e-3 vchange=0.5 imaxdc=500                                                                       \par
+.save outfile=frd                                                                     \par
+.end                                                                       \par
+                                                                          \par
+models  conmob  fldmob srh auger  bgn                                                                                                                                             \par
+material  material=silicon taun0=20e-6 taup0=20e-6                                                                       \par
+beam device=adiode x.origin=12 y.origin=175 angle=180  wavelength=0.3\par
+                                                                         \par
+method gummel newton                                                       \par
+##################################################################         \par
+go atlas                                                                       \par
+.begin                                                                       \par
+#                                                                       \par
+r1 0 1 1                                                                       \par
+adiode 1=anode 2=cathode infile=frd0.str width=1e6                                                                       \par
+v1 2 0 pwl 0 0 1e-7 0 5e-7 100                                                                       \par
+o1 1 0 pulse 0 20 1e-5 5e-7 5e-7 40e-6 1                                                                       \par
+                                                                         \par
+.numeric toldc=1e-3 vchange=0.5 imaxdc=500     \par
+\kerning2 .options  write=10\kerning0                                                                  \par
+.tran 0.1ns 100us                                                                       \par
+.load infile=frd                                                                       \par
+.log outfile=frd                                                                      \par
+.save master=frd                                                                      \par
+.end                                                                      \par
+                                                                            \par
+models device=adiode conmob  fldmob consrh   bgn                                                                          \par
+impact device=adiode selb                                                                       \par
+material device=adiode material=silicon taun0=20e-6 taup0=20e-6                                                                       \par
+beam device=adiode  x.origin=12 y.origin=175 angle=180  wavelength=0.3\par
+                                                                         \par
+method gummel newton                                                                         \par
+\pard quit     \lang2052\par
+\par
+\pard\nowidctlpar\sl-360\slmult0\qj\lang1033\kerning2 go devedit \par
+# \par
+region reg=1 mat=silicon color=0xffb2 pattern=0x9 \\ \par
+ points="0,50 100,50 100,30 92,30 90,0 10,0 8,30 0,30 0,50" \par
+impurity id=1 region.id=1 imp=Phos \\ \par
+ \lang1036     x1=0 x2=0 y1=0 y2=0 \\ \par
+     peak.value=1e+14 ref.value=1000000000000 comb.func=Multiply \\ \par
+     \lang1033 rolloff.y=both conc.func.y=Constant \\ \par
+     rolloff.x=both conc.func.x=Constant \par
+\kerning0 impurity id=2  imp=Boron  color=0x906000 \\\par
+\pard\tab x1=0 x2=0 y1=0 y2=0 \\\par
+\tab peak.value=5e+18 ref.value=1e+14 comb.func=Multiply \\\par
+\tab rolloff.y=high conc.func.y="Gaussian (Dist)" conc.param.y=5 \\\par
+\pard\nowidctlpar\sl-360\slmult0\qj\tab\kerning2  rolloff.x=both conc.func.x=Constant \par
+\kerning0 impurity id=3  imp=Phos  color=0x906000 \\\par
+\pard\tab x1=0 x2=0 y1=35 y2=50 \\\par
+\tab peak.value=2e19 ref.value=1e+14 comb.func=Multiply \\\par
+\tab rolloff.y=low conc.func.y="Gaussian (Dist)" conc.param.y=8 \\\par
+\pard\nowidctlpar\sl-360\slmult0\qj\tab\kerning2  rolloff.x=both conc.func.x=Constant \par
+#electrode \par
+region reg=2 name=anode mat=contact elec.id=1 work.func=0 \\ \par
+    points="10,0 15,0 15,-1 10,-1 10,0" \par
+region reg=3 name=anode mat=contact elec.id=1 work.func=0 \\ \par
+    points="90,0 90,-1 85,-1 85,0 90,0" \par
+region reg=4 name=cathode mat=contact elec.id=2 work.func=0 \\ \par
+    points="0,30  5,30 5,29 0,29 0,30" \par
+region reg=5 name=cathode mat=contact elec.id=2 work.func=0 \\ \par
+    points="100,30 100,29 95,29 95,30 100,30" \par
+\par
+# Set Meshing Parameters \par
+base.mesh height=2 width=5\par
+# \par
+bound.cond max.slope=180 max.ratio=300 rnd.unit=0.001 line.straightening=1 \\ \par
+    align.points when=automatic \par
+# \par
+constr.mesh mat.type=semiconductor max.angle=180 max.ratio=200 \\ \par
+    max.height=5 max.width=10 min.height=0.1 min.width=1 \par
+# \par
+constr.mesh x1=0 x2=100 y1=0.0 y2=34 max.height=1 min.width=0.1 \par
+constr.mesh x1=0 x2=100 y1=0.0 y2=6  max.height=0.5 min.width=0.1 \par
+constr.mesh x1=0 x2=100 y1=0.0 y2=1  max.height=0.25 min.width=0.1 \par
+constr.mesh x1=0 x2=100 y1=30 y2=31 max.height=0.25 min.width=0.1 \par
+ \par
+mesh \par
+\pard structure outf=frd0.str \lang2052\kerning0\par
+}
+ 

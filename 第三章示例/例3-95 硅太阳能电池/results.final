@@ -1,0 +1,15 @@
+init infile="AIa00660"
+extract name="short_circuit_current" max(abs(i."cathode"))
+short_circuit_current=4.86522e-009 
+quit
+init infile="AIa00660"
+extract name="open_circuit_voltage" max(abs(vint."cathode"))
+open_circuit_voltage=0.40761 
+quit
+init inf="solar_spectral_response.log "
+Can't read file 'solar_spectral_response.log ': No such file or directory
+extract name="EQ_int" curve(elect."optical wavelength", -(i."anode")/elect."available photo current") outf="EQ_int.dat"
+initialization has not been performed
+extract name="EQ_ext" curve(elect."optical wavelength", -(i."anode")/elect."source photo current") outf="EQ_ext.dat"
+initialization has not been performed
+quit

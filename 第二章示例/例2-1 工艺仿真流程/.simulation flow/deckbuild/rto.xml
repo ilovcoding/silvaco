@@ -1,0 +1,519 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<!DOCTYPE rto SYSTEM "rto.dtd">
+<rto>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="deckbuild" timestamp="1613028520" type="out">
+*** this is deckbuild version 5.0.10.R ***
+
+</text>
+
+  <text deck-line="1" is-extract="false" line-id="1" simulator="athena" timestamp="1613028520" type="out">go athena
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613028521" type="out">
+
+
+                                  A T H E N A
+
+     Version: athena 5.21.2 (aka 5.22.3.R) (Fri Jul 12 14:21:19 PDT 2013)
+
+                            Copyright � 1984 - 2013
+
+                       Silvaco Inc. All rights reserved
+
+   We acknowledge the contribution of the following collaborative partners:
+
+                              Stanford University
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613028522" type="out">
+
+	==============================================================
+	 ATHENA                           :  Enabled
+	 SSUPREM4                         :  Enabled
+	   Monte Carlo Implant            :  Enabled
+	 ELITE                            :  Enabled
+	   Monte Carlo Etch &amp; Deposit     :  Enabled
+	 OPTOLITH                         :  Enabled
+	==============================================================
+
+                      It is now Thu Feb 11 15:28:42 2021
+
+                       Executing </text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613028522" type="out">on host: DESKTOP-VV1IB23
+
+
+Loading model file 'D:\sedatools\\lib\athena\5.22.3.R\common\athenamod'...</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613028522" type="out"> done.
+ATHENA&gt; </text>
+
+  <text deck-line="2" is-extract="false" line-id="4" simulator="athena" timestamp="1613028522" type="out"># dimension definition 维度网格定义
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613028522" type="out">ATHENA&gt; </text>
+
+  <text deck-line="3" is-extract="false" line-id="5" simulator="athena" timestamp="1613028522" type="out">line x loc = 0.0 spacing=0.1
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613028522" type="out">ATHENA&gt; </text>
+
+  <text deck-line="4" is-extract="false" line-id="6" simulator="athena" timestamp="1613028522" type="out">line x loc = 0.1 spacing=0.1
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613028522" type="out">ATHENA&gt; </text>
+
+  <text deck-line="5" is-extract="false" line-id="7" simulator="athena" timestamp="1613028522" type="out">line y loc = 0 spacing = 0.02
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613028522" type="out">ATHENA&gt; </text>
+
+  <text deck-line="6" is-extract="false" line-id="8" simulator="athena" timestamp="1613028522" type="out">line y loc = 2.0 spacing = 0.20
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613028522" type="out">ATHENA&gt; </text>
+
+  <text deck-line="7" is-extract="false" line-id="9" simulator="athena" timestamp="1613028522" type="out">
+</text>  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613028522" type="out">ATHENA&gt; </text>
+
+  <text deck-line="8" is-extract="false" line-id="10" simulator="athena" timestamp="1613028522" type="out"># initialize the mesh 初始化网格
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613028522" type="out">ATHENA&gt; </text>
+
+  <text deck-line="9" is-extract="false" line-id="11" simulator="athena" timestamp="1613028522" type="out">init silicon c.phos=1.0e14
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613028523" type="out">ATHENA&gt; </text>
+
+  <text deck-line="10" is-extract="false" line-id="29" simulator="athena" timestamp="1613028523" type="out">
+</text>  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613028523" type="out">ATHENA&gt; </text>
+
+  <text deck-line="11" is-extract="false" line-id="28" simulator="athena" timestamp="1613028523" type="out"># perform uniform boron implant 均匀植入硼
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613028523" type="out">ATHENA&gt; </text>
+
+  <text deck-line="12" is-extract="false" line-id="30" simulator="athena" timestamp="1613028523" type="out">implant boron dose=1e13 energy=70
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613028523" type="out">ATHENA&gt; </text>
+
+  <text deck-line="13" is-extract="false" line-id="31" simulator="athena" timestamp="1613028523" type="out"># perform diffusion 进行扩散
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613028523" type="out">ATHENA&gt; </text>
+
+  <text deck-line="14" is-extract="false" line-id="27" simulator="athena" timestamp="1613028523" type="out">diffuse time=30 temperature=1000
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613028523" type="out">Solving time (hh:mm:ss.t)  00:00:00.0  + [1.e-05 sec]  [100.  %]  [np 66]  
+Solving time (hh:mm:ss.t)  00:00:00.0  + [9.e-04 sec]  [9900  %]  [np 66]  
+Solving time (hh:mm:ss.t)  00:00:00.0  + [0.1    sec]  [1.e+04%]  [np 66]  
+Solving time (hh:mm:ss.t)  00:00:00.1  + [90.14  sec]  [9.e+04%]  [np 66]  
+Solving time (hh:mm:ss.t)  00:01:30.2  + [220.7  sec]  [244.8 %]  [np 66]  
+Solving time (hh:mm:ss.t)  00:05:10.9  + [450.   sec]  [203.9 %]  [np 66]  
+Solving time (hh:mm:ss.t)  00:12:40.9  + [450.   </text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613028523" type="out">sec]  [100.  %]  [np 66]  
+Solving time (hh:mm:ss.t)  00:20:10.9  + [450.   sec]  [100.  %]  [np 66]  
+Solving time (hh:mm:ss.t)  00:27:40.9  + [139.   sec]  [30.9  %]  [np 66]  
+Solving time (hh:mm:ss.t)  00:30:00.0
+ATHENA&gt; </text>
+
+  <text deck-line="15" is-extract="false" line-id="33" simulator="athena" timestamp="1613028523" type="out"># 提取仿真特性，这里是提取结深
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613028523" type="out">ATHENA&gt; </text>
+
+  <text deck-line="-1" is-extract="false" line-id="17" simulator="athena" timestamp="1613028523" type="out">structure outfile='C:\Users\mintian\AppData\Local\Temp\auto.a14888'
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613028523" type="out">ATHENA&gt; </text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="extract" timestamp="1613028523" type="out">
+</text>  <text deck-line="-1" is-extract="false" line-id="-1" simulator="EXTRACT" timestamp="1613028523" type="out">EXTRACT&gt; </text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="EXTRACT" timestamp="1613028523" type="out">init inf="C:\Users\mintian\AppData\Local\Temp\auto.a14888"
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="EXTRACT" timestamp="1613028523" type="out">EXTRACT&gt; </text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="EXTRACT" timestamp="1613028523" type="out">extract name="xj" xj silicon mat.occno=1 x.val=0.0 junc.occno=1
+</text>
+
+  <text deck-line="-1" is-extract="true" line-id="-1" simulator="EXTRACT" timestamp="1613028523" type="out">xj=0.700558 um from top of first Silicon layer  X.val=0
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="EXTRACT" timestamp="1613028523" type="out">EXTRACT&gt; # save the structure 保存结构
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="EXTRACT" timestamp="1613028523" type="out">EXTRACT&gt; </text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="EXTRACT" timestamp="1613028523" type="out">quit
+</text>
+
+  <text deck-line="18" is-extract="false" line-id="20" simulator="athena" timestamp="1613028523" type="out">structure outfile=boron_implant.str
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613028523" type="out">ATHENA&gt; </text>
+
+  <text deck-line="19" is-extract="false" line-id="21" simulator="athena" timestamp="1613028523" type="out">
+</text>  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613028523" type="out">ATHENA&gt; </text>
+
+  <text deck-line="20" is-extract="false" line-id="22" simulator="athena" timestamp="1613028523" type="out"># plot the final profile 绘制最终的结构
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613028523" type="out">ATHENA&gt; </text>
+
+  <text deck-line="-1" is-extract="false" line-id="23" simulator="athena" timestamp="1613028523" type="out">tonyplot boron_implant.str
+</text>
+
+  <text deck-line="22" is-extract="false" line-id="32" simulator="athena" timestamp="1613028523" type="out">quit 
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="deckbuild" timestamp="1613028571" type="out">
+*** this is deckbuild version 5.0.10.R ***
+
+</text>
+
+  <text deck-line="1" is-extract="false" line-id="1" simulator="athena" timestamp="1613028571" type="out">go athena
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613028572" type="out">
+
+
+                                  A T H E N A
+
+     Version: athena 5.21.2 (aka 5.22.3.R) (Fri Jul 12 14:21:19 PDT 2013)
+
+                            Copyright � 1984 - 2013
+
+                       Silvaco Inc. All rights reserved
+
+   We acknowledge the contribution of the following collaborative partners:
+
+                              Stanford University
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613028572" type="out">
+
+	==============================================================
+	 ATHENA                           :  Enabled
+	 SSUPREM4                         :  Enabled
+	   Monte Carlo Implant            :  Enabled
+	 ELITE                            :  Enabled
+	   Monte Carlo Etch &amp; Deposit     :  Enabled
+	 OPTOLITH                         :  Enabled
+	==============================================================
+
+                      It is now Thu Feb 11 15:29:32 2021
+
+                       Executing </text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613028572" type="out">on host: DESKTOP-VV1IB23
+
+
+Loading model file 'D:\sedatools\\lib\athena\5.22.3.R\common\athenamod'...</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613028573" type="out"> done.
+ATHENA&gt; </text>
+
+  <text deck-line="2" is-extract="false" line-id="4" simulator="athena" timestamp="1613028573" type="out"># dimension definition 维度网格定义
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613028573" type="out">ATHENA&gt; </text>
+
+  <text deck-line="3" is-extract="false" line-id="5" simulator="athena" timestamp="1613028573" type="out">line x loc = 0.0 spacing=0.1
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613028573" type="out">ATHENA&gt; </text>
+
+  <text deck-line="4" is-extract="false" line-id="6" simulator="athena" timestamp="1613028573" type="out">line x loc = 0.1 spacing=0.1
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613028573" type="out">ATHENA&gt; </text>
+
+  <text deck-line="5" is-extract="false" line-id="7" simulator="athena" timestamp="1613028573" type="out">line y loc = 0 spacing = 0.02
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613028573" type="out">ATHENA&gt; </text>
+
+  <text deck-line="6" is-extract="false" line-id="8" simulator="athena" timestamp="1613028573" type="out">line y loc = 2.0 spacing = 0.20
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613028573" type="out">ATHENA&gt; </text>
+
+  <text deck-line="7" is-extract="false" line-id="9" simulator="athena" timestamp="1613028573" type="out">
+</text>  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613028573" type="out">ATHENA&gt; </text>
+
+  <text deck-line="8" is-extract="false" line-id="10" simulator="athena" timestamp="1613028573" type="out"># initialize the mesh 初始化网格
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613028573" type="out">ATHENA&gt; </text>
+
+  <text deck-line="9" is-extract="false" line-id="11" simulator="athena" timestamp="1613028573" type="out">init silicon c.phos=1.0e14
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613028573" type="out">ATHENA&gt; </text>
+
+  <text deck-line="10" is-extract="false" line-id="29" simulator="athena" timestamp="1613028573" type="out">
+</text>  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613028573" type="out">ATHENA&gt; </text>
+
+  <text deck-line="11" is-extract="false" line-id="28" simulator="athena" timestamp="1613028573" type="out"># perform uniform boron implant 均匀植入硼
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613028573" type="out">ATHENA&gt; </text>
+
+  <text deck-line="12" is-extract="false" line-id="30" simulator="athena" timestamp="1613028573" type="out">implant boron dose=1e13 energy=70
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613028573" type="out">ATHENA&gt; </text>
+
+  <text deck-line="13" is-extract="false" line-id="31" simulator="athena" timestamp="1613028573" type="out"># perform diffusion 进行扩散
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613028573" type="out">ATHENA&gt; </text>
+
+  <text deck-line="14" is-extract="false" line-id="27" simulator="athena" timestamp="1613028573" type="out">diffuse time=30 temperature=1000
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613028573" type="out">Solving time (hh:mm:ss.t)  00:00:00.0  + [1.e-05 sec]  [100.  %]  [np 66]  
+Solving time (hh:mm:ss.t)  00:00:00.0  + [9.e-04 sec]  [9900  %]  [np 66]  
+Solving time (hh:mm:ss.t)  00:00:00.0  + [0.1    sec]  [1.e+04%]  [np 66]  
+Solving time (hh:mm:ss.t)  00:00:00.1  + [90.14  sec]  [9.e+04%]  [np 66]  
+Solving time (hh:mm:ss.t)  00:01:30.2  + [220.7  sec]  [244.8 %]  [np 66]  
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613028573" type="out">Solving time (hh:mm:ss.t)  00:05:10.9  + [450.   sec]  [203.9 %]  [np 66]  
+Solving time (hh:mm:ss.t)  00:12:40.9  + [450.   sec]  [100.  %]  [np 66]  
+Solving time (hh:mm:ss.t)  00:20:10.9  + [450.   sec]  [100.  %]  [np 66]  
+Solving time (hh:mm:ss.t)  00:27:40.9  + [139.   sec]  [30.9  %]  [np 66]  
+Solving time (hh:mm:ss.t)  00:30:00.0
+ATHENA&gt; </text>
+
+  <text deck-line="15" is-extract="false" line-id="33" simulator="athena" timestamp="1613028573" type="out"># 提取仿真特性，这里是提取结深
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613028573" type="out">ATHENA&gt; </text>
+
+  <text deck-line="-1" is-extract="false" line-id="17" simulator="athena" timestamp="1613028573" type="out">structure outfile='C:\Users\mintian\AppData\Local\Temp\auto.a14464'
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613028573" type="out">ATHENA&gt; </text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="extract" timestamp="1613028573" type="out">
+</text>  <text deck-line="-1" is-extract="false" line-id="-1" simulator="EXTRACT" timestamp="1613028573" type="out">EXTRACT&gt; </text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="EXTRACT" timestamp="1613028573" type="out">init inf="C:\Users\mintian\AppData\Local\Temp\auto.a14464"
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="EXTRACT" timestamp="1613028573" type="out">EXTRACT&gt; </text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="EXTRACT" timestamp="1613028573" type="out">extract name="xj" xj silicon mat.occno=1 x.val=0.0 junc.occno=1
+</text>
+
+  <text deck-line="-1" is-extract="true" line-id="-1" simulator="EXTRACT" timestamp="1613028573" type="out">xj=0.700558 um from top of first Silicon layer  X.val=0
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="EXTRACT" timestamp="1613028573" type="out">EXTRACT&gt; # save the structure 保存结构
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="EXTRACT" timestamp="1613028573" type="out">EXTRACT&gt; </text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="EXTRACT" timestamp="1613028573" type="out">quit
+</text>
+
+  <text deck-line="18" is-extract="false" line-id="20" simulator="athena" timestamp="1613028573" type="out">structure outfile=boron_implant.str
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613028573" type="out">ATHENA&gt; </text>
+
+  <text deck-line="19" is-extract="false" line-id="21" simulator="athena" timestamp="1613028574" type="out">
+</text>  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613028574" type="out">ATHENA&gt; </text>
+
+  <text deck-line="20" is-extract="false" line-id="22" simulator="athena" timestamp="1613028574" type="out"># plot the final profile 绘制最终的结构
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613028574" type="out">ATHENA&gt; </text>
+
+  <text deck-line="-1" is-extract="false" line-id="23" simulator="athena" timestamp="1613028574" type="out">tonyplot boron_implant.str
+</text>
+
+  <text deck-line="22" is-extract="false" line-id="32" simulator="athena" timestamp="1613028574" type="out">quit 
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="deckbuild" timestamp="1613028614" type="out">
+*** this is deckbuild version 5.0.10.R ***
+
+</text>
+
+  <text deck-line="1" is-extract="false" line-id="1" simulator="athena" timestamp="1613028614" type="out">go athena
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613028615" type="out">
+
+
+                                  A T H E N A
+
+     Version: athena 5.21.2 (aka 5.22.3.R) (Fri Jul 12 14:21:19 PDT 2013)
+
+                            Copyright � 1984 - 2013
+
+                       Silvaco Inc. All rights reserved
+
+   We acknowledge the contribution of the following collaborative partners:
+
+                              Stanford University
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613028615" type="out">
+
+	==============================================================
+	 ATHENA                           :  Enabled
+	 SSUPREM4                         :  Enabled
+	   Monte Carlo Implant            :  Enabled
+	 ELITE                            :  Enabled
+	   Monte Carlo Etch &amp; Deposit     :  Enabled
+	 OPTOLITH                         :  Enabled
+	==============================================================
+
+                      It is now Thu Feb 11 15:30:15 2021
+
+                       Executing </text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613028615" type="out">on host: DESKTOP-VV1IB23
+
+
+Loading model file 'D:\sedatools\\lib\athena\5.22.3.R\common\athenamod'...</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613028616" type="out"> done.
+ATHENA&gt; </text>
+
+  <text deck-line="2" is-extract="false" line-id="4" simulator="athena" timestamp="1613028616" type="out"># dimension definition 维度网格定义
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613028616" type="out">ATHENA&gt; </text>
+
+  <text deck-line="3" is-extract="false" line-id="5" simulator="athena" timestamp="1613028616" type="out">line x loc = 0.0 spacing=0.1
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613028616" type="out">ATHENA&gt; </text>
+
+  <text deck-line="4" is-extract="false" line-id="6" simulator="athena" timestamp="1613028616" type="out">line x loc = 0.1 spacing=0.1
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613028616" type="out">ATHENA&gt; </text>
+
+  <text deck-line="5" is-extract="false" line-id="7" simulator="athena" timestamp="1613028616" type="out">line y loc = 0 spacing = 0.02
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613028616" type="out">ATHENA&gt; </text>
+
+  <text deck-line="6" is-extract="false" line-id="8" simulator="athena" timestamp="1613028616" type="out">line y loc = 2.0 spacing = 0.20
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613028616" type="out">ATHENA&gt; </text>
+
+  <text deck-line="7" is-extract="false" line-id="9" simulator="athena" timestamp="1613028616" type="out">
+</text>  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613028616" type="out">ATHENA&gt; </text>
+
+  <text deck-line="8" is-extract="false" line-id="10" simulator="athena" timestamp="1613028616" type="out"># initialize the mesh 初始化网格
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613028616" type="out">ATHENA&gt; </text>
+
+  <text deck-line="9" is-extract="false" line-id="11" simulator="athena" timestamp="1613028616" type="out">init silicon c.phos=1.0e14 two.d
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613028616" type="out">ATHENA&gt; </text>
+
+  <text deck-line="10" is-extract="false" line-id="29" simulator="athena" timestamp="1613028616" type="out">
+</text>  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613028616" type="out">ATHENA&gt; </text>
+
+  <text deck-line="11" is-extract="false" line-id="28" simulator="athena" timestamp="1613028616" type="out"># perform uniform boron implant 均匀植入硼
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613028616" type="out">ATHENA&gt; </text>
+
+  <text deck-line="12" is-extract="false" line-id="30" simulator="athena" timestamp="1613028616" type="out">implant boron dose=1e13 energy=70
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613028616" type="out">ATHENA&gt; </text>
+
+  <text deck-line="13" is-extract="false" line-id="31" simulator="athena" timestamp="1613028616" type="out"># perform diffusion 进行扩散
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613028616" type="out">ATHENA&gt; </text>
+
+  <text deck-line="14" is-extract="false" line-id="27" simulator="athena" timestamp="1613028616" type="out">diffuse time=30 temperature=1000
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613028616" type="out">Solving time (hh:mm:ss.t)  00:00:00.0  + [1.e-05 sec]  [100.  %]  [np 66]  
+Solving time (hh:mm:ss.t)  00:00:00.0  + [9.e-04 sec]  [9900  %]  [np 66]  
+Solving time (hh:mm:ss.t)  00:00:00.0  + [0.1    sec]  [1.e+04%]  [np 66]  
+Solving time (hh:mm:ss.t)  00:00:00.1  + [90.14  sec]  [9.e+04%]  [np 66]  
+Solving time (hh:mm:ss.t)  00:01:30.2  + [220.7  sec]  [244.8 %]  [np 66]  
+Solving time (hh:mm:ss.t)  00:05:10.9  + [450.   sec]  [203.9 %]  [np 66]  
+Solving time (hh:mm:ss.t)  00:12:40.9  + [450.   </text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613028616" type="out">sec]  [100.  %]  [np 66]  
+Solving time (hh:mm:ss.t)  00:20:10.9  + [450.   sec]  [100.  %]  [np 66]  
+Solving time (hh:mm:ss.t)  00:27:40.9  + [139.   sec]  [30.9  %]  [np 66]  
+Solving time (hh:mm:ss.t)  00:30:00.0
+ATHENA&gt; </text>
+
+  <text deck-line="15" is-extract="false" line-id="33" simulator="athena" timestamp="1613028616" type="out"># 提取仿真特性，这里是提取结深
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613028616" type="out">ATHENA&gt; </text>
+
+  <text deck-line="-1" is-extract="false" line-id="17" simulator="athena" timestamp="1613028616" type="out">structure outfile='C:\Users\mintian\AppData\Local\Temp\auto.a07856'
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613028616" type="out">ATHENA&gt; </text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="extract" timestamp="1613028616" type="out">
+</text>  <text deck-line="-1" is-extract="false" line-id="-1" simulator="EXTRACT" timestamp="1613028616" type="out">EXTRACT&gt; </text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="EXTRACT" timestamp="1613028616" type="out">init inf="C:\Users\mintian\AppData\Local\Temp\auto.a07856"
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="EXTRACT" timestamp="1613028616" type="out">EXTRACT&gt; </text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="EXTRACT" timestamp="1613028616" type="out">extract name="xj" xj silicon mat.occno=1 x.val=0.0 junc.occno=1
+</text>
+
+  <text deck-line="-1" is-extract="true" line-id="-1" simulator="EXTRACT" timestamp="1613028616" type="out">WARNING: specified cutline may give inaccurate values resulting from proximity to structure edge, (min=0, max=0.1)
+xj=0.700558 um from top of first Silicon layer  X.val=0
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="EXTRACT" timestamp="1613028616" type="out">EXTRACT&gt; # save the structure 保存结构
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="EXTRACT" timestamp="1613028616" type="out">EXTRACT&gt; </text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="EXTRACT" timestamp="1613028616" type="out">quit
+</text>
+
+  <text deck-line="18" is-extract="false" line-id="20" simulator="athena" timestamp="1613028616" type="out">structure outfile=boron_implant.str
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613028616" type="out">ATHENA&gt; </text>
+
+  <text deck-line="19" is-extract="false" line-id="21" simulator="athena" timestamp="1613028616" type="out">
+</text>  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613028616" type="out">ATHENA&gt; </text>
+
+  <text deck-line="20" is-extract="false" line-id="22" simulator="athena" timestamp="1613028616" type="out"># plot the final profile 绘制最终的结构
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613028616" type="out">ATHENA&gt; </text>
+
+  <text deck-line="-1" is-extract="false" line-id="23" simulator="athena" timestamp="1613028616" type="out">tonyplot boron_implant.str
+</text>
+
+  <text deck-line="22" is-extract="false" line-id="32" simulator="athena" timestamp="1613028617" type="out">quit 
+</text>
+
+</rto>

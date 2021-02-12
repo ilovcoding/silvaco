@@ -1,0 +1,25 @@
+init infile="AIa05204"
+extract name="max_conc" max(curve(depth, (impurity="aluminum" material="4h-sic" mat.occno=1 ))) outfile="MaxConc_energy1.e+002.dat"
+max_conc=9.49688e+017 
+extract name="Rp" x.val from curve(depth, (impurity="aluminum" material="4h-sic" mat.occno=1 )) where y.val=9.49688e+017 outfile="Rp_energy1.e+002.dat"
+Rp=0.118182 
+init infile="AIa04084"
+extract name="max_conc" max(curve(depth, (impurity="aluminum" material="4h-sic" mat.occno=1 ))) outfile="MaxConc_energy2.e+002.dat"
+max_conc=6.21397e+017 
+extract name="Rp" x.val from curve(depth, (impurity="aluminum" material="4h-sic" mat.occno=1 )) where y.val=6.21397e+017 outfile="Rp_energy2.e+002.dat"
+Rp=0.242008 
+init infile="AIa04592"
+extract name="max_conc" max(curve(depth, (impurity="aluminum" material="4h-sic" mat.occno=1 ))) outfile="MaxConc_energy3.e+002.dat"
+max_conc=4.98559e+017 
+extract name="Rp" x.val from curve(depth, (impurity="aluminum" material="4h-sic" mat.occno=1 )) where y.val=4.98559e+017 outfile="Rp_energy3.e+002.dat"
+Rp=0.339215 
+init infile="AIa04332"
+extract name="max_conc" max(curve(depth, (impurity="aluminum" material="4h-sic" mat.occno=1 ))) outfile="MaxConc_energy4.e+002.dat"
+max_conc=4.51085e+017 
+extract name="Rp" x.val from curve(depth, (impurity="aluminum" material="4h-sic" mat.occno=1 )) where y.val=4.51085e+017 outfile="Rp_energy4.e+002.dat"
+Rp=0.462192 
+init infile="AIa01208"
+extract name="max_conc" max(curve(depth, (impurity="aluminum" material="4h-sic" mat.occno=1 ))) outfile="MaxConc_energy5.e+002.dat"
+max_conc=3.96583e+017 
+extract name="Rp" x.val from curve(depth, (impurity="aluminum" material="4h-sic" mat.occno=1 )) where y.val=3.96583e+017 outfile="Rp_energy5.e+002.dat"
+Rp=0.563568 

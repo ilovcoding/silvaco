@@ -1,0 +1,62 @@
+go devedit 
+ 
+#work.area left=0 top=-12 right=850 bottom=1200   
+
+profile name="Ndrain" impurity=donors	filename=profile_N
+profile name="Pwell"	impurity=acceptors 	filename=profile_P
+
+region reg=1 mat=silicon color=0xffb2 pattern=0x9 \
+	points="0,0 20,0 20,10 0,10 0,0"
+#sub N- 
+impurity region.id=1 id=1  imp=donors color=0x906000 \     
+        x1=0 x2=0 y1=0 y2=0 \      
+        peak.value=1e+14 ref.value=10000000000 comb.func=Multiply \      
+        rolloff.y=both conc.func.y=Constant \     
+        rolloff.x=both conc.func.x=Constant 
+#Pwell
+impurity region.id=1 id=2 imp=acceptors color=0x8c5d00 \
+	peak.value=1e17 ref.value=1.3e13 comb.func=Multiply \
+	y1=0 y2=0 rolloff.y=high conc.func.y="Pwell" conc.param.y="Log Extrapolate" \
+	x1=2 x2=18 rolloff.x=both conc.func.x="Gaussian (Dist)" conc.param.x=1.6
+#Source
+impurity region.id=1 id=3 imp=donors color=0x8c5d00 \
+	peak.value=1e20 ref.value=1.3e13 comb.func=Multiply \
+	y1=0 y2=0 rolloff.y=high conc.func.y="Ndrain" conc.param.y="Log Extrapolate" \
+	x1=3 x2=5 rolloff.x=both conc.func.x="Gaussian (Dist)" conc.param.x=0.35
+#Drain
+impurity region.id=1 id=4 imp=donors color=0x8c5d00 \
+	peak.value=1e20 ref.value=1.3e13 comb.func=Multiply \
+	y1=0 y2=0 rolloff.y=high conc.func.y="Ndrain" conc.param.y="Log Extrapolate" \
+	x1=15 x2=17 rolloff.x=both conc.func.x="Gaussian (Dist)" conc.param.x=0.35
+
+region reg=2  mat=oxide  color=0xffb2 pattern=0x9 \      
+        points="6,0 14,0 14,-0.05 6,-0.05 6,0"
+region reg=3 name=gate mat=contact elec.id=1 work.func=0 \
+	points="6,-0.05 14,-0.05 14,-0.15 6,-0.15 6,-0.05"
+region reg=4 name=source mat=contact elec.id=2 work.func=0 \
+       points="3.5,0 4.5,0 4.5,-0.1 3.5,-0.1 3.5,0" 
+region reg=5 name=drain mat=contact elec.id=3 work.func=0 \
+       points="15.5,0 16.5,0 16.5,-0.1 15.5,-0.1 15.5,0" 
+ 
+constr.mesh region=1 default 
+ 
+base.mesh height=0.5 width=0.25 
+bound.cond !apply max.slope=200 max.ratio=300 rnd.unit=5e-05 line.straightening=1 align.points when=automatic 
+imp.refine imp=donors sensitivity=0.25 
+imp.refine imp=acceptors sensitivity=0.25 
+imp.refine min.spacing=0.1 
+
+constr.mesh max.angle=90 max.ratio=300  \
+	 max.width=0.25 min.width=0.1 max.height=0.25 min.height=0.1 \
+       x1=0  x2=20 y1=0  y2=10
+
+constr.mesh type=Semiconductor default 
+constr.mesh type=Insulator default 
+constr.mesh type=Metal default 
+constr.mesh type=Other default 
+mesh 
+ 
+structure outf=devedit_str.str 
+tonyplot devedit_str.str 
+
+quit

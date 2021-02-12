@@ -1,0 +1,42 @@
+go atlas
+
+mesh width=1e6
+
+x.mesh loc=0.0   spac=5
+x.mesh loc=10.0  spac=5
+
+y.mesh loc=0.0   spac=0.25
+y.mesh loc=10.0   spac=0.5
+y.mesh loc=20.0   spac=2.5
+y.mesh loc=185   spac=10
+y.mesh loc=330.0 spac=2.5
+y.mesh loc=340.0 spac=0.5
+y.mesh loc=350.0 spac=0.25
+
+region num=1 silicon
+
+elec num=1 top name=anode
+elec num=2 bottom name=cathode
+
+doping  uniform conc=3e13    n.type
+doping  gauss conc=2.e19 p.type peak=0 junc=20
+doping  gauss conc=2.e19 n.type peak=350 char=7
+
+models conmob fldmob consrh auger bgn 
+material material=silicon taun0=5e-6 taup0=5e-6
+
+method gummel newton maxtrap=10
+
+solve init
+save outfile=PIN_0V.str
+ 
+log outfile=IV_PIN.log
+solve vanode=0.05 vstep=0.05 vfinal=1.8 name=anode
+
+extract name="JV_1.4V" y.val from curve(v."anode",i."anode") where x.val =1.4
+extract name="Ron_1.4V" grad from curve(i."anode",v."anode") where y.val =1.4
+
+save outf=PIN_1.5V.str master.out
+
+
+quit

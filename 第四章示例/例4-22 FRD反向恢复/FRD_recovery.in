@@ -1,0 +1,89 @@
+go atlas
+
+mesh
+
+x.mesh loc=0.0   spac=5
+x.mesh loc=10.0  spac=5
+
+y.mesh loc=0.0   spac=0.25
+y.mesh loc=10.0   spac=0.5
+y.mesh loc=20.0   spac=2.5
+y.mesh loc=185   spac=10
+y.mesh loc=330.0 spac=2.5
+y.mesh loc=340.0 spac=0.5
+y.mesh loc=350.0 spac=0.25
+
+region num=1 silicon
+#
+elec num=1 top name=anode
+elec num=2 bottom name=cathode
+#
+doping  uniform conc=3e13    n.type
+doping  gauss conc=2.e19 p.type peak=0 junc=20
+doping  gauss conc=2.e19 n.type peak=350 char=7
+save outf=frd.str master.out
+#######################################################3
+go atlas
+.begin
+#
+#  Steady-state simulation of circuit with FRD
+#
+v1 1 0  500. 
+r1 1 2  1m
+l1 2 3  2uH
+adiode  3=cathode 4=anode width=5.e7 infile=frd.str
+r2 4 0  1mg
+i1 0 4  500.
+#
+.nodeset v(1)=500 v(2)=500 v(3)=500 v(4)=502.5
+.numeric lte=1e-3 toltr=1e-3 vchange=0.1 imaxdc=200
+#
+.save outfile=frd_save
+.options fulln print debug 
+.end
+#m2ln
+models device=adiode reg=1 conmob fldmob consrh auger bgn
+# lat.temp
+material device=adiode reg=1 taun0=5e-6 taup0=2e-6
+#impact device=adiode reg=1 selb
+#thermcontact device=adiode num=1 y.max=0   ext.temp=300 alpha=100
+#thermcontact device=adiode num=2 y.min=350 ext.temp=300 alpha=100
+method gummel block newton maxtrap=10
+############################################################
+go atlas
+.begin
+#
+#   Reverse recovery of FRD
+#didt=200A/us
+v1 1 0  400. 
+r1 1 2  1m
+l1 2 3  2uH
+adiode  3=cathode 4=anode width=5.e7 infile=frd.str
+r2 4 0  1mg EXP 1mg 1e-3 0. 20ns 10 200
+i1 0 4  500
+#
+.numeric lte=1e-3 toltr=1.e-4 vchange=10.
+.options print relpot write=50
+#
+.log outfile=frd
+.load infile=frd_save
+.save master=frd
+#
+.tran 0.1ns 10us
+#
+.end
+
+models device=adiode reg=1 conmob fldmob consrh auger bgn lat.temp
+material device=adiode reg=1 taun0=5e-6 taup0=2e-6
+impact device=adiode reg=1 selb
+thermcontact device=adiode num=1 y.max=0   ext.temp=300
+thermcontact device=adiode num=2 y.min=350 ext.temp=300
+probe device=adiode  name=n_junc n.conc x=5 y=20  
+probe device=adiode  name=p_junc p.conc x=5 y=20
+probe device=adiode  name=Field_junc field x=5 y=20 dir=270 
+probe device=adiode  name=lat.temp lat.temp max 
+
+go atlas
+tonyplot frd_tr.log -set frd.set
+
+quit

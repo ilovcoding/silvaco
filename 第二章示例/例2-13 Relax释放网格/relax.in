@@ -1,0 +1,28 @@
+go athena
+
+#
+line x loc=0.0 spac=0.01 
+line x loc=0.6 spac=0.01
+#
+line y loc=0.0 spac=0.01 
+line y loc=0.2 spac=0.025
+line y loc=0.8 spac=0.1 
+#
+init  c.phos=1e14  two.d
+structure outfile=origin.str
+###############################################
+go athena
+
+#
+line x loc=0.0 spac=0.01 
+line x loc=0.6 spac=0.01
+#
+line y loc=0.0 spac=0.01 
+line y loc=0.2 spac=0.025
+line y loc=0.8 spac=0.1 
+#
+init  c.phos=1e14  two.d
+relax silicon x.min=0.1 x.max=0.5 y.min=0.2 y.max=0.6
+structure outfile=relax.str
+tonyplot origin.str relax.str
+ 

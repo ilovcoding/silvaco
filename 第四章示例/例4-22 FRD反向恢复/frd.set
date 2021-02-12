@@ -1,0 +1,31 @@
+# TPCS version: 6
+key contours 1 at 3
+key contours 2 at 1
+key contours 3 at 6
+key electrical at user 0.524954, 0.619247
+key vectors at 6
+key overlay at 2
+key regions at 4
+select 1
+show points on
+show lines on
+xygraph type 0 convert 0
+xygraph yaxis scale linear
+xygraph xaxis "Transient time" linear
+xygraph yaxis none
+xygraph yaxis "I[adiode_anode]" log
+title main auto
+title sub auto
+footer right none
+footer left none
+show xaxis on
+show yaxis on
+show grid on
+show label xaxis on
+show label yaxis on
+range xaxis auto
+range yaxis auto
+label xaxis "Transient time (s)"
+zoom from 0.000000, 0.000000 scale 1.000000, 1.000000
+label overlay 1 "powerex01_tr.log"
+draw all
