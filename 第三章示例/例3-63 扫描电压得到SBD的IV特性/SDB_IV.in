@@ -1,0 +1,29 @@
+go atlas
+init infile=SBD.str
+model conmob fldmob srh auger bgn
+contact  name=anode workf=4.97
+solve  init
+log outfile=Schottky_Diode_IV.log
+
+solve vanode=0.01
+solve vanode=0.05
+solve vanode=0.1
+solve vanode=0.15
+solve vanode=0.2
+solve vanode=0.25
+solve vanode=0.3
+solve vanode=0.35
+solve vanode=0.4
+solve vanode=0.45
+solve vanode=0.5
+solve vanode=0.55
+solve vanode=0.6
+solve vanode=0.65
+solve vanode=0.7
+solve vanode=0.75
+solve vanode=0.8
+solve vanode=0.85
+solve vanode=0.9
+solve vanode=0.95
+solve vanode=1.0
+tonyplot Schottky_Diode_IV.log

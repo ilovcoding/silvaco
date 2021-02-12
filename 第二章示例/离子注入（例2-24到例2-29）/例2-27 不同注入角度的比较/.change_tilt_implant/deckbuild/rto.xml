@@ -1,0 +1,2677 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<!DOCTYPE rto SYSTEM "rto.dtd">
+<rto>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="deckbuild" timestamp="1613134307" type="out">
+*** this is deckbuild version 5.0.10.R ***
+
+</text>
+
+  <text deck-line="1" is-extract="false" line-id="1" simulator="athena" timestamp="1613134307" type="out">go athena
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613134307" type="out">
+
+
+                                  A T H E N A
+
+     Version: athena 5.21.2 (aka 5.22.3.R) (Fri Jul 12 14:21:19 PDT 2013)
+
+                            Copyright � 1984 - 2013
+
+                       Silvaco Inc. All rights reserved
+
+   We acknowledge the contribution of the following collaborative partners:
+
+                              Stanford University
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613134308" type="out">
+
+	==============================================================
+	 ATHENA                           :  Enabled
+	 SSUPREM4                         :  Enabled
+	   Monte Carlo Implant            :  Enabled
+	 ELITE                            :  Enabled
+	   Monte Carlo Etch &amp; Deposit     :  Enabled
+	 OPTOLITH                         :  Enabled
+	==============================================================
+
+                      It is now Fri Feb 12 20:51:48 2021
+
+                       Executing </text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613134308" type="out">on host: DESKTOP-VV1IB23
+
+
+Loading model file 'D:\sedatools\\lib\athena\5.22.3.R\common\athenamod'...</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613134309" type="out"> done.
+ATHENA&gt; </text>
+
+  <text deck-line="2" is-extract="false" line-id="2" simulator="athena" timestamp="1613134309" type="out">line x loc = 0.0  spacing=0.02
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613134309" type="out">ATHENA&gt; </text>
+
+  <text deck-line="3" is-extract="false" line-id="3" simulator="athena" timestamp="1613134309" type="out">line x loc = 0.5   spacing=0.02
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613134309" type="out">ATHENA&gt; </text>
+
+  <text deck-line="4" is-extract="false" line-id="4" simulator="athena" timestamp="1613134309" type="out">line y loc = 0   spacing = 0.02
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613134309" type="out">ATHENA&gt; </text>
+
+  <text deck-line="5" is-extract="false" line-id="5" simulator="athena" timestamp="1613134309" type="out">line y loc = 0.6  spacing = 0.05
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613134309" type="out">ATHENA&gt; </text>
+
+  <text deck-line="6" is-extract="false" line-id="6" simulator="athena" timestamp="1613134309" type="out">init
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613134309" type="out">ATHENA&gt; </text>
+
+  <text deck-line="7" is-extract="false" line-id="7" simulator="athena" timestamp="1613134309" type="out">structure outfile=origin_STR.str
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613134309" type="out">ATHENA&gt; </text>
+
+  <text deck-line="8" is-extract="false" line-id="8" simulator="athena" timestamp="1613134309" type="out">quit
+</text>
+
+  <text deck-line="8" is-extract="false" line-id="8" simulator="athena" timestamp="1613134309" type="out">go athena                                                                      
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613134309" type="out">
+
+
+                                  A T H E N A
+
+     Version: athena 5.21.2 (aka 5.22.3.R) (Fri Jul 12 14:21:19 PDT 2013)
+
+                            Copyright � 1984 - 2013
+
+                       Silvaco Inc. All rights reserved
+
+   We acknowledge the contribution of the following collaborative partners:
+
+                              Stanford University
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613134309" type="out">
+
+	==============================================================
+	 ATHENA                           :  Enabled
+	 SSUPREM4                         :  Enabled
+	   Monte Carlo Implant            :  Enabled
+	 ELITE                            :  Enabled
+	   Monte Carlo Etch &amp; Deposit     :  Enabled
+	 OPTOLITH                         :  Enabled
+	==============================================================
+
+                      It is now Fri Feb 12 20:51:49 2021
+
+                       Executing </text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613134309" type="out">on host: DESKTOP-VV1IB23
+
+
+Loading model file 'D:\sedatools\\lib\athena\5.22.3.R\common\athenamod'...</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613134310" type="out"> done.
+ATHENA&gt; </text>
+
+  <text deck-line="9" is-extract="false" line-id="9" simulator="athena" timestamp="1613134310" type="out">init infile=origin_STR.str                                                                        
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613134310" type="out">ATHENA&gt; </text>
+
+  <text deck-line="10" is-extract="false" line-id="10" simulator="athena" timestamp="1613134310" type="out">implant boron energy=35 dose=1.e13 tilt=0 rotation=0 print.mom                                                                        
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613134311" type="out">
+The following implant parameters are found in the
+   ** SVDP (UT at Austin) tables ** and used for:
+MATERIAL: silicon;  ION: Boron;  S.OXIDE.THICKNESS=0.001um.
+energy=35 dose=1e+013 tilt=0 rotation=0 range=0.1904 std.dev=0.0729571 gamma=0.0508571 kurtosis=2.99286 srange=0.339586 sstd.dev=0.0537 sgamma=-0.0241429 skurtosis=2.92143 dratio=0.6881 lstd.dev=0.056 kurtt=3 lsstd.dev=0.0032 skurtt=1.82
+ATHENA&gt; </text>
+
+  <text deck-line="11" is-extract="false" line-id="11" simulator="athena" timestamp="1613134311" type="out">save outfile=titl_0.str                                                                        
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613134311" type="out">ATHENA&gt; </text>
+
+  <text deck-line="12" is-extract="false" line-id="12" simulator="athena" timestamp="1613134311" type="out">init infile=origin_STR.str                                                                         
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613134311" type="out">ATHENA&gt; </text>
+
+  <text deck-line="13" is-extract="false" line-id="13" simulator="athena" timestamp="1613134311" type="out">implant boron energy=35 dose=1.e13 tilt=1 rotation=0 print.mom                                                                         
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613134311" type="out">
+The following implant parameters are found in the
+   ** SVDP (UT at Austin) tables ** and used for:
+MATERIAL: silicon;  ION: Boron;  S.OXIDE.THICKNESS=0.001um.
+energy=35 dose=1e+013 tilt=1 rotation=0 range=0.166086 std.dev=0.0618714 gamma=-0.144 kurtosis=3.12143 srange=0.292043 sstd.dev=0.069 sgamma=0.00185714 skurtosis=2.80714 dratio=0.748043 lstd.dev=0.056 kurtt=3 lsstd.dev=0.0032 skurtt=1.82
+ATHENA&gt; </text>
+
+  <text deck-line="14" is-extract="false" line-id="14" simulator="athena" timestamp="1613134311" type="out">save outfile=titl_1.str
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613134311" type="out">ATHENA&gt; </text>
+
+  <text deck-line="15" is-extract="false" line-id="15" simulator="athena" timestamp="1613134311" type="out">
+</text>  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613134311" type="out">ATHENA&gt; </text>
+
+  <text deck-line="16" is-extract="false" line-id="16" simulator="athena" timestamp="1613134311" type="out">quit
+</text>
+
+  <text deck-line="16" is-extract="false" line-id="16" simulator="athena" timestamp="1613134311" type="out">go athena                                                                         
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613134311" type="out">
+
+
+                                  A T H E N A
+
+     Version: athena 5.21.2 (aka 5.22.3.R) (Fri Jul 12 14:21:19 PDT 2013)
+
+                            Copyright � 1984 - 2013
+
+                       Silvaco Inc. All rights reserved
+
+   We acknowledge the contribution of the following collaborative partners:
+
+                              Stanford University
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613134311" type="out">
+
+	==============================================================
+	 ATHENA                           :  Enabled
+	 SSUPREM4                         :  Enabled
+	   Monte Carlo Implant            :  Enabled
+	 ELITE                            :  Enabled
+	   Monte Carlo Etch &amp; Deposit     :  Enabled
+	 OPTOLITH                         :  Enabled
+	==============================================================
+
+                      It is now Fri Feb 12 20:51:51 2021
+
+                       Executing </text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613134311" type="out">on host: DESKTOP-VV1IB23
+
+
+Loading model file 'D:\sedatools\\lib\athena\5.22.3.R\common\athenamod'...</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613134312" type="out"> done.
+ATHENA&gt; </text>
+
+  <text deck-line="17" is-extract="false" line-id="17" simulator="athena" timestamp="1613134312" type="out">init infile=origin_STR.str                                                                        
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613134312" type="out">ATHENA&gt; </text>
+
+  <text deck-line="18" is-extract="false" line-id="18" simulator="athena" timestamp="1613134312" type="out">implant boron energy=35 dose=1.e13 tilt=2 rotation=0 print.mom                                                                         
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613134312" type="out">
+The following implant parameters are found in the
+   ** SVDP (UT at Austin) tables ** and used for:
+MATERIAL: silicon;  ION: Boron;  S.OXIDE.THICKNESS=0.001um.
+energy=35 dose=1e+013 tilt=2 rotation=0 range=0.157286 std.dev=0.0620143 gamma=0.0594286 kurtosis=2.95286 srange=0.249843 sstd.dev=0.0835 sgamma=-0.202857 skurtosis=2.94286 dratio=0.787757 lstd.dev=0.056 kurtt=3 lsstd.dev=0.0032 skurtt=1.82
+ATHENA&gt; </text>
+
+  <text deck-line="19" is-extract="false" line-id="19" simulator="athena" timestamp="1613134312" type="out">save outfile=titl_2.str                                                                        
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613134312" type="out">ATHENA&gt; </text>
+
+  <text deck-line="20" is-extract="false" line-id="20" simulator="athena" timestamp="1613134312" type="out">                                                                         
+</text>  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613134312" type="out">ATHENA&gt; </text>
+
+  <text deck-line="21" is-extract="false" line-id="21" simulator="athena" timestamp="1613134312" type="out">quit
+</text>
+
+  <text deck-line="21" is-extract="false" line-id="21" simulator="athena" timestamp="1613134312" type="out">go athena                                                                        
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613134312" type="out">
+
+
+                                  A T H E N A
+
+     Version: athena 5.21.2 (aka 5.22.3.R) (Fri Jul 12 14:21:19 PDT 2013)
+
+                            Copyright � 1984 - 2013
+
+                       Silvaco Inc. All rights reserved
+
+   We acknowledge the contribution of the following collaborative partners:
+
+                              Stanford University
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613134313" type="out">
+
+	==============================================================
+	 ATHENA                           :  Enabled
+	 SSUPREM4                         :  Enabled
+	   Monte Carlo Implant            :  Enabled
+	 ELITE                            :  Enabled
+	   Monte Carlo Etch &amp; Deposit     :  Enabled
+	 OPTOLITH                         :  Enabled
+	==============================================================
+
+                      It is now Fri Feb 12 20:51:53 2021
+
+                       Executing </text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613134313" type="out">on host: DESKTOP-VV1IB23
+
+
+Loading model file 'D:\sedatools\\lib\athena\5.22.3.R\common\athenamod'...</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613134313" type="out"> done.
+ATHENA&gt; </text>
+
+  <text deck-line="22" is-extract="false" line-id="22" simulator="athena" timestamp="1613134313" type="out">init infile=origin_STR.str                                                                         
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613134313" type="out">ATHENA&gt; </text>
+
+  <text deck-line="23" is-extract="false" line-id="23" simulator="athena" timestamp="1613134313" type="out">implant boron energy=35 dose=1.e13 tilt=7 rotation=0 print.mom                                                                        
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613134313" type="out">
+The following implant parameters are found in the
+   ** SVDP (UT at Austin) tables ** and used for:
+MATERIAL: silicon;  ION: Boron;  S.OXIDE.THICKNESS=0.001um.
+energy=35 dose=1e+013 tilt=7 rotation=0 range=0.137943 std.dev=0.0595429 gamma=0.287714 kurtosis=3.17143 srange=0.222329 sstd.dev=0.0726571 sgamma=0.435 skurtosis=2.83143 dratio=0.796086 lstd.dev=0.056 kurtt=3 lsstd.dev=0.0032 skurtt=1.82
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613134314" type="out">ATHENA&gt; </text>
+
+  <text deck-line="24" is-extract="false" line-id="24" simulator="athena" timestamp="1613134314" type="out">save outfile=titl_7.str                                                                        
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613134314" type="out">ATHENA&gt; </text>
+
+  <text deck-line="25" is-extract="false" line-id="25" simulator="athena" timestamp="1613134314" type="out">                                                                         
+</text>  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613134314" type="out">ATHENA&gt; </text>
+
+  <text deck-line="26" is-extract="false" line-id="26" simulator="athena" timestamp="1613134314" type="out">quit
+</text>
+
+  <text deck-line="26" is-extract="false" line-id="26" simulator="athena" timestamp="1613134314" type="out">go athena                                                                       
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613134314" type="out">
+
+
+                                  A T H E N A
+
+     Version: athena 5.21.2 (aka 5.22.3.R) (Fri Jul 12 14:21:19 PDT 2013)
+
+                            Copyright � 1984 - 2013
+
+                       Silvaco Inc. All rights reserved
+
+   We acknowledge the contribution of the following collaborative partners:
+
+                              Stanford University
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613134314" type="out">
+
+	==============================================================
+	 ATHENA                           :  Enabled
+	 SSUPREM4                         :  Enabled
+	   Monte Carlo Implant            :  Enabled
+	 ELITE                            :  Enabled
+	   Monte Carlo Etch &amp; Deposit     :  Enabled
+	 OPTOLITH                         :  Enabled
+	==============================================================
+
+                      It is now Fri Feb 12 20:51:54 2021
+
+                       Executing </text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613134314" type="out">on host: DESKTOP-VV1IB23
+
+
+Loading model file 'D:\sedatools\\lib\athena\5.22.3.R\common\athenamod'...</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613134315" type="out"> done.
+ATHENA&gt; </text>
+
+  <text deck-line="27" is-extract="false" line-id="27" simulator="athena" timestamp="1613134315" type="out">init infile=origin_STR.str                                                                       
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613134315" type="out">ATHENA&gt; </text>
+
+  <text deck-line="28" is-extract="false" line-id="28" simulator="athena" timestamp="1613134315" type="out">implant boron energy=35 dose=1.e13 tilt=10 rotation=0 print.mom                                                                         
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613134315" type="out">
+The following implant parameters are found in the
+   ** SVDP (UT at Austin) tables ** and used for:
+MATERIAL: silicon;  ION: Boron;  S.OXIDE.THICKNESS=0.001um.
+energy=35 dose=1e+013 tilt=10 rotation=0 range=0.1319 std.dev=0.0562 gamma=0.295714 kurtosis=3.08571 srange=0.216829 sstd.dev=0.0687286 sgamma=0.396857 skurtosis=2.79571 dratio=0.808243 lstd.dev=0.056 kurtt=3 lsstd.dev=0.0032 skurtt=1.82
+ATHENA&gt; </text>
+
+  <text deck-line="29" is-extract="false" line-id="29" simulator="athena" timestamp="1613134315" type="out">save outfile=titl_10.str                                                                        
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613134315" type="out">ATHENA&gt; </text>
+
+  <text deck-line="-1" is-extract="false" line-id="30" simulator="athena" timestamp="1613134315" type="out">tonyplot -overlay titl_*.str 
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="30" simulator="athena" timestamp="1613134431" type="out">tonyplot -overlay titl_*.str 
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="deckbuild" timestamp="1613134443" type="out">
+*** this is deckbuild version 5.0.10.R ***
+
+</text>
+
+  <text deck-line="1" is-extract="false" line-id="1" simulator="athena" timestamp="1613134443" type="out">go athena
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613134443" type="out">
+
+
+                                  A T H E N A
+
+     Version: athena 5.21.2 (aka 5.22.3.R) (Fri Jul 12 14:21:19 PDT 2013)
+
+                            Copyright � 1984 - 2013
+
+                       Silvaco Inc. All rights reserved
+
+   We acknowledge the contribution of the following collaborative partners:
+
+                              Stanford University
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613134443" type="out">
+
+	==============================================================
+	 ATHENA                           :  Enabled
+	 SSUPREM4                         :  Enabled
+	   Monte Carlo Implant            :  Enabled
+	 ELITE                            :  Enabled
+	   Monte Carlo Etch &amp; Deposit     :  Enabled
+	 OPTOLITH                         :  Enabled
+	==============================================================
+
+                      It is now Fri Feb 12 20:54:03 2021
+
+                       Executing </text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613134443" type="out">on host: DESKTOP-VV1IB23
+
+
+Loading model file 'D:\sedatools\\lib\athena\5.22.3.R\common\athenamod'...</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613134444" type="out"> done.
+ATHENA&gt; </text>
+
+  <text deck-line="2" is-extract="false" line-id="2" simulator="athena" timestamp="1613134444" type="out">line x loc = 0.0  spacing=0.02
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613134444" type="out">ATHENA&gt; </text>
+
+  <text deck-line="3" is-extract="false" line-id="3" simulator="athena" timestamp="1613134444" type="out">line x loc = 0.5   spacing=0.02
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613134444" type="out">ATHENA&gt; </text>
+
+  <text deck-line="4" is-extract="false" line-id="4" simulator="athena" timestamp="1613134444" type="out">line y loc = 0   spacing = 0.02
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613134444" type="out">ATHENA&gt; </text>
+
+  <text deck-line="5" is-extract="false" line-id="5" simulator="athena" timestamp="1613134444" type="out">line y loc = 0.6  spacing = 0.05
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613134444" type="out">ATHENA&gt; </text>
+
+  <text deck-line="6" is-extract="false" line-id="6" simulator="athena" timestamp="1613134444" type="out">init
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613134444" type="out">ATHENA&gt; </text>
+
+  <text deck-line="7" is-extract="false" line-id="7" simulator="athena" timestamp="1613134444" type="out">structure outfile=origin_STR.str
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613134444" type="out">ATHENA&gt; </text>
+
+  <text deck-line="8" is-extract="false" line-id="8" simulator="athena" timestamp="1613134444" type="out">quit
+</text>
+
+  <text deck-line="8" is-extract="false" line-id="8" simulator="athena" timestamp="1613134445" type="out">go athena                                                                      
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613134445" type="out">
+
+
+                                  A T H E N A
+
+     Version: athena 5.21.2 (aka 5.22.3.R) (Fri Jul 12 14:21:19 PDT 2013)
+
+                            Copyright � 1984 - 2013
+
+                       Silvaco Inc. All rights reserved
+
+   We acknowledge the contribution of the following collaborative partners:
+
+                              Stanford University
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613134445" type="out">
+
+	==============================================================
+	 ATHENA                           :  Enabled
+	 SSUPREM4                         :  Enabled
+	   Monte Carlo Implant            :  Enabled
+	 ELITE                            :  Enabled
+	   Monte Carlo Etch &amp; Deposit     :  Enabled
+	 OPTOLITH                         :  Enabled
+	==============================================================
+
+                      It is now Fri Feb 12 20:54:05 2021
+
+                       Executing </text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613134445" type="out">on host: DESKTOP-VV1IB23
+
+
+Loading model file 'D:\sedatools\\lib\athena\5.22.3.R\common\athenamod'...</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613134446" type="out"> done.
+ATHENA&gt; </text>
+
+  <text deck-line="9" is-extract="false" line-id="9" simulator="athena" timestamp="1613134446" type="out">init infile=origin_STR.str                                                                        
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613134446" type="out">ATHENA&gt; </text>
+
+  <text deck-line="10" is-extract="false" line-id="10" simulator="athena" timestamp="1613134446" type="out">implant boron energy=35 dose=1.e13 tilt=0 rotation=0 print.mom                                                                        
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613134446" type="out">
+The following implant parameters are found in the
+   ** SVDP (UT at Austin) tables ** and used for:
+MATERIAL: silicon;  ION: Boron;  S.OXIDE.THICKNESS=0.001um.
+energy=35 dose=1e+013 tilt=0 rotation=0 range=0.1904 std.dev=0.0729571 gamma=0.0508571 kurtosis=2.99286 srange=0.339586 sstd.dev=0.0537 sgamma=-0.0241429 skurtosis=2.92143 dratio=0.6881 lstd.dev=0.056 kurtt=3 lsstd.dev=0.0032 skurtt=1.82
+ATHENA&gt; </text>
+
+  <text deck-line="11" is-extract="false" line-id="11" simulator="athena" timestamp="1613134446" type="out">save outfile=titl_0.str
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613134446" type="out">ATHENA&gt; </text>
+
+  <text deck-line="12" is-extract="false" line-id="31" simulator="athena" timestamp="1613134446" type="out">quit
+</text>
+
+  <text deck-line="12" is-extract="false" line-id="31" simulator="athena" timestamp="1613134446" type="out">go athena                                                                     
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613134446" type="out">
+
+
+                                  A T H E N A
+
+     Version: athena 5.21.2 (aka 5.22.3.R) (Fri Jul 12 14:21:19 PDT 2013)
+
+                            Copyright � 1984 - 2013
+
+                       Silvaco Inc. All rights reserved
+
+   We acknowledge the contribution of the following collaborative partners:
+
+                              Stanford University
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613134446" type="out">
+
+	==============================================================
+	 ATHENA                           :  Enabled
+	 SSUPREM4                         :  Enabled
+	   Monte Carlo Implant            :  Enabled
+	 ELITE                            :  Enabled
+	   Monte Carlo Etch &amp; Deposit     :  Enabled
+	 OPTOLITH                         :  Enabled
+	==============================================================
+
+                      It is now Fri Feb 12 20:54:06 2021
+
+                       Executing </text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613134446" type="out">on host: DESKTOP-VV1IB23
+
+
+Loading model file 'D:\sedatools\\lib\athena\5.22.3.R\common\athenamod'...</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613134447" type="out"> done.
+ATHENA&gt; </text>
+
+  <text deck-line="13" is-extract="false" line-id="12" simulator="athena" timestamp="1613134447" type="out">init infile=origin_STR.str                                                                         
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613134447" type="out">ATHENA&gt; </text>
+
+  <text deck-line="14" is-extract="false" line-id="13" simulator="athena" timestamp="1613134447" type="out">implant boron energy=35 dose=1.e13 tilt=1 rotation=0 print.mom                                                                         
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613134447" type="out">
+The following implant parameters are found in the
+   ** SVDP (UT at Austin) tables ** and used for:
+MATERIAL: silicon;  ION: Boron;  S.OXIDE.THICKNESS=0.001um.
+energy=35 dose=1e+013 tilt=1 rotation=0 range=0.166086 std.dev=0.0618714 gamma=-0.144 kurtosis=3.12143 srange=0.292043 sstd.dev=0.069 sgamma=0.00185714 skurtosis=2.80714 dratio=0.748043 lstd.dev=0.056 kurtt=3 lsstd.dev=0.0032 skurtt=1.82
+ATHENA&gt; </text>
+
+  <text deck-line="15" is-extract="false" line-id="14" simulator="athena" timestamp="1613134447" type="out">save outfile=titl_1.str
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613134447" type="out">ATHENA&gt; </text>
+
+  <text deck-line="16" is-extract="false" line-id="15" simulator="athena" timestamp="1613134447" type="out">
+</text>  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613134447" type="out">ATHENA&gt; </text>
+
+  <text deck-line="17" is-extract="false" line-id="16" simulator="athena" timestamp="1613134447" type="out">quit
+</text>
+
+  <text deck-line="17" is-extract="false" line-id="16" simulator="athena" timestamp="1613134447" type="out">go athena                                                                         
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613134447" type="out">
+
+
+                                  A T H E N A
+
+     Version: athena 5.21.2 (aka 5.22.3.R) (Fri Jul 12 14:21:19 PDT 2013)
+
+                            Copyright � 1984 - 2013
+
+                       Silvaco Inc. All rights reserved
+
+   We acknowledge the contribution of the following collaborative partners:
+
+                              Stanford University
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613134448" type="out">
+
+	==============================================================
+	 ATHENA                           :  Enabled
+	 SSUPREM4                         :  Enabled
+	   Monte Carlo Implant            :  Enabled
+	 ELITE                            :  Enabled
+	   Monte Carlo Etch &amp; Deposit     :  Enabled
+	 OPTOLITH                         :  Enabled
+	==============================================================
+
+                      It is now Fri Feb 12 20:54:08 2021
+
+                       Executing </text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613134448" type="out">on host: DESKTOP-VV1IB23
+
+
+Loading model file 'D:\sedatools\\lib\athena\5.22.3.R\common\athenamod'...</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613134449" type="out"> done.
+ATHENA&gt; </text>
+
+  <text deck-line="18" is-extract="false" line-id="17" simulator="athena" timestamp="1613134449" type="out">init infile=origin_STR.str                                                                        
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613134449" type="out">ATHENA&gt; </text>
+
+  <text deck-line="19" is-extract="false" line-id="18" simulator="athena" timestamp="1613134449" type="out">implant boron energy=35 dose=1.e13 tilt=2 rotation=0 print.mom                                                                         
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613134449" type="out">
+The following implant parameters are found in the
+   ** SVDP (UT at Austin) tables ** and used for:
+MATERIAL: silicon;  ION: Boron;  S.OXIDE.THICKNESS=0.001um.
+energy=35 dose=1e+013 tilt=2 rotation=0 range=0.157286 std.dev=0.0620143 gamma=0.0594286 kurtosis=2.95286 srange=0.249843 sstd.dev=0.0835 sgamma=-0.202857 skurtosis=2.94286 dratio=0.787757 lstd.dev=0.056 kurtt=3 lsstd.dev=0.0032 skurtt=1.82
+ATHENA&gt; </text>
+
+  <text deck-line="20" is-extract="false" line-id="19" simulator="athena" timestamp="1613134449" type="out">save outfile=titl_2.str                                                                        
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613134449" type="out">ATHENA&gt; </text>
+
+  <text deck-line="21" is-extract="false" line-id="20" simulator="athena" timestamp="1613134449" type="out">                                                                         
+</text>  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613134449" type="out">ATHENA&gt; </text>
+
+  <text deck-line="22" is-extract="false" line-id="21" simulator="athena" timestamp="1613134449" type="out">quit
+</text>
+
+  <text deck-line="22" is-extract="false" line-id="21" simulator="athena" timestamp="1613134449" type="out">go athena                                                                        
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613134449" type="out">
+
+
+                                  A T H E N A
+
+     Version: athena 5.21.2 (aka 5.22.3.R) (Fri Jul 12 14:21:19 PDT 2013)
+
+                            Copyright � 1984 - 2013
+
+                       Silvaco Inc. All rights reserved
+
+   We acknowledge the contribution of the following collaborative partners:
+
+                              Stanford University
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613134449" type="out">
+
+	==============================================================
+	 ATHENA                           :  Enabled
+	 SSUPREM4                         :  Enabled
+	   Monte Carlo Implant            :  Enabled
+	 ELITE                            :  Enabled
+	   Monte Carlo Etch &amp; Deposit     :  Enabled
+	 OPTOLITH                         :  Enabled
+	==============================================================
+
+                      It is now Fri Feb 12 20:54:09 2021
+
+                       Executing </text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613134449" type="out">on host: DESKTOP-VV1IB23
+
+
+Loading model file 'D:\sedatools\\lib\athena\5.22.3.R\common\athenamod'...</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613134450" type="out"> done.
+ATHENA&gt; </text>
+
+  <text deck-line="23" is-extract="false" line-id="22" simulator="athena" timestamp="1613134450" type="out">init infile=origin_STR.str                                                                         
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613134450" type="out">ATHENA&gt; </text>
+
+  <text deck-line="24" is-extract="false" line-id="23" simulator="athena" timestamp="1613134450" type="out">implant boron energy=35 dose=1.e13 tilt=7 rotation=0 print.mom                                                                        
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613134450" type="out">
+The following implant parameters are found in the
+   ** SVDP (UT at Austin) tables ** and used for:
+MATERIAL: silicon;  ION: Boron;  S.OXIDE.THICKNESS=0.001um.
+energy=35 dose=1e+013 tilt=7 rotation=0 range=0.137943 std.dev=0.0595429 gamma=0.287714 kurtosis=3.17143 srange=0.222329 sstd.dev=0.0726571 sgamma=0.435 skurtosis=2.83143 dratio=0.796086 lstd.dev=0.056 kurtt=3 lsstd.dev=0.0032 skurtt=1.82
+ATHENA&gt; </text>
+
+  <text deck-line="25" is-extract="false" line-id="24" simulator="athena" timestamp="1613134450" type="out">save outfile=titl_7.str                                                                        
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613134450" type="out">ATHENA&gt; </text>
+
+  <text deck-line="26" is-extract="false" line-id="25" simulator="athena" timestamp="1613134450" type="out">                                                                         
+</text>  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613134450" type="out">ATHENA&gt; </text>
+
+  <text deck-line="27" is-extract="false" line-id="26" simulator="athena" timestamp="1613134450" type="out">quit
+</text>
+
+  <text deck-line="27" is-extract="false" line-id="26" simulator="athena" timestamp="1613134450" type="out">go athena                                                                       
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613134450" type="out">
+
+
+                                  A T H E N A
+
+     Version: athena 5.21.2 (aka 5.22.3.R) (Fri Jul 12 14:21:19 PDT 2013)
+
+                            Copyright � 1984 - 2013
+
+                       Silvaco Inc. All rights reserved
+
+   We acknowledge the contribution of the following collaborative partners:
+
+                              Stanford University
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613134451" type="out">
+
+	==============================================================
+	 ATHENA                           :  Enabled
+	 SSUPREM4                         :  Enabled
+	   Monte Carlo Implant            :  Enabled
+	 ELITE                            :  Enabled
+	   Monte Carlo Etch &amp; Deposit     :  Enabled
+	 OPTOLITH                         :  Enabled
+	==============================================================
+
+                      It is now Fri Feb 12 20:54:10 2021
+
+                       Executing </text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613134451" type="out">on host: DESKTOP-VV1IB23
+
+
+Loading model file 'D:\sedatools\\lib\athena\5.22.3.R\common\athenamod'...</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613134451" type="out"> done.
+ATHENA&gt; </text>
+
+  <text deck-line="28" is-extract="false" line-id="27" simulator="athena" timestamp="1613134451" type="out">init infile=origin_STR.str                                                                       
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613134451" type="out">ATHENA&gt; </text>
+
+  <text deck-line="29" is-extract="false" line-id="28" simulator="athena" timestamp="1613134451" type="out">implant boron energy=35 dose=1.e13 tilt=10 rotation=0 print.mom                                                                         
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613134451" type="out">
+The following implant parameters are found in the
+   ** SVDP (UT at Austin) tables ** and used for:
+MATERIAL: silicon;  ION: Boron;  S.OXIDE.THICKNESS=0.001um.
+energy=35 dose=1e+013 tilt=10 rotation=0 range=0.1319 std.dev=0.0562 gamma=0.295714 kurtosis=3.08571 srange=0.216829 sstd.dev=0.0687286 sgamma=0.396857 skurtosis=2.79571 dratio=0.808243 lstd.dev=0.056 kurtt=3 lsstd.dev=0.0032 skurtt=1.82
+ATHENA&gt; </text>
+
+  <text deck-line="30" is-extract="false" line-id="29" simulator="athena" timestamp="1613134451" type="out">save outfile=titl_10.str                                                                        
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613134451" type="out">ATHENA&gt; </text>
+
+  <text deck-line="-1" is-extract="false" line-id="30" simulator="athena" timestamp="1613134451" type="out">tonyplot -overlay titl_*.str 
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="deckbuild" timestamp="1613134555" type="out">
+*** this is deckbuild version 5.0.10.R ***
+
+</text>
+
+  <text deck-line="1" is-extract="false" line-id="1" simulator="athena" timestamp="1613134555" type="out">go athena
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613134555" type="out">
+
+
+                                  A T H E N A
+
+     Version: athena 5.21.2 (aka 5.22.3.R) (Fri Jul 12 14:21:19 PDT 2013)
+
+                            Copyright � 1984 - 2013
+
+                       Silvaco Inc. All rights reserved
+
+   We acknowledge the contribution of the following collaborative partners:
+
+                              Stanford University
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613134555" type="out">
+
+	==============================================================
+	 ATHENA                           :  Enabled
+	 SSUPREM4                         :  Enabled
+	   Monte Carlo Implant            :  Enabled
+	 ELITE                            :  Enabled
+	   Monte Carlo Etch &amp; Deposit     :  Enabled
+	 OPTOLITH                         :  Enabled
+	==============================================================
+
+                      It is now Fri Feb 12 20:55:55 2021
+
+                       Executing </text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613134555" type="out">on host: DESKTOP-VV1IB23
+
+
+Loading model file 'D:\sedatools\\lib\athena\5.22.3.R\common\athenamod'...</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613134556" type="out"> done.
+ATHENA&gt; </text>
+
+  <text deck-line="2" is-extract="false" line-id="2" simulator="athena" timestamp="1613134556" type="out">line x loc = 0.0  spacing=0.02
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613134556" type="out">ATHENA&gt; </text>
+
+  <text deck-line="3" is-extract="false" line-id="3" simulator="athena" timestamp="1613134556" type="out">line x loc = 0.5   spacing=0.02
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613134556" type="out">ATHENA&gt; </text>
+
+  <text deck-line="4" is-extract="false" line-id="4" simulator="athena" timestamp="1613134556" type="out">line y loc = 0   spacing = 0.02
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613134556" type="out">ATHENA&gt; </text>
+
+  <text deck-line="5" is-extract="false" line-id="5" simulator="athena" timestamp="1613134556" type="out">line y loc = 0.6  spacing = 0.05
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613134556" type="out">ATHENA&gt; </text>
+
+  <text deck-line="6" is-extract="false" line-id="6" simulator="athena" timestamp="1613134556" type="out">init
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613134556" type="out">ATHENA&gt; </text>
+
+  <text deck-line="7" is-extract="false" line-id="7" simulator="athena" timestamp="1613134556" type="out">structure outfile=origin_STR.str
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613134556" type="out">ATHENA&gt; </text>
+
+  <text deck-line="8" is-extract="false" line-id="8" simulator="athena" timestamp="1613134556" type="out">quit
+</text>
+
+  <text deck-line="8" is-extract="false" line-id="8" simulator="athena" timestamp="1613134556" type="out">go athena                                                                      
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613134556" type="out">
+
+
+                                  A T H E N A
+
+     Version: athena 5.21.2 (aka 5.22.3.R) (Fri Jul 12 14:21:19 PDT 2013)
+
+                            Copyright � 1984 - 2013
+
+                       Silvaco Inc. All rights reserved
+
+   We acknowledge the contribution of the following collaborative partners:
+
+                              Stanford University
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613134557" type="out">
+
+	==============================================================
+	 ATHENA                           :  Enabled
+	 SSUPREM4                         :  Enabled
+	   Monte Carlo Implant            :  Enabled
+	 ELITE                            :  Enabled
+	   Monte Carlo Etch &amp; Deposit     :  Enabled
+	 OPTOLITH                         :  Enabled
+	==============================================================
+
+                      It is now Fri Feb 12 20:55:57 2021
+
+                       Executing </text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613134557" type="out">on host: DESKTOP-VV1IB23
+
+
+Loading model file 'D:\sedatools\\lib\athena\5.22.3.R\common\athenamod'...</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613134557" type="out"> done.
+ATHENA&gt; </text>
+
+  <text deck-line="9" is-extract="false" line-id="9" simulator="athena" timestamp="1613134557" type="out">init infile=origin_STR.str                                                                        
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613134557" type="out">ATHENA&gt; </text>
+
+  <text deck-line="10" is-extract="false" line-id="10" simulator="athena" timestamp="1613134557" type="out">implant boron energy=35 dose=1.e13 tilt=0 rotation=0 print.mom                                                                        
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613134557" type="out">
+The following implant parameters are found in the
+   ** SVDP (UT at Austin) tables ** and used for:
+MATERIAL: silicon;  ION: Boron;  S.OXIDE.THICKNESS=0.001um.
+energy=35 dose=1e+013 tilt=0 rotation=0 range=0.1904 std.dev=0.0729571 gamma=0.0508571 kurtosis=2.99286 srange=0.339586 sstd.dev=0.0537 sgamma=-0.0241429 skurtosis=2.92143 dratio=0.6881 lstd.dev=0.056 kurtt=3 lsstd.dev=0.0032 skurtt=1.82
+ATHENA&gt; </text>
+
+  <text deck-line="11" is-extract="false" line-id="11" simulator="athena" timestamp="1613134557" type="out">save outfile=titl_0.str
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613134557" type="out">ATHENA&gt; </text>
+
+  <text deck-line="12" is-extract="false" line-id="31" simulator="athena" timestamp="1613134557" type="out">quit
+</text>
+
+  <text deck-line="12" is-extract="false" line-id="31" simulator="athena" timestamp="1613134558" type="out">go athena                                                                     
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613134558" type="out">
+
+
+                                  A T H E N A
+
+     Version: athena 5.21.2 (aka 5.22.3.R) (Fri Jul 12 14:21:19 PDT 2013)
+
+                            Copyright � 1984 - 2013
+
+                       Silvaco Inc. All rights reserved
+
+   We acknowledge the contribution of the following collaborative partners:
+
+                              Stanford University
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613134558" type="out">
+
+	==============================================================
+	 ATHENA                           :  Enabled
+	 SSUPREM4                         :  Enabled
+	   Monte Carlo Implant            :  Enabled
+	 ELITE                            :  Enabled
+	   Monte Carlo Etch &amp; Deposit     :  Enabled
+	 OPTOLITH                         :  Enabled
+	==============================================================
+
+                      It is now Fri Feb 12 20:55:58 2021
+
+                       Executing </text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613134558" type="out">on host: DESKTOP-VV1IB23
+
+
+Loading model file 'D:\sedatools\\lib\athena\5.22.3.R\common\athenamod'...</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613134559" type="out"> done.
+ATHENA&gt; </text>
+
+  <text deck-line="13" is-extract="false" line-id="12" simulator="athena" timestamp="1613134559" type="out">init infile=origin_STR.str                                                                         
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613134559" type="out">ATHENA&gt; </text>
+
+  <text deck-line="14" is-extract="false" line-id="13" simulator="athena" timestamp="1613134559" type="out">implant boron energy=35 dose=1.e13 tilt=1 rotation=0 print.mom                                                                         
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613134559" type="out">
+The following implant parameters are found in the
+   ** SVDP (UT at Austin) tables ** and used for:
+MATERIAL: silicon;  ION: Boron;  S.OXIDE.THICKNESS=0.001um.
+energy=35 dose=1e+013 tilt=1 rotation=0 range=0.166086 std.dev=0.0618714 gamma=-0.144 kurtosis=3.12143 srange=0.292043 sstd.dev=0.069 sgamma=0.00185714 skurtosis=2.80714 dratio=0.748043 lstd.dev=0.056 kurtt=3 lsstd.dev=0.0032 skurtt=1.82
+ATHENA&gt; </text>
+
+  <text deck-line="15" is-extract="false" line-id="14" simulator="athena" timestamp="1613134559" type="out">save outfile=titl_1.str
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613134559" type="out">ATHENA&gt; </text>
+
+  <text deck-line="16" is-extract="false" line-id="15" simulator="athena" timestamp="1613134559" type="out">
+</text>  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613134559" type="out">ATHENA&gt; </text>
+
+  <text deck-line="17" is-extract="false" line-id="16" simulator="athena" timestamp="1613134559" type="out">quit
+</text>
+
+  <text deck-line="17" is-extract="false" line-id="16" simulator="athena" timestamp="1613134559" type="out">go athena                                                                         
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613134559" type="out">
+
+
+                                  A T H E N A
+
+     Version: athena 5.21.2 (aka 5.22.3.R) (Fri Jul 12 14:21:19 PDT 2013)
+
+                            Copyright � 1984 - 2013
+
+                       Silvaco Inc. All rights reserved
+
+   We acknowledge the contribution of the following collaborative partners:
+
+                              Stanford University
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613134559" type="out">
+
+	==============================================================
+	 ATHENA                           :  Enabled
+	 SSUPREM4                         :  Enabled
+	   Monte Carlo Implant            :  Enabled
+	 ELITE                            :  Enabled
+	   Monte Carlo Etch &amp; Deposit     :  Enabled
+	 OPTOLITH                         :  Enabled
+	==============================================================
+
+                      It is now Fri Feb 12 20:55:59 2021
+
+                       Executing </text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613134559" type="out">on host: DESKTOP-VV1IB23
+
+
+Loading model file 'D:\sedatools\\lib\athena\5.22.3.R\common\athenamod'...</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613134560" type="out"> done.
+ATHENA&gt; </text>
+
+  <text deck-line="18" is-extract="false" line-id="17" simulator="athena" timestamp="1613134560" type="out">init infile=origin_STR.str                                                                        
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613134560" type="out">ATHENA&gt; </text>
+
+  <text deck-line="19" is-extract="false" line-id="18" simulator="athena" timestamp="1613134560" type="out">implant boron energy=35 dose=1.e13 tilt=2 rotation=0 print.mom                                                                         
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613134560" type="out">
+The following implant parameters are found in the
+   ** SVDP (UT at Austin) tables ** and used for:
+MATERIAL: silicon;  ION: Boron;  S.OXIDE.THICKNESS=0.001um.
+energy=35 dose=1e+013 tilt=2 rotation=0 range=0.157286 std.dev=0.0620143 gamma=0.0594286 kurtosis=2.95286 srange=0.249843 sstd.dev=0.0835 sgamma=-0.202857 skurtosis=2.94286 dratio=0.787757 lstd.dev=0.056 kurtt=3 lsstd.dev=0.0032 skurtt=1.82
+ATHENA&gt; </text>
+
+  <text deck-line="20" is-extract="false" line-id="19" simulator="athena" timestamp="1613134560" type="out">save outfile=titl_2.str                                                                        
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613134560" type="out">ATHENA&gt; </text>
+
+  <text deck-line="21" is-extract="false" line-id="20" simulator="athena" timestamp="1613134560" type="out">                                                                         
+</text>  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613134560" type="out">ATHENA&gt; </text>
+
+  <text deck-line="22" is-extract="false" line-id="21" simulator="athena" timestamp="1613134560" type="out">quit
+</text>
+
+  <text deck-line="22" is-extract="false" line-id="21" simulator="athena" timestamp="1613134560" type="out">go athena                                                                        
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613134560" type="out">
+
+
+                                  A T H E N A
+
+     Version: athena 5.21.2 (aka 5.22.3.R) (Fri Jul 12 14:21:19 PDT 2013)
+
+                            Copyright � 1984 - 2013
+
+                       Silvaco Inc. All rights reserved
+
+   We acknowledge the contribution of the following collaborative partners:
+
+                              Stanford University
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613134561" type="out">
+
+	==============================================================
+	 ATHENA                           :  Enabled
+	 SSUPREM4                         :  Enabled
+	   Monte Carlo Implant            :  Enabled
+	 ELITE                            :  Enabled
+	   Monte Carlo Etch &amp; Deposit     :  Enabled
+	 OPTOLITH                         :  Enabled
+	==============================================================
+
+                      It is now Fri Feb 12 20:56:01 2021
+
+                       Executing </text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613134561" type="out">on host: DESKTOP-VV1IB23
+
+
+Loading model file 'D:\sedatools\\lib\athena\5.22.3.R\common\athenamod'...</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613134561" type="out"> done.
+ATHENA&gt; </text>
+
+  <text deck-line="23" is-extract="false" line-id="22" simulator="athena" timestamp="1613134561" type="out">init infile=origin_STR.str                                                                         
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613134561" type="out">ATHENA&gt; </text>
+
+  <text deck-line="24" is-extract="false" line-id="23" simulator="athena" timestamp="1613134561" type="out">implant boron energy=35 dose=1.e13 tilt=7 rotation=0 print.mom                                                                        
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613134561" type="out">
+The following implant parameters are found in the
+   ** SVDP (UT at Austin) tables ** and used for:
+MATERIAL: silicon;  ION: Boron;  S.OXIDE.THICKNESS=0.001um.
+energy=35 dose=1e+013 tilt=7 rotation=0 range=0.137943 std.dev=0.0595429 gamma=0.287714 kurtosis=3.17143 srange=0.222329 sstd.dev=0.0726571 sgamma=0.435 skurtosis=2.83143 dratio=0.796086 lstd.dev=0.056 kurtt=3 lsstd.dev=0.0032 skurtt=1.82
+ATHENA&gt; </text>
+
+  <text deck-line="25" is-extract="false" line-id="24" simulator="athena" timestamp="1613134561" type="out">save outfile=titl_7.str                                                                        
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613134561" type="out">ATHENA&gt; </text>
+
+  <text deck-line="26" is-extract="false" line-id="25" simulator="athena" timestamp="1613134561" type="out">                                                                         
+</text>  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613134561" type="out">ATHENA&gt; </text>
+
+  <text deck-line="27" is-extract="false" line-id="26" simulator="athena" timestamp="1613134561" type="out">quit
+</text>
+
+  <text deck-line="27" is-extract="false" line-id="26" simulator="athena" timestamp="1613134561" type="out">go athena                                                                       
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613134562" type="out">
+
+
+                                  A T H E N A
+
+     Version: athena 5.21.2 (aka 5.22.3.R) (Fri Jul 12 14:21:19 PDT 2013)
+
+                            Copyright � 1984 - 2013
+
+                       Silvaco Inc. All rights reserved
+
+   We acknowledge the contribution of the following collaborative partners:
+
+                              Stanford University
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613134562" type="out">
+
+	==============================================================
+	 ATHENA                           :  Enabled
+	 SSUPREM4                         :  Enabled
+	   Monte Carlo Implant            :  Enabled
+	 ELITE                            :  Enabled
+	   Monte Carlo Etch &amp; Deposit     :  Enabled
+	 OPTOLITH                         :  Enabled
+	==============================================================
+
+                      It is now Fri Feb 12 20:56:02 2021
+
+                       Executing </text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613134562" type="out">on host: DESKTOP-VV1IB23
+
+
+Loading model file 'D:\sedatools\\lib\athena\5.22.3.R\common\athenamod'...</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613134563" type="out"> done.
+ATHENA&gt; </text>
+
+  <text deck-line="28" is-extract="false" line-id="27" simulator="athena" timestamp="1613134563" type="out">init infile=origin_STR.str                                                                       
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613134563" type="out">ATHENA&gt; </text>
+
+  <text deck-line="29" is-extract="false" line-id="28" simulator="athena" timestamp="1613134563" type="out">implant boron energy=35 dose=1.e13 tilt=10 rotation=0 print.mom                                                                         
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613134563" type="out">
+The following implant parameters are found in the
+   ** SVDP (UT at Austin) tables ** and used for:
+MATERIAL: silicon;  ION: Boron;  S.OXIDE.THICKNESS=0.001um.
+energy=35 dose=1e+013 tilt=10 rotation=0 range=0.1319 std.dev=0.0562 gamma=0.295714 kurtosis=3.08571 srange=0.216829 sstd.dev=0.0687286 sgamma=0.396857 skurtosis=2.79571 dratio=0.808243 lstd.dev=0.056 kurtt=3 lsstd.dev=0.0032 skurtt=1.82
+ATHENA&gt; </text>
+
+  <text deck-line="30" is-extract="false" line-id="29" simulator="athena" timestamp="1613134563" type="out">save outfile=titl_10.str                                                                        
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613134563" type="out">ATHENA&gt; </text>
+
+  <text deck-line="-1" is-extract="false" line-id="30" simulator="athena" timestamp="1613134563" type="out">tonyplot -overlay titl_*.str
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="deckbuild" timestamp="1613134718" type="out">
+*** this is deckbuild version 5.0.10.R ***
+
+</text>
+
+  <text deck-line="1" is-extract="false" line-id="1" simulator="athena" timestamp="1613134718" type="out">go athena
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613134718" type="out">
+
+
+                                  A T H E N A
+
+     Version: athena 5.21.2 (aka 5.22.3.R) (Fri Jul 12 14:21:19 PDT 2013)
+
+                            Copyright � 1984 - 2013
+
+                       Silvaco Inc. All rights reserved
+
+   We acknowledge the contribution of the following collaborative partners:
+
+                              Stanford University
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613134719" type="out">
+
+	==============================================================
+	 ATHENA                           :  Enabled
+	 SSUPREM4                         :  Enabled
+	   Monte Carlo Implant            :  Enabled
+	 ELITE                            :  Enabled
+	   Monte Carlo Etch &amp; Deposit     :  Enabled
+	 OPTOLITH                         :  Enabled
+	==============================================================
+
+                      It is now Fri Feb 12 20:58:39 2021
+
+                       Executing </text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613134719" type="out">on host: DESKTOP-VV1IB23
+
+
+Loading model file 'D:\sedatools\\lib\athena\5.22.3.R\common\athenamod'...</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613134719" type="out"> done.
+ATHENA&gt; </text>
+
+  <text deck-line="2" is-extract="false" line-id="2" simulator="athena" timestamp="1613134719" type="out">line x loc = 0.0  spacing=0.02
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613134719" type="out">ATHENA&gt; </text>
+
+  <text deck-line="3" is-extract="false" line-id="3" simulator="athena" timestamp="1613134719" type="out">line x loc = 0.5   spacing=0.02
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613134719" type="out">ATHENA&gt; </text>
+
+  <text deck-line="4" is-extract="false" line-id="4" simulator="athena" timestamp="1613134719" type="out">line y loc = 0   spacing = 0.02
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613134719" type="out">ATHENA&gt; </text>
+
+  <text deck-line="5" is-extract="false" line-id="5" simulator="athena" timestamp="1613134719" type="out">line y loc = 0.6  spacing = 0.05
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613134719" type="out">ATHENA&gt; </text>
+
+  <text deck-line="6" is-extract="false" line-id="6" simulator="athena" timestamp="1613134719" type="out">init
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613134719" type="out">ATHENA&gt; </text>
+
+  <text deck-line="7" is-extract="false" line-id="7" simulator="athena" timestamp="1613134719" type="out">structure outfile=origin_STR.str
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613134720" type="out">ATHENA&gt; </text>
+
+  <text deck-line="8" is-extract="false" line-id="8" simulator="athena" timestamp="1613134720" type="out">quit
+</text>
+
+  <text deck-line="8" is-extract="false" line-id="8" simulator="athena" timestamp="1613134720" type="out">go athena                                                                      
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613134720" type="out">
+
+
+                                  A T H E N A
+
+     Version: athena 5.21.2 (aka 5.22.3.R) (Fri Jul 12 14:21:19 PDT 2013)
+
+                            Copyright � 1984 - 2013
+
+                       Silvaco Inc. All rights reserved
+
+   We acknowledge the contribution of the following collaborative partners:
+
+                              Stanford University
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613134720" type="out">
+
+	==============================================================
+	 ATHENA                           :  Enabled
+	 SSUPREM4                         :  Enabled
+	   Monte Carlo Implant            :  Enabled
+	 ELITE                            :  Enabled
+	   Monte Carlo Etch &amp; Deposit     :  Enabled
+	 OPTOLITH                         :  Enabled
+	==============================================================
+
+                      It is now Fri Feb 12 20:58:40 2021
+
+                       Executing </text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613134720" type="out">on host: DESKTOP-VV1IB23
+
+
+Loading model file 'D:\sedatools\\lib\athena\5.22.3.R\common\athenamod'...</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613134721" type="out"> done.
+ATHENA&gt; </text>
+
+  <text deck-line="9" is-extract="false" line-id="9" simulator="athena" timestamp="1613134721" type="out">init infile=origin_STR.str                                                                        
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613134721" type="out">ATHENA&gt; </text>
+
+  <text deck-line="10" is-extract="false" line-id="10" simulator="athena" timestamp="1613134721" type="out">implant boron energy=35 dose=1.e13 tilt=0 rotation=0 print.mom                                                                        
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613134721" type="out">
+The following implant parameters are found in the
+   ** SVDP (UT at Austin) tables ** and used for:
+MATERIAL: silicon;  ION: Boron;  S.OXIDE.THICKNESS=0.001um.
+energy=35 dose=1e+013 tilt=0 rotation=0 range=0.1904 std.dev=0.0729571 gamma=0.0508571 kurtosis=2.99286 srange=0.339586 sstd.dev=0.0537 sgamma=-0.0241429 skurtosis=2.92143 dratio=0.6881 lstd.dev=0.056 kurtt=3 lsstd.dev=0.0032 skurtt=1.82
+ATHENA&gt; </text>
+
+  <text deck-line="11" is-extract="false" line-id="11" simulator="athena" timestamp="1613134721" type="out">save outfile=titl_0.str
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613134721" type="out">ATHENA&gt; </text>
+
+  <text deck-line="12" is-extract="false" line-id="31" simulator="athena" timestamp="1613134721" type="out">quit
+</text>
+
+  <text deck-line="12" is-extract="false" line-id="31" simulator="athena" timestamp="1613134721" type="out">go athena                                                                     
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613134721" type="out">
+
+
+                                  A T H E N A
+
+     Version: athena 5.21.2 (aka 5.22.3.R) (Fri Jul 12 14:21:19 PDT 2013)
+
+                            Copyright � 1984 - 2013
+
+                       Silvaco Inc. All rights reserved
+
+   We acknowledge the contribution of the following collaborative partners:
+
+                              Stanford University
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613134721" type="out">
+
+	==============================================================
+	 ATHENA                           :  Enabled
+	 SSUPREM4                         :  Enabled
+	   Monte Carlo Implant            :  Enabled
+	 ELITE                            :  Enabled
+	   Monte Carlo Etch &amp; Deposit     :  Enabled
+	 OPTOLITH                         :  Enabled
+	==============================================================
+
+                      It is now Fri Feb 12 20:58:41 2021
+
+                       Executing </text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613134721" type="out">on host: DESKTOP-VV1IB23
+
+
+Loading model file 'D:\sedatools\\lib\athena\5.22.3.R\common\athenamod'...</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613134722" type="out"> done.
+ATHENA&gt; </text>
+
+  <text deck-line="13" is-extract="false" line-id="12" simulator="athena" timestamp="1613134722" type="out">init infile=origin_STR.str                                                                         
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613134722" type="out">ATHENA&gt; </text>
+
+  <text deck-line="14" is-extract="false" line-id="13" simulator="athena" timestamp="1613134722" type="out">implant boron energy=35 dose=1.e13 tilt=1 rotation=0 print.mom                                                                         
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613134722" type="out">
+The following implant parameters are found in the
+   ** SVDP (UT at Austin) tables ** and used for:
+MATERIAL: silicon;  ION: Boron;  S.OXIDE.THICKNESS=0.001um.
+energy=35 dose=1e+013 tilt=1 rotation=0 range=0.166086 std.dev=0.0618714 gamma=-0.144 kurtosis=3.12143 srange=0.292043 sstd.dev=0.069 sgamma=0.00185714 skurtosis=2.80714 dratio=0.748043 lstd.dev=0.056 kurtt=3 lsstd.dev=0.0032 skurtt=1.82
+ATHENA&gt; </text>
+
+  <text deck-line="15" is-extract="false" line-id="14" simulator="athena" timestamp="1613134722" type="out">save outfile=titl_1.str
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613134722" type="out">ATHENA&gt; </text>
+
+  <text deck-line="16" is-extract="false" line-id="15" simulator="athena" timestamp="1613134722" type="out">
+</text>  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613134722" type="out">ATHENA&gt; </text>
+
+  <text deck-line="17" is-extract="false" line-id="16" simulator="athena" timestamp="1613134722" type="out">quit
+</text>
+
+  <text deck-line="17" is-extract="false" line-id="16" simulator="athena" timestamp="1613134723" type="out">go athena                                                                         
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613134723" type="out">
+
+
+                                  A T H E N A
+
+     Version: athena 5.21.2 (aka 5.22.3.R) (Fri Jul 12 14:21:19 PDT 2013)
+
+                            Copyright � 1984 - 2013
+
+                       Silvaco Inc. All rights reserved
+
+   We acknowledge the contribution of the following collaborative partners:
+
+                              Stanford University
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613134724" type="out">
+
+	==============================================================
+	 ATHENA                           :  Enabled
+	 SSUPREM4                         :  Enabled
+	   Monte Carlo Implant            :  Enabled
+	 ELITE                            :  Enabled
+	   Monte Carlo Etch &amp; Deposit     :  Enabled
+	 OPTOLITH                         :  Enabled
+	==============================================================
+
+                      It is now Fri Feb 12 20:58:44 2021
+
+                       Executing </text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613134724" type="out">on host: DESKTOP-VV1IB23
+
+
+Loading model file 'D:\sedatools\\lib\athena\5.22.3.R\common\athenamod'...</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613134724" type="out"> done.
+ATHENA&gt; </text>
+
+  <text deck-line="18" is-extract="false" line-id="17" simulator="athena" timestamp="1613134724" type="out">init infile=origin_STR.str                                                                        
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613134724" type="out">ATHENA&gt; </text>
+
+  <text deck-line="19" is-extract="false" line-id="18" simulator="athena" timestamp="1613134724" type="out">implant boron energy=35 dose=1.e13 tilt=2 rotation=0 print.mom                                                                         
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613134724" type="out">
+The following implant parameters are found in the
+   ** SVDP (UT at Austin) tables ** and used for:
+MATERIAL: silicon;  ION: Boron;  S.OXIDE.THICKNESS=0.001um.
+energy=35 dose=1e+013 tilt=2 rotation=0 range=0.157286 std.dev=0.0620143 gamma=0.0594286 kurtosis=2.95286 srange=0.249843 sstd.dev=0.0835 sgamma=-0.202857 skurtosis=2.94286 dratio=0.787757 lstd.dev=0.056 kurtt=3 lsstd.dev=0.0032 skurtt=1.82
+ATHENA&gt; </text>
+
+  <text deck-line="20" is-extract="false" line-id="19" simulator="athena" timestamp="1613134724" type="out">save outfile=titl_2.str                                                                        
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613134724" type="out">ATHENA&gt; </text>
+
+  <text deck-line="21" is-extract="false" line-id="20" simulator="athena" timestamp="1613134724" type="out">                                                                         
+</text>  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613134724" type="out">ATHENA&gt; </text>
+
+  <text deck-line="22" is-extract="false" line-id="21" simulator="athena" timestamp="1613134724" type="out">quit
+</text>
+
+  <text deck-line="22" is-extract="false" line-id="21" simulator="athena" timestamp="1613134724" type="out">go athena                                                                        
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613134725" type="out">
+
+
+                                  A T H E N A
+
+     Version: athena 5.21.2 (aka 5.22.3.R) (Fri Jul 12 14:21:19 PDT 2013)
+
+                            Copyright � 1984 - 2013
+
+                       Silvaco Inc. All rights reserved
+
+   We acknowledge the contribution of the following collaborative partners:
+
+                              Stanford University
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613134725" type="out">
+
+	==============================================================
+	 ATHENA                           :  Enabled
+	 SSUPREM4                         :  Enabled
+	   Monte Carlo Implant            :  Enabled
+	 ELITE                            :  Enabled
+	   Monte Carlo Etch &amp; Deposit     :  Enabled
+	 OPTOLITH                         :  Enabled
+	==============================================================
+
+                      It is now Fri Feb 12 20:58:45 2021
+
+                       Executing </text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613134725" type="out">on host: DESKTOP-VV1IB23
+
+
+Loading model file 'D:\sedatools\\lib\athena\5.22.3.R\common\athenamod'...</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613134726" type="out"> done.
+ATHENA&gt; </text>
+
+  <text deck-line="23" is-extract="false" line-id="22" simulator="athena" timestamp="1613134726" type="out">init infile=origin_STR.str                                                                         
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613134726" type="out">ATHENA&gt; </text>
+
+  <text deck-line="24" is-extract="false" line-id="23" simulator="athena" timestamp="1613134726" type="out">implant boron energy=35 dose=1.e13 tilt=7 rotation=0 print.mom                                                                        
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613134726" type="out">
+The following implant parameters are found in the
+   ** SVDP (UT at Austin) tables ** and used for:
+MATERIAL: silicon;  ION: Boron;  S.OXIDE.THICKNESS=0.001um.
+energy=35 dose=1e+013 tilt=7 rotation=0 range=0.137943 std.dev=0.0595429 gamma=0.287714 kurtosis=3.17143 srange=0.222329 sstd.dev=0.0726571 sgamma=0.435 skurtosis=2.83143 dratio=0.796086 lstd.dev=0.056 kurtt=3 lsstd.dev=0.0032 skurtt=1.82
+ATHENA&gt; </text>
+
+  <text deck-line="25" is-extract="false" line-id="24" simulator="athena" timestamp="1613134726" type="out">save outfile=titl_7.str                                                                        
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613134726" type="out">ATHENA&gt; </text>
+
+  <text deck-line="26" is-extract="false" line-id="25" simulator="athena" timestamp="1613134726" type="out">                                                                         
+</text>  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613134726" type="out">ATHENA&gt; </text>
+
+  <text deck-line="27" is-extract="false" line-id="26" simulator="athena" timestamp="1613134726" type="out">quit
+</text>
+
+  <text deck-line="27" is-extract="false" line-id="26" simulator="athena" timestamp="1613134726" type="out">go athena                                                                       
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613134726" type="out">
+
+
+                                  A T H E N A
+
+     Version: athena 5.21.2 (aka 5.22.3.R) (Fri Jul 12 14:21:19 PDT 2013)
+
+                            Copyright � 1984 - 2013
+
+                       Silvaco Inc. All rights reserved
+
+   We acknowledge the contribution of the following collaborative partners:
+
+                              Stanford University
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613134726" type="out">
+
+	==============================================================
+	 ATHENA                           :  Enabled
+	 SSUPREM4                         :  Enabled
+	   Monte Carlo Implant            :  Enabled
+	 ELITE                            :  Enabled
+	   Monte Carlo Etch &amp; Deposit     :  Enabled
+	 OPTOLITH                         :  Enabled
+	==============================================================
+
+                      It is now Fri Feb 12 20:58:46 2021
+
+                       Executing </text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613134726" type="out">on host: DESKTOP-VV1IB23
+
+
+Loading model file 'D:\sedatools\\lib\athena\5.22.3.R\common\athenamod'...</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613134727" type="out"> done.
+ATHENA&gt; </text>
+
+  <text deck-line="28" is-extract="false" line-id="27" simulator="athena" timestamp="1613134727" type="out">init infile=origin_STR.str                                                                       
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613134727" type="out">ATHENA&gt; </text>
+
+  <text deck-line="29" is-extract="false" line-id="28" simulator="athena" timestamp="1613134727" type="out">implant boron energy=35 dose=1.e13 tilt=10 rotation=0 print.mom                                                                         
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613134727" type="out">
+The following implant parameters are found in the
+   ** SVDP (UT at Austin) tables ** and used for:
+MATERIAL: silicon;  ION: Boron;  S.OXIDE.THICKNESS=0.001um.
+energy=35 dose=1e+013 tilt=10 rotation=0 range=0.1319 std.dev=0.0562 gamma=0.295714 kurtosis=3.08571 srange=0.216829 sstd.dev=0.0687286 sgamma=0.396857 skurtosis=2.79571 dratio=0.808243 lstd.dev=0.056 kurtt=3 lsstd.dev=0.0032 skurtt=1.82
+ATHENA&gt; </text>
+
+  <text deck-line="30" is-extract="false" line-id="29" simulator="athena" timestamp="1613134727" type="out">save outfile=titl_10.str                                                                        
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613134727" type="out">ATHENA&gt; </text>
+
+  <text deck-line="-1" is-extract="false" line-id="30" simulator="athena" timestamp="1613134727" type="out">tonyplot -overlay titl_*.str
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="deckbuild" timestamp="1613134824" type="out">
+*** this is deckbuild version 5.0.10.R ***
+
+</text>
+
+  <text deck-line="1" is-extract="false" line-id="1" simulator="athena" timestamp="1613134824" type="out">go athena
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613134824" type="out">
+
+
+                                  A T H E N A
+
+     Version: athena 5.21.2 (aka 5.22.3.R) (Fri Jul 12 14:21:19 PDT 2013)
+
+                            Copyright � 1984 - 2013
+
+                       Silvaco Inc. All rights reserved
+
+   We acknowledge the contribution of the following collaborative partners:
+
+                              Stanford University
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613134824" type="out">
+
+	==============================================================
+	 ATHENA                           :  Enabled
+	 SSUPREM4                         :  Enabled
+	   Monte Carlo Implant            :  Enabled
+	 ELITE                            :  Enabled
+	   Monte Carlo Etch &amp; Deposit     :  Enabled
+	 OPTOLITH                         :  Enabled
+	==============================================================
+
+                      It is now Fri Feb 12 21:00:24 2021
+
+                       Executing </text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613134824" type="out">on host: DESKTOP-VV1IB23
+
+
+Loading model file 'D:\sedatools\\lib\athena\5.22.3.R\common\athenamod'...</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613134825" type="out"> done.
+ATHENA&gt; </text>
+
+  <text deck-line="2" is-extract="false" line-id="2" simulator="athena" timestamp="1613134825" type="out">line x loc = 0.0  spacing=0.02
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613134825" type="out">ATHENA&gt; </text>
+
+  <text deck-line="3" is-extract="false" line-id="3" simulator="athena" timestamp="1613134825" type="out">line x loc = 0.5   spacing=0.02
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613134825" type="out">ATHENA&gt; </text>
+
+  <text deck-line="4" is-extract="false" line-id="4" simulator="athena" timestamp="1613134825" type="out">line y loc = 0   spacing = 0.02
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613134825" type="out">ATHENA&gt; </text>
+
+  <text deck-line="5" is-extract="false" line-id="5" simulator="athena" timestamp="1613134825" type="out">line y loc = 0.6  spacing = 0.05
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613134825" type="out">ATHENA&gt; </text>
+
+  <text deck-line="6" is-extract="false" line-id="7" simulator="athena" timestamp="1613134825" type="out">structure outfile=origin_STR.str
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613134825" type="out">ATHENA&gt; </text>
+
+  <text deck-line="7" is-extract="false" line-id="8" simulator="athena" timestamp="1613134825" type="out">quit
+</text>
+
+  <text deck-line="7" is-extract="false" line-id="8" simulator="athena" timestamp="1613134825" type="out">go athena                                                                      
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613134826" type="out">
+
+
+                                  A T H E N A
+
+     Version: athena 5.21.2 (aka 5.22.3.R) (Fri Jul 12 14:21:19 PDT 2013)
+
+                            Copyright � 1984 - 2013
+
+                       Silvaco Inc. All rights reserved
+
+   We acknowledge the contribution of the following collaborative partners:
+
+                              Stanford University
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613134826" type="out">
+
+	==============================================================
+	 ATHENA                           :  Enabled
+	 SSUPREM4                         :  Enabled
+	   Monte Carlo Implant            :  Enabled
+	 ELITE                            :  Enabled
+	   Monte Carlo Etch &amp; Deposit     :  Enabled
+	 OPTOLITH                         :  Enabled
+	==============================================================
+
+                      It is now Fri Feb 12 21:00:26 2021
+
+                       Executing </text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613134826" type="out">on host: DESKTOP-VV1IB23
+
+
+Loading model file 'D:\sedatools\\lib\athena\5.22.3.R\common\athenamod'...</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613134827" type="out"> done.
+ATHENA&gt; </text>
+
+  <text deck-line="8" is-extract="false" line-id="9" simulator="athena" timestamp="1613134827" type="out">init infile=origin_STR.str                                                                        
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613134827" type="out">ATHENA&gt; </text>
+
+  <text deck-line="9" is-extract="false" line-id="10" simulator="athena" timestamp="1613134827" type="out">implant boron energy=35 dose=1.e13 tilt=0 rotation=0 print.mom                                                                        
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613134827" type="out">
+
+***** Error *****
+
+	The structure has been deleted. The program cannot continue.
+
+
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="deckbuild" timestamp="1613135070" type="out">
+*** this is deckbuild version 5.0.10.R ***
+
+</text>
+
+  <text deck-line="1" is-extract="false" line-id="1" simulator="athena" timestamp="1613135070" type="out">go athena
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613135070" type="out">
+
+
+                                  A T H E N A
+
+     Version: athena 5.21.2 (aka 5.22.3.R) (Fri Jul 12 14:21:19 PDT 2013)
+
+                            Copyright � 1984 - 2013
+
+                       Silvaco Inc. All rights reserved
+
+   We acknowledge the contribution of the following collaborative partners:
+
+                              Stanford University
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613135070" type="out">
+
+	==============================================================
+	 ATHENA                           :  Enabled
+	 SSUPREM4                         :  Enabled
+	   Monte Carlo Implant            :  Enabled
+	 ELITE                            :  Enabled
+	   Monte Carlo Etch &amp; Deposit     :  Enabled
+	 OPTOLITH                         :  Enabled
+	==============================================================
+
+                      It is now Fri Feb 12 21:04:30 2021
+
+                       Executing </text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613135070" type="out">on host: DESKTOP-VV1IB23
+
+
+Loading model file 'D:\sedatools\\lib\athena\5.22.3.R\common\athenamod'...</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613135071" type="out"> done.
+ATHENA&gt; </text>
+
+  <text deck-line="2" is-extract="false" line-id="2" simulator="athena" timestamp="1613135071" type="out">line x loc = 0.0  spacing=0.02
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613135071" type="out">ATHENA&gt; </text>
+
+  <text deck-line="3" is-extract="false" line-id="3" simulator="athena" timestamp="1613135071" type="out">line x loc = 0.5   spacing=0.02
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613135071" type="out">ATHENA&gt; </text>
+
+  <text deck-line="4" is-extract="false" line-id="4" simulator="athena" timestamp="1613135071" type="out">line y loc = 0   spacing = 0.02
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613135071" type="out">ATHENA&gt; </text>
+
+  <text deck-line="5" is-extract="false" line-id="5" simulator="athena" timestamp="1613135071" type="out">line y loc = 0.6  spacing = 0.05
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613135071" type="out">ATHENA&gt; </text>
+
+  <text deck-line="6" is-extract="false" line-id="7" simulator="athena" timestamp="1613135071" type="out">structure outfile=origin_STR.str
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613135071" type="out">ATHENA&gt; </text>
+
+  <text deck-line="7" is-extract="false" line-id="8" simulator="athena" timestamp="1613135071" type="out">quit
+</text>
+
+  <text deck-line="7" is-extract="false" line-id="8" simulator="athena" timestamp="1613135071" type="out">go athena                                                                      
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613135071" type="out">
+
+
+                                  A T H E N A
+
+     Version: athena 5.21.2 (aka 5.22.3.R) (Fri Jul 12 14:21:19 PDT 2013)
+
+                            Copyright � 1984 - 2013
+
+                       Silvaco Inc. All rights reserved
+
+   We acknowledge the contribution of the following collaborative partners:
+
+                              Stanford University
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613135071" type="out">
+
+	==============================================================
+	 ATHENA                           :  Enabled
+	 SSUPREM4                         :  Enabled
+	   Monte Carlo Implant            :  Enabled
+	 ELITE                            :  Enabled
+	   Monte Carlo Etch &amp; Deposit     :  Enabled
+	 OPTOLITH                         :  Enabled
+	==============================================================
+
+                      It is now Fri Feb 12 21:04:31 2021
+
+                       Executing </text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613135071" type="out">on host: DESKTOP-VV1IB23
+
+
+Loading model file 'D:\sedatools\\lib\athena\5.22.3.R\common\athenamod'...</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613135072" type="out"> done.
+ATHENA&gt; </text>
+
+  <text deck-line="8" is-extract="false" line-id="9" simulator="athena" timestamp="1613135072" type="out">init infile=origin_STR.str                                                                        
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613135072" type="out">ATHENA&gt; </text>
+
+  <text deck-line="9" is-extract="false" line-id="10" simulator="athena" timestamp="1613135072" type="out">implant boron energy=35 dose=1.e13 tilt=0 rotation=0 print.mom                                                                        
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613135072" type="out">
+
+***** Error *****
+
+	The structure has been deleted. The program cannot continue.
+
+
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="deckbuild" timestamp="1613135094" type="out">
+*** this is deckbuild version 5.0.10.R ***
+
+</text>
+
+  <text deck-line="1" is-extract="false" line-id="1" simulator="athena" timestamp="1613135094" type="out">go athena
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613135095" type="out">
+
+
+                                  A T H E N A
+
+     Version: athena 5.21.2 (aka 5.22.3.R) (Fri Jul 12 14:21:19 PDT 2013)
+
+                            Copyright � 1984 - 2013
+
+                       Silvaco Inc. All rights reserved
+
+   We acknowledge the contribution of the following collaborative partners:
+
+                              Stanford University
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613135095" type="out">
+
+	==============================================================
+	 ATHENA                           :  Enabled
+	 SSUPREM4                         :  Enabled
+	   Monte Carlo Implant            :  Enabled
+	 ELITE                            :  Enabled
+	   Monte Carlo Etch &amp; Deposit     :  Enabled
+	 OPTOLITH                         :  Enabled
+	==============================================================
+
+                      It is now Fri Feb 12 21:04:55 2021
+
+                       Executing </text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613135095" type="out">on host: DESKTOP-VV1IB23
+
+
+Loading model file 'D:\sedatools\\lib\athena\5.22.3.R\common\athenamod'...</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613135096" type="out"> done.
+ATHENA&gt; </text>
+
+  <text deck-line="2" is-extract="false" line-id="2" simulator="athena" timestamp="1613135096" type="out">line x loc = 0.0  spacing=0.02
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613135096" type="out">ATHENA&gt; </text>
+
+  <text deck-line="3" is-extract="false" line-id="3" simulator="athena" timestamp="1613135096" type="out">line x loc = 0.5   spacing=0.02
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613135096" type="out">ATHENA&gt; </text>
+
+  <text deck-line="4" is-extract="false" line-id="4" simulator="athena" timestamp="1613135096" type="out">line y loc = 0   spacing = 0.02
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613135096" type="out">ATHENA&gt; </text>
+
+  <text deck-line="5" is-extract="false" line-id="5" simulator="athena" timestamp="1613135096" type="out">line y loc = 0.6  spacing = 0.05
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613135096" type="out">ATHENA&gt; </text>
+
+  <text deck-line="6" is-extract="false" line-id="32" simulator="athena" timestamp="1613135096" type="out">init two.d
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613135096" type="out">ATHENA&gt; </text>
+
+  <text deck-line="7" is-extract="false" line-id="7" simulator="athena" timestamp="1613135096" type="out">structure outfile=origin_STR.str
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613135096" type="out">ATHENA&gt; </text>
+
+  <text deck-line="8" is-extract="false" line-id="8" simulator="athena" timestamp="1613135096" type="out">quit
+</text>
+
+  <text deck-line="8" is-extract="false" line-id="8" simulator="athena" timestamp="1613135096" type="out">go athena                                                                      
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613135096" type="out">
+
+
+                                  A T H E N A
+
+     Version: athena 5.21.2 (aka 5.22.3.R) (Fri Jul 12 14:21:19 PDT 2013)
+
+                            Copyright � 1984 - 2013
+
+                       Silvaco Inc. All rights reserved
+
+   We acknowledge the contribution of the following collaborative partners:
+
+                              Stanford University
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613135096" type="out">
+
+	==============================================================
+	 ATHENA                           :  Enabled
+	 SSUPREM4                         :  Enabled
+	   Monte Carlo Implant            :  Enabled
+	 ELITE                            :  Enabled
+	   Monte Carlo Etch &amp; Deposit     :  Enabled
+	 OPTOLITH                         :  Enabled
+	==============================================================
+
+                      It is now Fri Feb 12 21:04:56 2021
+
+                       Executing </text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613135096" type="out">on host: DESKTOP-VV1IB23
+
+
+Loading model file 'D:\sedatools\\lib\athena\5.22.3.R\common\athenamod'...</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613135097" type="out"> done.
+ATHENA&gt; </text>
+
+  <text deck-line="9" is-extract="false" line-id="9" simulator="athena" timestamp="1613135097" type="out">init infile=origin_STR.str                                                                        
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613135097" type="out">ATHENA&gt; </text>
+
+  <text deck-line="10" is-extract="false" line-id="10" simulator="athena" timestamp="1613135097" type="out">implant boron energy=35 dose=1.e13 tilt=0 rotation=0 print.mom                                                                        
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613135097" type="out">
+The following implant parameters are found in the
+   ** SVDP (UT at Austin) tables ** and used for:
+MATERIAL: silicon;  ION: Boron;  S.OXIDE.THICKNESS=0.001um.
+energy=35 dose=1e+013 tilt=0 rotation=0 range=0.1904 std.dev=0.0729571 gamma=0.0508571 kurtosis=2.99286 srange=0.339586 sstd.dev=0.0537 sgamma=-0.0241429 skurtosis=2.92143 dratio=0.6881 lstd.dev=0.056 kurtt=3 lsstd.dev=0.0032 skurtt=1.82
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613135097" type="out">ATHENA&gt; </text>
+
+  <text deck-line="11" is-extract="false" line-id="11" simulator="athena" timestamp="1613135097" type="out">save outfile=titl_0.str
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613135097" type="out">ATHENA&gt; </text>
+
+  <text deck-line="12" is-extract="false" line-id="31" simulator="athena" timestamp="1613135097" type="out">quit
+</text>
+
+  <text deck-line="12" is-extract="false" line-id="31" simulator="athena" timestamp="1613135097" type="out">go athena                                                                     
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613135097" type="out">
+
+
+                                  A T H E N A
+
+     Version: athena 5.21.2 (aka 5.22.3.R) (Fri Jul 12 14:21:19 PDT 2013)
+
+                            Copyright � 1984 - 2013
+
+                       Silvaco Inc. All rights reserved
+
+   We acknowledge the contribution of the following collaborative partners:
+
+                              Stanford University
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613135098" type="out">
+
+	==============================================================
+	 ATHENA                           :  Enabled
+	 SSUPREM4                         :  Enabled
+	   Monte Carlo Implant            :  Enabled
+	 ELITE                            :  Enabled
+	   Monte Carlo Etch &amp; Deposit     :  Enabled
+	 OPTOLITH                         :  Enabled
+	==============================================================
+
+                      It is now Fri Feb 12 21:04:58 2021
+
+                       Executing </text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613135098" type="out">on host: DESKTOP-VV1IB23
+
+
+Loading model file 'D:\sedatools\\lib\athena\5.22.3.R\common\athenamod'...</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613135098" type="out"> done.
+ATHENA&gt; </text>
+
+  <text deck-line="13" is-extract="false" line-id="12" simulator="athena" timestamp="1613135098" type="out">init infile=origin_STR.str                                                                         
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613135098" type="out">ATHENA&gt; </text>
+
+  <text deck-line="14" is-extract="false" line-id="13" simulator="athena" timestamp="1613135098" type="out">implant boron energy=35 dose=1.e13 tilt=1 rotation=0 print.mom                                                                         
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613135098" type="out">
+The following implant parameters are found in the
+   ** SVDP (UT at Austin) tables ** and used for:
+MATERIAL: silicon;  ION: Boron;  S.OXIDE.THICKNESS=0.001um.
+energy=35 dose=1e+013 tilt=1 rotation=0 range=0.166086 std.dev=0.0618714 gamma=-0.144 kurtosis=3.12143 srange=0.292043 sstd.dev=0.069 sgamma=0.00185714 skurtosis=2.80714 dratio=0.748043 lstd.dev=0.056 kurtt=3 lsstd.dev=0.0032 skurtt=1.82
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613135099" type="out">ATHENA&gt; </text>
+
+  <text deck-line="15" is-extract="false" line-id="14" simulator="athena" timestamp="1613135099" type="out">save outfile=titl_1.str
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613135099" type="out">ATHENA&gt; </text>
+
+  <text deck-line="16" is-extract="false" line-id="15" simulator="athena" timestamp="1613135099" type="out">
+</text>  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613135099" type="out">ATHENA&gt; </text>
+
+  <text deck-line="17" is-extract="false" line-id="16" simulator="athena" timestamp="1613135099" type="out">quit
+</text>
+
+  <text deck-line="17" is-extract="false" line-id="16" simulator="athena" timestamp="1613135099" type="out">go athena                                                                         
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613135099" type="out">
+
+
+                                  A T H E N A
+
+     Version: athena 5.21.2 (aka 5.22.3.R) (Fri Jul 12 14:21:19 PDT 2013)
+
+                            Copyright � 1984 - 2013
+
+                       Silvaco Inc. All rights reserved
+
+   We acknowledge the contribution of the following collaborative partners:
+
+                              Stanford University
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613135099" type="out">
+
+	==============================================================
+	 ATHENA                           :  Enabled
+	 SSUPREM4                         :  Enabled
+	   Monte Carlo Implant            :  Enabled
+	 ELITE                            :  Enabled
+	   Monte Carlo Etch &amp; Deposit     :  Enabled
+	 OPTOLITH                         :  Enabled
+	==============================================================
+
+                      It is now Fri Feb 12 21:04:59 2021
+
+                       Executing </text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613135099" type="out">on host: DESKTOP-VV1IB23
+
+
+Loading model file 'D:\sedatools\\lib\athena\5.22.3.R\common\athenamod'...</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613135100" type="out"> done.
+ATHENA&gt; </text>
+
+  <text deck-line="18" is-extract="false" line-id="17" simulator="athena" timestamp="1613135100" type="out">init infile=origin_STR.str                                                                        
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613135100" type="out">ATHENA&gt; </text>
+
+  <text deck-line="19" is-extract="false" line-id="18" simulator="athena" timestamp="1613135100" type="out">implant boron energy=35 dose=1.e13 tilt=2 rotation=0 print.mom                                                                         
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613135100" type="out">
+The following implant parameters are found in the
+   ** SVDP (UT at Austin) tables ** and used for:
+MATERIAL: silicon;  ION: Boron;  S.OXIDE.THICKNESS=0.001um.
+energy=35 dose=1e+013 tilt=2 rotation=0 range=0.157286 std.dev=0.0620143 gamma=0.0594286 kurtosis=2.95286 srange=0.249843 sstd.dev=0.0835 sgamma=-0.202857 skurtosis=2.94286 dratio=0.787757 lstd.dev=0.056 kurtt=3 lsstd.dev=0.0032 skurtt=1.82
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613135100" type="out">ATHENA&gt; </text>
+
+  <text deck-line="20" is-extract="false" line-id="19" simulator="athena" timestamp="1613135100" type="out">save outfile=titl_2.str                                                                        
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613135100" type="out">ATHENA&gt; </text>
+
+  <text deck-line="21" is-extract="false" line-id="20" simulator="athena" timestamp="1613135100" type="out">                                                                         
+</text>  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613135100" type="out">ATHENA&gt; </text>
+
+  <text deck-line="22" is-extract="false" line-id="21" simulator="athena" timestamp="1613135100" type="out">quit
+</text>
+
+  <text deck-line="22" is-extract="false" line-id="21" simulator="athena" timestamp="1613135100" type="out">go athena                                                                        
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613135100" type="out">
+
+
+                                  A T H E N A
+
+     Version: athena 5.21.2 (aka 5.22.3.R) (Fri Jul 12 14:21:19 PDT 2013)
+
+                            Copyright � 1984 - 2013
+
+                       Silvaco Inc. All rights reserved
+
+   We acknowledge the contribution of the following collaborative partners:
+
+                              Stanford University
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613135100" type="out">
+
+	==============================================================
+	 ATHENA                           :  Enabled
+	 SSUPREM4                         :  Enabled
+	   Monte Carlo Implant            :  Enabled
+	 ELITE                            :  Enabled
+	   Monte Carlo Etch &amp; Deposit     :  Enabled
+	 OPTOLITH                         :  Enabled
+	==============================================================
+
+                      It is now Fri Feb 12 21:05:00 2021
+
+                       Executing </text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613135100" type="out">on host: DESKTOP-VV1IB23
+
+
+Loading model file 'D:\sedatools\\lib\athena\5.22.3.R\common\athenamod'...</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613135101" type="out"> done.
+ATHENA&gt; </text>
+
+  <text deck-line="23" is-extract="false" line-id="22" simulator="athena" timestamp="1613135101" type="out">init infile=origin_STR.str                                                                         
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613135101" type="out">ATHENA&gt; </text>
+
+  <text deck-line="24" is-extract="false" line-id="23" simulator="athena" timestamp="1613135101" type="out">implant boron energy=35 dose=1.e13 tilt=7 rotation=0 print.mom                                                                        
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613135101" type="out">
+The following implant parameters are found in the
+   ** SVDP (UT at Austin) tables ** and used for:
+MATERIAL: silicon;  ION: Boron;  S.OXIDE.THICKNESS=0.001um.
+energy=35 dose=1e+013 tilt=7 rotation=0 range=0.137943 std.dev=0.0595429 gamma=0.287714 kurtosis=3.17143 srange=0.222329 sstd.dev=0.0726571 sgamma=0.435 skurtosis=2.83143 dratio=0.796086 lstd.dev=0.056 kurtt=3 lsstd.dev=0.0032 skurtt=1.82
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613135101" type="out">ATHENA&gt; </text>
+
+  <text deck-line="25" is-extract="false" line-id="24" simulator="athena" timestamp="1613135101" type="out">save outfile=titl_7.str                                                                        
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613135101" type="out">ATHENA&gt; </text>
+
+  <text deck-line="26" is-extract="false" line-id="25" simulator="athena" timestamp="1613135101" type="out">                                                                         
+</text>  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613135101" type="out">ATHENA&gt; </text>
+
+  <text deck-line="27" is-extract="false" line-id="26" simulator="athena" timestamp="1613135101" type="out">quit
+</text>
+
+  <text deck-line="27" is-extract="false" line-id="26" simulator="athena" timestamp="1613135101" type="out">go athena                                                                       
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613135102" type="out">
+
+
+                                  A T H E N A
+
+     Version: athena 5.21.2 (aka 5.22.3.R) (Fri Jul 12 14:21:19 PDT 2013)
+
+                            Copyright � 1984 - 2013
+
+                       Silvaco Inc. All rights reserved
+
+   We acknowledge the contribution of the following collaborative partners:
+
+                              Stanford University
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613135102" type="out">
+
+	==============================================================
+	 ATHENA                           :  Enabled
+	 SSUPREM4                         :  Enabled
+	   Monte Carlo Implant            :  Enabled
+	 ELITE                            :  Enabled
+	   Monte Carlo Etch &amp; Deposit     :  Enabled
+	 OPTOLITH                         :  Enabled
+	==============================================================
+
+                      It is now Fri Feb 12 21:05:02 2021
+
+                       Executing </text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613135102" type="out">on host: DESKTOP-VV1IB23
+
+
+Loading model file 'D:\sedatools\\lib\athena\5.22.3.R\common\athenamod'...</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613135103" type="out"> done.
+ATHENA&gt; </text>
+
+  <text deck-line="28" is-extract="false" line-id="27" simulator="athena" timestamp="1613135103" type="out">init infile=origin_STR.str                                                                       
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613135103" type="out">ATHENA&gt; </text>
+
+  <text deck-line="29" is-extract="false" line-id="28" simulator="athena" timestamp="1613135103" type="out">implant boron energy=35 dose=1.e13 tilt=10 rotation=0 print.mom                                                                         
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613135103" type="out">
+The following implant parameters are found in the
+   ** SVDP (UT at Austin) tables ** and used for:
+MATERIAL: silicon;  ION: Boron;  S.OXIDE.THICKNESS=0.001um.
+energy=35 dose=1e+013 tilt=10 rotation=0 range=0.1319 std.dev=0.0562 gamma=0.295714 kurtosis=3.08571 srange=0.216829 sstd.dev=0.0687286 sgamma=0.396857 skurtosis=2.79571 dratio=0.808243 lstd.dev=0.056 kurtt=3 lsstd.dev=0.0032 skurtt=1.82
+ATHENA&gt; </text>
+
+  <text deck-line="30" is-extract="false" line-id="29" simulator="athena" timestamp="1613135103" type="out">save outfile=titl_10.str                                                                        
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613135103" type="out">ATHENA&gt; </text>
+
+  <text deck-line="-1" is-extract="false" line-id="30" simulator="athena" timestamp="1613135103" type="out">tonyplot -overlay titl_*.str
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="deckbuild" timestamp="1613135357" type="out">
+*** this is deckbuild version 5.0.10.R ***
+
+</text>
+
+  <text deck-line="1" is-extract="false" line-id="1" simulator="" timestamp="1613135357" type="out">#go athena
+</text>
+
+  <text deck-line="2" is-extract="false" line-id="2" simulator="" timestamp="1613135357" type="out">#line x loc = 0.0  spacing=0.02
+</text>
+
+  <text deck-line="3" is-extract="false" line-id="3" simulator="" timestamp="1613135357" type="out">#line x loc = 0.5   spacing=0.02
+</text>
+
+  <text deck-line="4" is-extract="false" line-id="4" simulator="" timestamp="1613135358" type="out">#line y loc = 0   spacing = 0.02
+</text>
+
+  <text deck-line="5" is-extract="false" line-id="5" simulator="" timestamp="1613135358" type="out">#line y loc = 0.6  spacing = 0.05
+</text>
+
+  <text deck-line="6" is-extract="false" line-id="32" simulator="" timestamp="1613135358" type="out">#init two.d
+</text>
+
+  <text deck-line="7" is-extract="false" line-id="7" simulator="" timestamp="1613135358" type="out">#structure outfile=origin_STR.str
+</text>
+
+  <text deck-line="8" is-extract="false" line-id="8" simulator="athena" timestamp="1613135358" type="out">go athena                                                                      
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613135358" type="out">
+
+
+                                  A T H E N A
+
+     Version: athena 5.21.2 (aka 5.22.3.R) (Fri Jul 12 14:21:19 PDT 2013)
+
+                            Copyright � 1984 - 2013
+
+                       Silvaco Inc. All rights reserved
+
+   We acknowledge the contribution of the following collaborative partners:
+
+                              Stanford University
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613135358" type="out">
+
+	==============================================================
+	 ATHENA                           :  Enabled
+	 SSUPREM4                         :  Enabled
+	   Monte Carlo Implant            :  Enabled
+	 ELITE                            :  Enabled
+	   Monte Carlo Etch &amp; Deposit     :  Enabled
+	 OPTOLITH                         :  Enabled
+	==============================================================
+
+                      It is now Fri Feb 12 21:09:18 2021
+
+                       Executing </text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613135358" type="out">on host: DESKTOP-VV1IB23
+
+
+Loading model file 'D:\sedatools\\lib\athena\5.22.3.R\common\athenamod'...</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613135359" type="out"> done.
+ATHENA&gt; </text>
+
+  <text deck-line="9" is-extract="false" line-id="9" simulator="athena" timestamp="1613135359" type="out">init infile=origin_STR.str                                                                        
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613135359" type="out">ATHENA&gt; </text>
+
+  <text deck-line="10" is-extract="false" line-id="10" simulator="athena" timestamp="1613135359" type="out">implant boron energy=35 dose=1.e13 tilt=0 rotation=0 print.mom                                                                        
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613135359" type="out">
+The following implant parameters are found in the
+   ** SVDP (UT at Austin) tables ** and used for:
+MATERIAL: silicon;  ION: Boron;  S.OXIDE.THICKNESS=0.001um.
+energy=35 dose=1e+013 tilt=0 rotation=0 range=0.1904 std.dev=0.0729571 gamma=0.0508571 kurtosis=2.99286 srange=0.339586 sstd.dev=0.0537 sgamma=-0.0241429 skurtosis=2.92143 dratio=0.6881 lstd.dev=0.056 kurtt=3 lsstd.dev=0.0032 skurtt=1.82
+ATHENA&gt; </text>
+
+  <text deck-line="11" is-extract="false" line-id="11" simulator="athena" timestamp="1613135359" type="out">save outfile=titl_0.str
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613135359" type="out">ATHENA&gt; </text>
+
+  <text deck-line="12" is-extract="false" line-id="31" simulator="athena" timestamp="1613135359" type="out">quit
+</text>
+
+  <text deck-line="12" is-extract="false" line-id="31" simulator="athena" timestamp="1613135359" type="out">go athena                                                                     
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613135359" type="out">
+
+
+                                  A T H E N A
+
+     Version: athena 5.21.2 (aka 5.22.3.R) (Fri Jul 12 14:21:19 PDT 2013)
+
+                            Copyright � 1984 - 2013
+
+                       Silvaco Inc. All rights reserved
+
+   We acknowledge the contribution of the following collaborative partners:
+
+                              Stanford University
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613135359" type="out">
+
+	==============================================================
+	 ATHENA                           :  Enabled
+	 SSUPREM4                         :  Enabled
+	   Monte Carlo Implant            :  Enabled
+	 ELITE                            :  Enabled
+	   Monte Carlo Etch &amp; Deposit     :  Enabled
+	 OPTOLITH                         :  Enabled
+	==============================================================
+
+                      It is now Fri Feb 12 21:09:19 2021
+
+                       Executing </text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613135359" type="out">on host: DESKTOP-VV1IB23
+
+
+Loading model file 'D:\sedatools\\lib\athena\5.22.3.R\common\athenamod'...</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613135360" type="out"> done.
+ATHENA&gt; </text>
+
+  <text deck-line="13" is-extract="false" line-id="12" simulator="athena" timestamp="1613135360" type="out">init infile=origin_STR.str                                                                         
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613135360" type="out">ATHENA&gt; </text>
+
+  <text deck-line="14" is-extract="false" line-id="13" simulator="athena" timestamp="1613135360" type="out">implant boron energy=35 dose=1.e13 tilt=1 rotation=0 print.mom                                                                         
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613135360" type="out">
+The following implant parameters are found in the
+   ** SVDP (UT at Austin) tables ** and used for:
+MATERIAL: silicon;  ION: Boron;  S.OXIDE.THICKNESS=0.001um.
+energy=35 dose=1e+013 tilt=1 rotation=0 range=0.166086 std.dev=0.0618714 gamma=-0.144 kurtosis=3.12143 srange=0.292043 sstd.dev=0.069 sgamma=0.00185714 skurtosis=2.80714 dratio=0.748043 lstd.dev=0.056 kurtt=3 lsstd.dev=0.0032 skurtt=1.82
+ATHENA&gt; </text>
+
+  <text deck-line="15" is-extract="false" line-id="14" simulator="athena" timestamp="1613135360" type="out">save outfile=titl_1.str
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613135360" type="out">ATHENA&gt; </text>
+
+  <text deck-line="16" is-extract="false" line-id="15" simulator="athena" timestamp="1613135360" type="out">
+</text>  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613135360" type="out">ATHENA&gt; </text>
+
+  <text deck-line="17" is-extract="false" line-id="16" simulator="athena" timestamp="1613135360" type="out">quit
+</text>
+
+  <text deck-line="17" is-extract="false" line-id="16" simulator="athena" timestamp="1613135360" type="out">go athena                                                                         
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613135361" type="out">
+
+
+                                  A T H E N A
+
+     Version: athena 5.21.2 (aka 5.22.3.R) (Fri Jul 12 14:21:19 PDT 2013)
+
+                            Copyright � 1984 - 2013
+
+                       Silvaco Inc. All rights reserved
+
+   We acknowledge the contribution of the following collaborative partners:
+
+                              Stanford University
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613135361" type="out">
+
+	==============================================================
+	 ATHENA                           :  Enabled
+	 SSUPREM4                         :  Enabled
+	   Monte Carlo Implant            :  Enabled
+	 ELITE                            :  Enabled
+	   Monte Carlo Etch &amp; Deposit     :  Enabled
+	 OPTOLITH                         :  Enabled
+	==============================================================
+
+                      It is now Fri Feb 12 21:09:21 2021
+
+                       Executing </text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613135361" type="out">on host: DESKTOP-VV1IB23
+
+
+Loading model file 'D:\sedatools\\lib\athena\5.22.3.R\common\athenamod'...</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613135361" type="out"> done.
+ATHENA&gt; </text>
+
+  <text deck-line="18" is-extract="false" line-id="17" simulator="athena" timestamp="1613135361" type="out">init infile=origin_STR.str                                                                        
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613135361" type="out">ATHENA&gt; </text>
+
+  <text deck-line="19" is-extract="false" line-id="18" simulator="athena" timestamp="1613135361" type="out">implant boron energy=35 dose=1.e13 tilt=2 rotation=0 print.mom                                                                         
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613135362" type="out">
+The following implant parameters are found in the
+   ** SVDP (UT at Austin) tables ** and used for:
+MATERIAL: silicon;  ION: Boron;  S.OXIDE.THICKNESS=0.001um.
+energy=35 dose=1e+013 tilt=2 rotation=0 range=0.157286 std.dev=0.0620143 gamma=0.0594286 kurtosis=2.95286 srange=0.249843 sstd.dev=0.0835 sgamma=-0.202857 skurtosis=2.94286 dratio=0.787757 lstd.dev=0.056 kurtt=3 lsstd.dev=0.0032 skurtt=1.82
+ATHENA&gt; </text>
+
+  <text deck-line="20" is-extract="false" line-id="19" simulator="athena" timestamp="1613135362" type="out">save outfile=titl_2.str                                                                        
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613135362" type="out">ATHENA&gt; </text>
+
+  <text deck-line="21" is-extract="false" line-id="20" simulator="athena" timestamp="1613135362" type="out">                                                                         
+</text>  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613135362" type="out">ATHENA&gt; </text>
+
+  <text deck-line="22" is-extract="false" line-id="21" simulator="athena" timestamp="1613135362" type="out">quit
+</text>
+
+  <text deck-line="22" is-extract="false" line-id="21" simulator="athena" timestamp="1613135362" type="out">go athena                                                                        
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613135362" type="out">
+
+
+                                  A T H E N A
+
+     Version: athena 5.21.2 (aka 5.22.3.R) (Fri Jul 12 14:21:19 PDT 2013)
+
+                            Copyright � 1984 - 2013
+
+                       Silvaco Inc. All rights reserved
+
+   We acknowledge the contribution of the following collaborative partners:
+
+                              Stanford University
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613135362" type="out">
+
+	==============================================================
+	 ATHENA                           :  Enabled
+	 SSUPREM4                         :  Enabled
+	   Monte Carlo Implant            :  Enabled
+	 ELITE                            :  Enabled
+	   Monte Carlo Etch &amp; Deposit     :  Enabled
+	 OPTOLITH                         :  Enabled
+	==============================================================
+
+                      It is now Fri Feb 12 21:09:22 2021
+
+                       Executing </text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613135362" type="out">on host: DESKTOP-VV1IB23
+
+
+Loading model file 'D:\sedatools\\lib\athena\5.22.3.R\common\athenamod'...</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613135363" type="out"> done.
+ATHENA&gt; </text>
+
+  <text deck-line="23" is-extract="false" line-id="22" simulator="athena" timestamp="1613135363" type="out">init infile=origin_STR.str                                                                         
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613135363" type="out">ATHENA&gt; </text>
+
+  <text deck-line="24" is-extract="false" line-id="23" simulator="athena" timestamp="1613135363" type="out">implant boron energy=35 dose=1.e13 tilt=7 rotation=0 print.mom                                                                        
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613135363" type="out">
+The following implant parameters are found in the
+   ** SVDP (UT at Austin) tables ** and used for:
+MATERIAL: silicon;  ION: Boron;  S.OXIDE.THICKNESS=0.001um.
+energy=35 dose=1e+013 tilt=7 rotation=0 range=0.137943 std.dev=0.0595429 gamma=0.287714 kurtosis=3.17143 srange=0.222329 sstd.dev=0.0726571 sgamma=0.435 skurtosis=2.83143 dratio=0.796086 lstd.dev=0.056 kurtt=3 lsstd.dev=0.0032 skurtt=1.82
+ATHENA&gt; </text>
+
+  <text deck-line="25" is-extract="false" line-id="24" simulator="athena" timestamp="1613135363" type="out">save outfile=titl_7.str                                                                        
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613135363" type="out">ATHENA&gt; </text>
+
+  <text deck-line="26" is-extract="false" line-id="25" simulator="athena" timestamp="1613135363" type="out">                                                                         
+</text>  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613135363" type="out">ATHENA&gt; </text>
+
+  <text deck-line="27" is-extract="false" line-id="26" simulator="athena" timestamp="1613135363" type="out">quit
+</text>
+
+  <text deck-line="27" is-extract="false" line-id="26" simulator="athena" timestamp="1613135363" type="out">go athena                                                                       
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613135363" type="out">
+
+
+                                  A T H E N A
+
+     Version: athena 5.21.2 (aka 5.22.3.R) (Fri Jul 12 14:21:19 PDT 2013)
+
+                            Copyright � 1984 - 2013
+
+                       Silvaco Inc. All rights reserved
+
+   We acknowledge the contribution of the following collaborative partners:
+
+                              Stanford University
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613135363" type="out">
+
+	==============================================================
+	 ATHENA                           :  Enabled
+	 SSUPREM4                         :  Enabled
+	   Monte Carlo Implant            :  Enabled
+	 ELITE                            :  Enabled
+	   Monte Carlo Etch &amp; Deposit     :  Enabled
+	 OPTOLITH                         :  Enabled
+	==============================================================
+
+                      It is now Fri Feb 12 21:09:23 2021
+
+                       Executing </text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613135363" type="out">on host: DESKTOP-VV1IB23
+
+
+Loading model file 'D:\sedatools\\lib\athena\5.22.3.R\common\athenamod'...</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613135364" type="out"> done.
+ATHENA&gt; </text>
+
+  <text deck-line="28" is-extract="false" line-id="27" simulator="athena" timestamp="1613135364" type="out">init infile=origin_STR.str                                                                       
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613135364" type="out">ATHENA&gt; </text>
+
+  <text deck-line="29" is-extract="false" line-id="28" simulator="athena" timestamp="1613135364" type="out">implant boron energy=35 dose=1.e13 tilt=10 rotation=0 print.mom                                                                         
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613135364" type="out">
+The following implant parameters are found in the
+   ** SVDP (UT at Austin) tables ** and used for:
+MATERIAL: silicon;  ION: Boron;  S.OXIDE.THICKNESS=0.001um.
+energy=35 dose=1e+013 tilt=10 rotation=0 range=0.1319 std.dev=0.0562 gamma=0.295714 kurtosis=3.08571 srange=0.216829 sstd.dev=0.0687286 sgamma=0.396857 skurtosis=2.79571 dratio=0.808243 lstd.dev=0.056 kurtt=3 lsstd.dev=0.0032 skurtt=1.82
+ATHENA&gt; </text>
+
+  <text deck-line="30" is-extract="false" line-id="29" simulator="athena" timestamp="1613135364" type="out">save outfile=titl_10.str                                                                        
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613135364" type="out">ATHENA&gt; </text>
+
+  <text deck-line="-1" is-extract="false" line-id="30" simulator="athena" timestamp="1613135364" type="out">tonyplot -overlay titl_*.str
+</text>
+
+  <text deck-line="32" is-extract="false" line-id="33" simulator="athena" timestamp="1613135364" type="out">1=
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="athena" timestamp="1613135364" type="out">	1= is not a legal command
+ATHENA&gt; </text>
+
+</rto>

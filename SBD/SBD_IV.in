@@ -1,0 +1,146 @@
+# athena 工艺刻蚀孔+atlas 定义器件
+
+go athena
+mesh
+line x loc=-150 spacing=10
+line x loc=150 spacing=10
+
+line y loc=0 spacin=0.05
+line y loc=50 spacing=0.1
+line y loc=250 spacing=1
+line y loc=500 spacing=1
+
+init silicon orientation=100 two.d
+
+# 衬底初始化
+etch silicon start x=-125 y=0
+etch continue x=-125 y=10
+etch continue x=-115 y=0
+etch continue x=-115 y=10
+etch done x=-115 y=0
+
+# 刻蚀，任意形状型
+etch silicon start x=-65 y=0
+etch continue x=-65 y=10
+etch continue x=-55 y=10
+etch continue x=-55 y=0
+
+etch silicon start x=65 y=0
+etch continue x=65 y =10
+etch continue x=-55 y=10
+etch continue x=-55 y=0
+
+etch silicon start x=65 y=0
+etch continue x=-5 y=0
+etch continue x=5 y=10
+etch done x=5 y=0
+
+etch silicon start x=125 y=0
+etch continue  x=125 y=10
+etch continue x=115 y=10
+etch done x=115 y=0
+
+save outfile=device_demo.str
+
+go atlas
+
+init infile=device_demo.str
+region number=1 x.min=-150 x.max=150 y.min=0 y.max=500 silicon
+electrode name=canode x.min=-150 x.max=-140 y.min=-10 y.max=0
+
+electrode substrate
+
+save outfile=device.str
+tonyplot device.str -set device.set
+
+## 2维的光谱响应
+go atlas
+init infile=device.str
+doping uniform conc=1e15 n.type region=1
+models conmob fldmob consrh bgn optr
+contact name=cathode
+contact name=substate workf=4.97197
+
+beam num=1 x.origin=0 y.origin=0 angle=90 rays=100
+output opt.intens
+method newton trap
+solve init
+solve vcathode=0.1
+solve vstep=0.25 vfinal=2 name=cathode
+
+log outf=opotex_90.log master
+
+solve prev b1=1 lambda=0.1
+solve prev b1=1 lambda=0.125
+solve prev b1=1 lambda=0.15
+solve prev b1=1 lambda=0.175
+solve prev b1=1 lambda=0.2
+solve prev b1=1 lambda=0.25
+solve prev b1=1 lambda=0.275
+solve prev b1=1 lambda=0.3
+
+save outfile=lambda0.3_90.str
+
+
+solve prev b1=1 lambda=0.325
+solve prev b1=1 lambda=0.35
+solve prev b1=1 lambda=0.375
+solve prev b1=1 lambda=0.4
+solve prev b1=1 lambda=0.425
+solve prev b1=1 lambda=0.45
+solve prev b1=1 lambda=0.475
+solve prev b1=1 lambda=0.5
+solve prev b1=1 lambda=0.525
+solve prev b1=1 lambda=0.55
+solve prev b1=1 lambda=0.575
+
+save outfile=lambda0.5_90.str
+
+solve prev b1=1 lambda=0.6
+solve prev b1=1 lambda=0.625
+solve prev b1=1 lambda=0.65
+solve prev b1=1 lambda=0.675
+solve prev b1=1 lambda=0.7
+solve prev b1=1 lambda=0.725
+solve prev b1=1 lambda=0.75
+solve prev b1=1 lambda=0.775
+solve prev b1=1 lambda=0.8
+save outfile=lambda0.8_90.str
+
+solve prev b1=1 lambda=0.81
+solve prev b1=1 lambda=0.825
+solve prev b1=1 lambda=0.85
+solve prev b1=1 lambda=0.875
+solve prev b1=1 lambda=0.9
+save outfile=lambda0.9_90.str
+
+solve prev b1=1 lambda=1.05
+solve prev b1=1 lambda=1.075
+solve prev b1=1 lambda=1.1
+solve prev b1=1 lambda=1.125
+solve prev b1=1 lambda=1.15
+solve prev b1=1 lambda=1.175
+solve prev b1=1 lambda=1.2
+solve prev b1=1 lambda=1.225
+solve prev b1=1 lambda=1.25
+solve prev b1=1 lambda=1.275
+solve prev b1=1 lambda=1.3
+save outfile=lambda1.3_90.str
+
+solve prev b1=1 lambda=1.33
+solve prev b1=1 lambda=1.35
+solve prev b1=1 lambda=1.375
+solve prev b1=1 lambda=1.4
+solve prev b1=1 lambda=1.425
+solve prev b1=1 lambda=1.45
+solve prev b1=1 lambda=1.475
+solve prev b1=1 lambda=1.5
+solve prev b1=1 lambda=1.51
+solve prev b1=1 lambda=1.525
+solve prev b1=1 lambda=1.54
+solve prev b1=1 lambda=1.55
+solve prev b1=1 lambda=1.575
+solve prev b1=1 lambda=1.6
+save outfile=lambda16.90.str
+
+tonyplot opotex_90.log -set opotex_90.set

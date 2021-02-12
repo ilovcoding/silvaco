@@ -1,0 +1,941 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<!DOCTYPE rto SYSTEM "rto.dtd">
+<rto>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="deckbuild" timestamp="1613140923" type="out">
+*** this is deckbuild version 5.0.10.R ***
+
+</text>
+
+  <text deck-line="1" is-extract="false" line-id="1" simulator="atlas" timestamp="1613140923" type="out">go atlas
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1613140923" type="out">
+
+                                   A T L A S
+
+            Version:  atlas 5.28.1.R (Wed Jun  5 11:14:46 PDT 2019)
+
+                           Copyright (c) 1984 - 2019
+                        Silvaco Inc. All rights reserved
+
+    We acknowledge the contribution of the following collaborative partners:
+
+                              Stanford University
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1613140924" type="out">
+
+
+               ======================================================
+
+                  ATLAS                           : enabled
+
+                  S-PISCES                        : enabled
+
+                  BLAZE                           : enabled
+
+                  GIGA                            : enabled
+
+                  LUMINOUS                        : enabled
+
+                  LED                             : enabled
+
+                  TFT                             : en</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1613140924" type="out">abled
+
+                  ORGANIC DISPLAY                 : enabled
+
+                  ORGANIC SOLAR                   : enabled
+
+                  MIXEDMODE                       : enabled
+
+                  LASER                           : enabled
+
+                  VCSEL                           : enabled
+
+                  FERRO                           : enabled
+
+                  QUANTUM                         : enabled
+
+                  NOISE                           : enabled
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1613140924" type="out">
+                  REM                             : enabled
+
+                  MAGNETIC                        : enabled
+
+                  DEVICE3D                        : enabled
+
+                  THERMAL3D                       : enabled
+
+                  GIGA3D                          : enabled
+
+                  MIXEDMODE3D                     : enabled
+
+                  TFT3D                           : enabled
+
+                  QUANTUM3D                       : enabled
+
+     </text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1613140924" type="out">             LUMINOUS3D                      : enabled
+
+                  REM3D                           : enabled
+
+                  MAGNETIC3D                      : enabled
+
+                  LED3D                           : enabled
+
+                  LASER3D                         : enabled
+
+                  MIXEDMODE XL                    : enabled
+
+                  S-PISCES BUNDLE                 : not licensed
+
+                  BLAZE BUNDLE                    : not licensed
+
+  </text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1613140924" type="out">                TFT BUNDLE                      : not licensed
+
+                  ORGANIC BUNDLE                  : not licensed
+
+                  DEVICE3D BUNDLE                 : not licensed
+
+                  TFT3D BUNDLE                    : not licensed
+
+               ======================================================
+
+                           Fri Feb 12 22:42:04 2021
+
+                       Executing on host: DESKTOP-VV1IB23
+                     Current SFLM Server: 127.0.0.1:31</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1613140924" type="out">62/
+
+
+
+ATLAS&gt; </text>
+
+  <text deck-line="2" is-extract="false" line-id="2" simulator="atlas" timestamp="1613140924" type="out">init infile=SBD.str
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1613140925" type="out">	####################################################
+	######                                        ######
+	######           Running on 1 CPU             ######
+	######           12 CPUs available            ######
+	######                                        ######
+	####################################################
+
+Reading MASTER format file SBD.str from ATLAS.
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1613140925" type="out"> Read 1260 nodes.
+ Read 2376 triangles.
+ Read 3 regions.
+ Read 2 electrodes.
+ 2812624 net bytes allocated during read.
+
+Electrode bias information:
+ V(  anode   ) =  0.000000E+00
+ V( cathode  ) =  0.000000E+00
+
+Electrode geometry information: 
+ No.  Name       x.min      x.max      y.min      y.max
+   1 anode       5.000E+00  7.000E+00  0.000E+00  0.000E+00
+   2 cathode     0.000E+00  1.200E+01  5.000E+00  5.000E+00
+ATLAS&gt; </text>
+
+  <text deck-line="3" is-extract="false" line-id="3" simulator="atlas" timestamp="1613140925" type="out">model conmob fldmob srh auger bgn
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1613140925" type="out">
+Mesh
+ Type:               non-cylindrical
+ Total grid points:  1260
+ Total triangles  :  2376
+ Obtuse triangles :  0  (0 %)
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1613140926" type="out">ATLAS&gt; </text>
+
+  <text deck-line="4" is-extract="false" line-id="4" simulator="atlas" timestamp="1613140926" type="out">contact  name=anode workf=4.97
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1613140926" type="out">ATLAS&gt; </text>
+
+  <text deck-line="5" is-extract="false" line-id="5" simulator="atlas" timestamp="1613140926" type="out">solve  init
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1613140926" type="out">
+Starting module:   SPISCES                        
+
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1613140926" type="out">
+Obtaining static solution:
+
+
+init           psi    psi 
+direct          x     rhs 
+   i    j  m  -5.00* -26.0*
+---------------------------
+   1    1  G  -0.608 -15.72
+   1    2  G  -0.546 -16.04
+   1    3  G  -1.115 -16.68
+   1    4  G  -2.823 -18.20
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1613140926" type="out">   1    5  G  -5.81* -21.12
+  
+ATLAS&gt; </text>
+
+  <text deck-line="6" is-extract="false" line-id="6" simulator="atlas" timestamp="1613140926" type="out">log outfile=Schottky_Diode_IV.log
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1613140926" type="out">ATLAS&gt; </text>
+
+  <text deck-line="7" is-extract="false" line-id="7" simulator="atlas" timestamp="1613140926" type="out">
+</text>  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1613140926" type="out">ATLAS&gt; </text>
+
+  <text deck-line="8" is-extract="false" line-id="8" simulator="atlas" timestamp="1613140926" type="out">solve vanode=0.01
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1613140926" type="out">
+Obtaining static solution:
+
+ V(  anode  ) = 0.01        
+
+
+prev           psi     n      p     psi     n      p  
+direct          x      x      x     rhs    rhs    rhs 
+   i    j  m  -5.00* -5.00* -5.00* -26.0* -17.3* -17.3*
+-------------------------------------------------------
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1613140926" type="out">   1       N  -1.399 -1.399 -4.164 -27.9* -7.788 -15.26
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1613140926" type="out">   2       N  -3.206 -3.817 -6.14* -27.9* -12.24 -17.06
+   3       N  -7.63* -8.23* -9.11* -27.9* -17.3* -16.99
+
+Electrode       Va(V)        Jn(A/um)    Jp(A/um)    Jc(A/um)    Jt(A/um)
+=========================================================================
+anode          1.000e-002  1.918e-014  6.615e-019  1.918e-014  1.918e-014
+cathode        0.000e+000 -1.919e-014 -1.375e-025 -1.919e-014 -1.919e-014
+Total                                                         -4.661e-018
+
+Time for bias poin</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1613140926" type="out">t:   0.14 sec. 
+Total time:            0.75 sec. 
+  
+ATLAS&gt; </text>
+
+  <text deck-line="9" is-extract="false" line-id="9" simulator="atlas" timestamp="1613140926" type="out">solve vanode=0.05
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1613140926" type="out">
+Obtaining static solution:
+
+ V(  anode  ) = 0.05        
+
+
+proj           psi     n      p     psi     n      p  
+direct          x      x      x     rhs    rhs    rhs 
+   i    j  m  -5.00* -5.00* -5.00* -26.0* -17.3* -17.3*
+-------------------------------------------------------
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1613140926" type="out">   1       N  -1.946 -1.946 -3.285 -27.9* -8.863 -13.50
+   2       N  -4.272 -4.946 -6.19* -27.9* -14.37 -17.00
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1613140926" type="out">   3       N  -9.08* -9.60* -9.52* -27.9* -17.4* -16.97
+
+Electrode       Va(V)        Jn(A/um)    Jp(A/um)    Jc(A/um)    Jt(A/um)
+=========================================================================
+anode          5.000e-002  2.395e-013  8.254e-018  2.395e-013  2.395e-013
+cathode        0.000e+000 -2.395e-013 -1.719e-024 -2.395e-013 -2.395e-013
+Total                                                         -1.036e-018
+
+Time for bias point:   0.13 sec. 
+Total time:            0.89 sec. 
+  
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1613140926" type="out">ATLAS&gt; </text>
+
+  <text deck-line="10" is-extract="false" line-id="10" simulator="atlas" timestamp="1613140926" type="out">solve vanode=0.1
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1613140926" type="out">
+Obtaining static solution:
+
+ V(  anode  ) = 0.1         
+
+
+proj           psi     n      p    </text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1613140926" type="out"> psi     n      p  
+dire</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1613140926" type="out">ct          x      x</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1613140926" type="out">      x     rhs  </text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1613140926" type="out">  rhs    rhs 
+   </text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1613140926" type="out">i    j  m  -5.00*</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1613140926" type="out"> -5.00* -5.00* </text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1613140926" type="out">-26.0* -17.3* -</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1613140926" type="out">17.3*
+----------</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1613140926" type="out">-----------------</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1613140926" type="out">----------------</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1613140926" type="out">------------
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1613140926" type="out">   1       N  -1.669 -1.669 -2.306 -27.9* -8.258 -11.54
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1613140926" type="out">   2       N  -3.705 -4.448 -5.15* -27.9* -13.25 -16.58
+   3       N  -7.88* -8.40* -8.32* -27.9* -17.3* -17.02
+
+Electrode       Va(V)        Jn(A/um)    Jp(A/um)    Jc(A/um)    Jt(A/um)
+=========================================================================
+anode          1.000e-001  1.886e-012  6.502e-017  1.886e-012  1.886e-012
+cathode        0.000e+000 -1.886e-012 -1.356e-023 -1.886e-012 -1.886e-012
+Total                                                         -5.184e-018
+
+Time for bias poin</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1613140926" type="out">t:   0.14 sec. 
+Total time:            1.24 sec. 
+  
+ATLAS&gt; </text>
+
+  <text deck-line="11" is-extract="false" line-id="11" simulator="atlas" timestamp="1613140926" type="out">solve vanode=0.15
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1613140926" type="out">
+Obtaining static solution:
+
+ V(  anode  ) = 0.15        
+
+
+proj           psi     n      p     psi     n      p  
+direct          x      x      x     rhs    rhs    rhs 
+   i    j  m  -5.00* -5.00* -5.00* -26.0* -17.3* -17.3*
+-------------------------------------------------------
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1613140926" type="out">   1       N  -1.025 -1.546 -1.463 -27.9* -8.316 -9.849
+   2       N  -2.698 -3.624 -3.746 -27.9* -12.66 -13.24
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1613140927" type="out">   3       N  -5.15* -5.70* -5.63* -27.9* -17.4* -17.06
+
+Electrode       Va(V)        Jn(A/um)    Jp(A/um)    Jc(A/um)    Jt(A/um)
+=========================================================================
+anode          1.500e-001  1.319e-011  4.557e-016  1.319e-011  1.319e-011
+cathode        0.000e+000 -1.319e-011 -9.520e-023 -1.319e-011 -1.319e-011
+Total                                                         -1.494e-019
+
+Time for bias point:   0.13 sec. 
+Total time:            1.39 sec. 
+  
+A</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1613140927" type="out">TLAS&gt; </text>
+
+  <text deck-line="12" is-extract="false" line-id="12" simulator="atlas" timestamp="1613140927" type="out">solve vanode=0.2
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1613140927" type="out">
+Obtaining static solution:
+
+ V(  anode  ) = 0.2         
+
+
+proj           psi     n      p     psi     n      p  
+direct          x      x      x     rhs    rhs    rhs 
+   i    j  m  -5.00* -5.00* -5.00* -26.0* -17.3* -17.3*
+-------------------------------------------------------
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1613140927" type="out">   1       N  -0.232 -0.753 -0.671 -27.9* -7.781 -8.219
+   2       N  -1.172 -2.124 -2.250 -27.9* -9.615 -10.10
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1613140927" type="out">   3       N  -2.930 -3.754 -3.749 -27.9* -13.14 -13.61
+
+Electrode       Va(V)        Jn(A/um)    Jp(A/um)    Jc(A/um)    Jt(A/um)
+=========================================================================
+anode          2.000e-001  9.061e-011  3.142e-015  9.061e-011  9.061e-011
+cathode        0.000e+000 -9.061e-011 -6.586e-022 -9.061e-011 -9.061e-011
+Total                                                         -9.209e-021
+
+Time for bias point:   0.14 sec. 
+Total time:            1.56 sec. 
+  
+A</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1613140927" type="out">TLAS&gt; </text>
+
+  <text deck-line="13" is-extract="false" line-id="13" simulator="atlas" timestamp="1613140927" type="out">solve vanode=0.25
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1613140927" type="out">
+Obtaining static solution:
+
+ V(  anode  ) = 0.25        
+
+
+proj           psi     n      p     psi     n      p  
+direct          x      x      x     rhs    rhs    rhs 
+   i    j  m  -5.00* -5.00* -5.00* -26.0* -17.3* -17.3*
+-------------------------------------------------------
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1613140927" type="out">   1       N   0.344 -0.178 -0.105 -27.9* -6.666 -6.871
+   2       N  -0.218 -1.261 -1.396 -27.9* -7.748 -7.882
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1613140927" type="out">   3       N  -0.977 -1.777 -1.784 -27.9* -9.296 -9.438
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1613140927" type="out">   4       N  -2.554 -3.417 -3.415 -27.9* -12.44 -12.60
+
+Electrode       Va(V)        Jn(A/um)    Jp(A/um)    Jc(A/um)    Jt(A/um)
+=========================================================================
+anode          2.500e-001  6.188e-010  2.157e-014  6.189e-010  6.189e-010
+cathode        0.000e+000 -6.189e-010 -4.561e-021 -6.189e-010 -6.189e-010
+Total                                                         -3.566e-018
+
+Time for bias point:   0.17 sec. 
+Total time:            1.75 sec. 
+  
+A</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1613140927" type="out">TLAS&gt; </text>
+
+  <text deck-line="14" is-extract="false" line-id="14" simulator="atlas" timestamp="1613140927" type="out">solve vanode=0.3
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1613140927" type="out">
+Obtaining static solution:
+
+ V(  anode  ) = 0.3         
+
+
+proj           psi     n      p     psi     n      p  
+direct          x      x      x     rhs    rhs    rhs 
+   i    j  m  -5.00* -5.00* -5.00* -26.0* -17.3* -17.3*
+-------------------------------------------------------
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1613140927" type="out">   1       N   0.249 -0.173 -0.258 -27.9* -6.726 -6.823
+   2       N  -0.347 -1.379 -1.210 -27.9* -7.865 -7.853
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1613140927" type="out">   3       N  -1.255 -2.065 -2.052 -27.9* -9.700 -9.691
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1613140927" type="out">   4       N  -3.121 -3.969 -3.951 -27.9* -13.44 -13.42
+
+Electrode       Va(V)        Jn(A/um)    Jp(A/um)    Jc(A/um)    Jt(A/um)
+=========================================================================
+anode          3.000e-001  4.202e-009  1.474e-013  4.202e-009  4.202e-009
+cathode        0.000e+000 -4.202e-009 -3.204e-020 -4.202e-009 -4.202e-009
+Total                                                         -3.847e-018
+
+Time for bias point:   0.16 sec. 
+Total time:            1.96 sec. 
+  
+A</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1613140927" type="out">TLAS&gt; </text>
+
+  <text deck-line="15" is-extract="false" line-id="15" simulator="atlas" timestamp="1613140927" type="out">solve vanode=0.35
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1613140927" type="out">
+Obtaining static solution:
+
+ V(  anode  ) = 0.35        
+
+
+proj           psi     n      p     psi     n      p  
+direct          x      x      x     rhs    rhs    rhs 
+   i    j  m  -5.00* -5.00* -5.00* -26.0* -17.3* -17.3*
+-------------------------------------------------------
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1613140927" type="out">   1       N  -0.349 -0.967 -0.878 -27.9* -8.149 -7.520
+   2       N  -1.641 -2.354 -2.275 -27.9* -10.37 -10.07
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1613140927" type="out">   3       N  -3.915 -4.692 -4.735 -27.9* -14.79 -14.77
+
+Electrode       Va(V)        Jn(A/um)    Jp(A/um)    Jc(A/um)    Jt(A/um)
+=========================================================================
+anode          3.500e-001  2.826e-008  9.870e-013  2.826e-008  2.826e-008
+cathode        0.000e+000 -2.826e-008 -2.424e-019 -2.826e-008 -2.826e-008
+Total                                                          1.455e-018
+
+Time for bias point:   0.13 sec. 
+Total time:            2.14 sec. 
+  
+A</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1613140927" type="out">TLAS&gt; </text>
+
+  <text deck-line="16" is-extract="false" line-id="16" simulator="atlas" timestamp="1613140927" type="out">solve vanode=0.4
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1613140927" type="out">
+Obtaining static solution:
+
+ V(  anode  ) = 0.4         
+
+
+proj           psi     n      p     psi     n      p  
+direct          x      x      x     rhs    rhs    rhs 
+   i    j  m  -5.00* -5.00* -5.00* -26.0* -17.3* -17.3*
+-------------------------------------------------------
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1613140927" type="out">   1       N  -0.673 -0.672 -0.601 -27.7* -6.717 -6.701
+   2       N  -1.830 -1.775 -1.815 -27.7* -9.863 -9.501
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1613140927" type="out">   3       N  -4.348 -4.785 -4.881 -27.7* -15.76 -14.65
+
+Electrode       Va(V)        Jn(A/um)    Jp(A/um)    Jc(A/um)    Jt(A/um)
+=========================================================================
+anode          4.000e-001  1.864e-007  6.065e-012  1.864e-007  1.864e-007
+cathode        0.000e+000 -1.864e-007 -2.329e-018 -1.864e-007 -1.864e-007
+Total                                                         -4.116e-018
+
+Time for bias point:   0.13 sec. 
+Total time:            2.29 sec. 
+  
+A</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1613140927" type="out">TLAS&gt; </text>
+
+  <text deck-line="17" is-extract="false" line-id="17" simulator="atlas" timestamp="1613140927" type="out">solve vanode=0.45
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1613140927" type="out">
+Obtaining static solution:
+
+ V(  anode  ) = 0.45        
+
+
+proj           psi     n      p     psi     n      p  
+direct          x      x      x     rhs    rhs    rhs 
+   i    j  m  -5.00* -5.00* -5.00* -26.0* -17.3* -17.3*
+-------------------------------------------------------
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1613140928" type="out">   1       N  -0.335 -0.473 -0.623 -27.7* -6.321 -6.723
+   2       N  -0.953 -1.662 -1.549 -27.8* -8.449 -8.734
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1613140928" type="out">   3       N  -2.426 -3.245 -3.326 -27.8* -11.52 -11.92
+
+Electrode       Va(V)        Jn(A/um)    Jp(A/um)    Jc(A/um)    Jt(A/um)
+=========================================================================
+anode          4.500e-001  1.167e-006  3.131e-011  1.167e-006  1.167e-006
+cathode        0.000e+000 -1.167e-006 -2.565e-017 -1.167e-006 -1.167e-006
+Total                                                          1.805e-018
+
+Time for bias point:   0.13 sec. 
+Total time:            2.45 sec. 
+  
+A</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1613140928" type="out">TLAS&gt; </text>
+
+  <text deck-line="18" is-extract="false" line-id="18" simulator="atlas" timestamp="1613140928" type="out">solve vanode=0.5
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1613140928" type="out">
+Obtaining static solution:
+
+ V(  anode  ) = 0.5         
+
+
+proj           psi     n      p     psi     n      p  
+direct          x      x      x     rhs    rhs    rhs 
+   i    j  m  -5.00* -5.00* -5.00* -26.0* -17.3* -17.3*
+-------------------------------------------------------
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1613140928" type="out">   1       N  -0.366 -0.592 -0.638 -27.6* -6.430 -7.013
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1613140928" type="out">   2       N  -0.896 -1.367 -1.421 -27.6* -8.325 -8.854
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1613140928" type="out">   3       N  -2.239 -2.966 -2.976 -27.6* -11.18 -11.62
+
+Electrode       Va(V)        Jn(A/um)    Jp(A/um)    Jc(A/um)    Jt(A/um)
+=========================================================================
+anode          5.000e-001  6.203e-006  1.486e-010  6.203e-006  6.203e-006
+cathode        0.000e+000 -6.203e-006 -2.317e-016 -6.203e-006 -6.203e-006
+Total                                                          4.997e-018
+
+Time for bias point:   0.14 sec. 
+Total time:            2.62 sec. 
+  
+A</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1613140928" type="out">TLAS&gt; </text>
+
+  <text deck-line="19" is-extract="false" line-id="19" simulator="atlas" timestamp="1613140928" type="out">solve vanode=0.55
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1613140928" type="out">
+Obtaining static solution:
+
+ V(  anode  ) = 0.55        
+
+
+proj           psi     n      p     psi     n      p  
+direct          x      x      x     rhs    rhs    rhs 
+   i    j  m  -5.00* -5.00* -5.00* -26.0* -17.3* -17.3*
+-------------------------------------------------------
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1613140928" type="out">   1       N  -0.492 -0.847 -0.491 -27.7* -6.882 -7.441
+   2       N  -1.176 -1.534 -1.639 -27.7* -8.977 -9.172
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1613140928" type="out">   3       N  -2.773 -3.487 -3.473 -27.7* -12.27 -12.41
+
+Electrode       Va(V)        Jn(A/um)    Jp(A/um)    Jc(A/um)    Jt(A/um)
+=========================================================================
+anode          5.500e-001  2.263e-005  7.246e-010  2.263e-005  2.263e-005
+cathode        0.000e+000 -2.263e-005 -1.688e-015 -2.263e-005 -2.263e-005
+Total                                                          1.791e-014
+
+Time for bias point:   0.13 sec. 
+Total time:            2.78 sec. 
+  
+A</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1613140928" type="out">TLAS&gt; </text>
+
+  <text deck-line="20" is-extract="false" line-id="20" simulator="atlas" timestamp="1613140928" type="out">solve vanode=0.6
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1613140928" type="out">
+Obtaining static solution:
+
+ V(  anode  ) = 0.6         
+
+
+proj           psi     n      p     psi     n      p  
+direct          x      x      x     rhs    rhs    rhs 
+   i    j  m  -5.00* -5.00* -5.00* -26.0* -17.3* -17.3*
+-------------------------------------------------------
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1613140928" type="out">   1       N  -0.419 -0.717 -0.524 -27.7* -6.522 -7.677
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1613140928" type="out">   2       N  -1.354 -1.591 -1.567 -27.6* -8.629 -9.233
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1613140928" type="out">   3       N  -3.152 -3.758 -3.358 -27.7* -12.68 -12.92
+
+Electrode       Va(V)        Jn(A/um)    Jp(A/um)    Jc(A/um)    Jt(A/um)
+=========================================================================
+anode          6.000e-001  5.366e-005  3.503e-009  5.366e-005  5.366e-005
+cathode        0.000e+000 -5.366e-005 -1.021e-014 -5.366e-005 -5.366e-005
+Total                                                          9.110e-013
+
+Time for bias point:   0.16 sec. 
+Total time:            2.97 sec. 
+  
+A</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1613140928" type="out">TLAS&gt; </text>
+
+  <text deck-line="21" is-extract="false" line-id="21" simulator="atlas" timestamp="1613140928" type="out">solve vanode=0.65
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1613140928" type="out">
+Obtaining static solution:
+
+ V(  anode  ) = 0.65        
+
+
+proj           psi     n      p     psi     n      p  
+direct          x      x      x     rhs    rhs    rhs 
+   i    j  m  -5.00* -5.00* -5.00* -26.0* -17.3* -17.3*
+-------------------------------------------------------
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1613140928" type="out">   1       N  -0.568 -0.561 -0.493 -27.7* -6.646 -7.499
+   2       N  -1.329 -1.680 -1.498 -27.7* -8.656 -8.977
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1613140928" type="out">   3       N  -3.098 -3.810 -3.622 -27.7* -12.29 -12.61
+
+Electrode       Va(V)        Jn(A/um)    Jp(A/um)    Jc(A/um)    Jt(A/um)
+=========================================================================
+anode          6.500e-001  9.535e-005  1.468e-008  9.536e-005  9.536e-005
+cathode        0.000e+000 -9.536e-005 -4.830e-014 -9.536e-005 -9.536e-005
+Total                                                          9.961e-014
+
+Time for bias point:   0.13 sec. 
+Total time:            3.15 sec. 
+  
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1613140928" type="out">ATLAS&gt; </text>
+
+  <text deck-line="22" is-extract="false" line-id="22" simulator="atlas" timestamp="1613140928" type="out">solve vanode=0.7
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1613140928" type="out">
+Obtaining static solution:
+
+ V(  anode  ) = 0.7         
+
+
+proj           psi     n      p     psi     n      p  
+direct          x      x      x     rhs    rhs    rhs 
+   i    j  m  -5.00* -5.00* -5.00* -26.0* -17.3* -17.3*
+-------------------------------------------------------
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1613140928" type="out">   1       N  -0.530 -0.454 -0.451 -27.7* -6.665 -7.178
+   2       N  -1.206 -1.711 -1.568 -27.7* -8.212 -8.628
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1613140929" type="out">   3       N  -2.941 -3.515 -3.477 -27.7* -11.79 -12.18
+
+Electrode       Va(V)        Jn(A/um)    Jp(A/um)    Jc(A/um)    Jt(A/um)
+=========================================================================
+anode          7.000e-001  1.436e-004  4.568e-008  1.437e-004  1.437e-004
+cathode        0.000e+000 -1.437e-004 -1.607e-013 -1.437e-004 -1.437e-004
+Total                                                          1.402e-015
+
+Time for bias point:   0.13 sec. 
+Total time:            3.36 sec. 
+  
+A</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1613140929" type="out">TLAS&gt; </text>
+
+  <text deck-line="23" is-extract="false" line-id="23" simulator="atlas" timestamp="1613140929" type="out">solve vanode=0.75
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1613140929" type="out">
+Obtaining static solution:
+
+ V(  anode  ) = 0.75        
+
+
+proj           psi     n      p     psi     n      p  
+direct          x      x      x     rhs    rhs    rhs 
+   i    j  m  -5.00* -5.00* -5.00* -26.0* -17.3* -17.3*
+-------------------------------------------------------
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1613140929" type="out">   1       N  -0.514 -0.474 -0.475 -27.7* -6.502 -7.007
+   2       N  -1.234 -1.788 -1.785 -27.8* -8.169 -8.580
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1613140929" type="out">   3       N  -3.067 -3.483 -3.428 -27.8* -11.97 -12.34
+
+Electrode       Va(V)        Jn(A/um)    Jp(A/um)    Jc(A/um)    Jt(A/um)
+=========================================================================
+anode          7.500e-001  1.960e-004  1.017e-007  1.961e-004  1.961e-004
+cathode        0.000e+000 -1.961e-004 -3.726e-013 -1.961e-004 -1.961e-004
+Total                                                          1.033e-017
+
+Time for bias point:   0.14 sec. 
+Total time:            3.53 sec. 
+  
+A</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1613140929" type="out">TLAS&gt; </text>
+
+  <text deck-line="24" is-extract="false" line-id="24" simulator="atlas" timestamp="1613140929" type="out">solve vanode=0.8
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1613140929" type="out">
+Obtaining static solution:
+
+ V(  anode  ) = 0.8         
+
+
+proj           psi     n      p     psi     n      p  
+direct          x      x      x     rhs    rhs    rhs 
+   i    j  m  -5.00* -5.00* -5.00* -26.0* -17.3* -17.3*
+-------------------------------------------------------
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1613140929" type="out">   1       N  -0.651 -0.627 -0.629 -27.7* -6.725 -7.165
+   2       N  -1.552 -2.133 -2.144 -27.6* -8.756 -9.132
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1613140929" type="out">   3       N  -3.747 -4.089 -4.010 -27.8* -13.30 -13.62
+
+Electrode       Va(V)        Jn(A/um)    Jp(A/um)    Jc(A/um)    Jt(A/um)
+=========================================================================
+anode          8.000e-001  2.511e-004  1.785e-007  2.512e-004  2.512e-004
+cathode        0.000e+000 -2.512e-004 -6.733e-013 -2.512e-004 -2.512e-004
+Total                                                          1.626e-018
+
+Time for bias point:   0.13 sec. 
+Total time:            3.68 sec. 
+  
+A</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1613140929" type="out">TLAS&gt; </text>
+
+  <text deck-line="25" is-extract="false" line-id="25" simulator="atlas" timestamp="1613140929" type="out">solve vanode=0.85
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1613140929" type="out">
+Obtaining static solution:
+
+ V(  anode  ) = 0.85        
+
+
+proj           psi     n      p     psi     n      p  
+direct          x      x      x     rhs    rhs    rhs 
+   i    j  m  -5.00* -5.00* -5.00* -26.0* -17.3* -17.3*
+-------------------------------------------------------
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1613140929" type="out">   1       N  -0.852 -0.851 -0.836 -27.7* -7.090 -7.476
+   2       N  -1.990 -2.593 -2.594 -27.7* -9.598 -9.945
+
+Electrode       Va(V)        Jn(A/um)    Jp(A/um)    Jc(A/um)    Jt(A/um)
+=========================================================================
+anode          8.500e-001  3.078e-004  2.715e-007  3.080e-004  3.080e-004
+cathode        0.000e+000 -3.080e-004 -1.048e-012 -3.080e-004 -3.080e-004
+Total                                                          2.421e-012
+
+Time for bias poin</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1613140929" type="out">t:   0.09 sec. 
+Total time:            3.81 sec. 
+  
+ATLAS&gt; </text>
+
+  <text deck-line="26" is-extract="false" line-id="26" simulator="atlas" timestamp="1613140929" type="out">solve vanode=0.9
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1613140929" type="out">
+Obtaining static solution:
+
+ V(  anode  ) = 0.9         
+
+
+proj           psi     n      p     psi     n      p  
+direct          x      x      x     rhs    rhs    rhs 
+   i    j  m  -5.00* -5.00* -5.00* -26.0* -17.3* -17.3*
+-------------------------------------------------------
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1613140929" type="out">   1       N  -1.033 -1.033 -1.028 -27.7* -7.422 -7.778
+   2       N  -2.373 -2.982 -2.984 -27.7* -10.34 -10.66
+
+Electrode       Va(V)        Jn(A/um)    Jp(A/um)    Jc(A/um)    Jt(A/um)
+=========================================================================
+anode          9.000e-001  3.655e-004  3.769e-007  3.659e-004  3.659e-004
+cathode        0.000e+000 -3.659e-004 -1.481e-012 -3.659e-004 -3.659e-004
+Total                                                          4.371e-013
+
+Time for bias poin</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1613140929" type="out">t:   0.09 sec. 
+Total time:            3.92 sec. 
+  
+ATLAS&gt; </text>
+
+  <text deck-line="27" is-extract="false" line-id="27" simulator="atlas" timestamp="1613140929" type="out">solve vanode=0.95
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1613140929" type="out">
+Obtaining static solution:
+
+ V(  anode  ) = 0.95        
+
+
+proj           psi     n      p     psi     n      p  
+direct          x      x      x     rhs    rhs    rhs 
+   i    j  m  -5.00* -5.00* -5.00* -26.0* -17.3* -17.3*
+-------------------------------------------------------
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1613140929" type="out">   1       N  -1.207 -1.207 -1.205 -27.7* -7.745 -8.081
+   2       N  -2.732 -3.335 -3.336 -27.7* -11.03 -11.34
+
+Electrode       Va(V)        Jn(A/um)    Jp(A/um)    Jc(A/um)    Jt(A/um)
+=========================================================================
+anode          9.500e-001  4.238e-004  4.924e-007  4.243e-004  4.243e-004
+cathode        0.000e+000 -4.243e-004 -1.965e-012 -4.243e-004 -4.243e-004
+Total                                                          8.721e-014
+
+Time for bias poin</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1613140929" type="out">t:   0.11 sec. 
+Total time:            4.04 sec. 
+  
+ATLAS&gt; </text>
+
+  <text deck-line="28" is-extract="false" line-id="28" simulator="atlas" timestamp="1613140929" type="out">solve vanode=1.0
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1613140929" type="out">
+Obtaining static solution:
+
+ V(  anode  ) = 1           
+
+
+proj           psi     n      p     psi     n      p  
+direct          x      x      x     rhs    rhs    rhs 
+   i    j  m  -5.00* -5.00* -5.00* -26.0* -17.3* -17.3*
+-------------------------------------------------------
+</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1613140929" type="out">   1       N  -1.322 -1.322 -1.304 -27.7* -7.960 -8.292
+   2       N  -2.964 -3.556 -3.560 -27.7* -11.48 -11.77
+
+Electrode       Va(V)        Jn(A/um)    Jp(A/um)    Jc(A/um)    Jt(A/um)
+=========================================================================
+anode          1.000e+000  4.824e-004  6.137e-007  4.830e-004  4.830e-004
+cathode        0.000e+000 -4.830e-004 -2.483e-012 -4.830e-004 -4.830e-004
+Total                                                          1.880e-014
+
+Time for bias poin</text>
+
+  <text deck-line="-1" is-extract="false" line-id="-1" simulator="atlas" timestamp="1613140929" type="out">t:   0.10 sec. 
+Total time:            4.14 sec. 
+  
+ATLAS&gt; </text>
+
+  <text deck-line="-1" is-extract="false" line-id="29" simulator="atlas" timestamp="1613140929" type="out">tonyplot Schottky_Diode_IV.log
+</text>
+
+</rto>

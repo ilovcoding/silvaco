@@ -1,22 +1,23 @@
 v ATHENA
-# silvaco.file ASCII version=1.14.6 format=1 contents=SDB,Coord1D
+# silvaco.file ASCII version=1.14.9 format=1 contents=SDB,Coord1D
 
 Copyright "###################################################################"
 Copyright "#               Copyright Silvaco International (c)               #"
-Copyright "#                            1992-2008                            #"
+Copyright "#                            1992-2013                            #"
 Copyright "#                                                                 #"
 Copyright "# This file format and the following Key are copyright Silvaco    #"
 Copyright "# International. You may not use, this format or key without      #"
 Copyright "# reproducing this message in full and obtaining                  #"
-Copyright "# express written permission from Silvaco International.          #"
+Copyright "# express written permission from Silvaco Inc.                    #"
 Copyright "#                                                                 #"
-Copyright "# To obtain such permission please contact: Silvaco International #"
+Copyright "# To obtain such permission please contact: Silvaco Inc.          #"
 Copyright "#                                           support@silvaco.com   #"
 Copyright "#                                                                 #"
 Copyright "# KEY=SVC86hn7562asdx                       PROD=345              #"
 Copyright "###################################################################"
-#ATHENA version 5.20.0.R
-#libSDB 1.12.10 (Fri Jan 27 00:37:26 PST 2012)
+#ATHENA version 5.21.2 (aka 5.22.3.R)
+#athena 5.21.2 (aka 5.22.3.R) (Fri Jul 12 14:21:19 PDT 2013)
+#libSDB 1.12.20 (Tue Jul  2 02:36:55 PDT 2013)
 j 14 4 3 10 9 703 704 705 706 711 712 2 700 1 12
 k 93 94 92 1 0 0 0 0.6 0 0 1 0 1 0
 m 0 300
@@ -433,4 +434,4 @@ Q 10002 1 ULOC202 2 0.5 3 Double
 H 3 UNUM ULOC201 ULOC202
 I 2 0 0.5
 J Integer Double Double
-EOF 2121086454
+EOF 356904052
